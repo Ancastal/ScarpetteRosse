@@ -9,11 +9,12 @@ import SwiftUI
 
 struct TView: View {
     var body: some View {
+        
         TabView() {
             ContentView().tabItem { Label("Questionario", systemImage: "q.circle.fill") }
             MapView().tabItem { Label("Map", systemImage: "map.fill") }
             ShareView().tabItem { Label("Info", systemImage: "info.circle.fill") }
-        }
+        }.tabViewStyle(DefaultTabViewStyle())
         
     }
 }

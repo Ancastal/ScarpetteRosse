@@ -7,13 +7,44 @@
 
 import SwiftUI
 
+struct PageViewData: Identifiable {
+    let id = UUID().uuidString
+    let imageNamed: String
+}
+
+struct PageView: View {
+    let viewData: PageViewData
+    var body: some View {
+        Image(viewData.imageNamed)
+            .resizable()
+            .clipped()
+    }
+}
+
+struct CircleButton: View {
+    @Binding var isSelected: Bool
+    let action: () -> Void
+    
+    var body: some View {
+        Button(action: {
+            self.action()
+        }) { Circle()
+            .frame(width: 16, height: 16)
+            .foregroundColor(self.isSelected ? Color.white : Color.white.opacity(0.5))
+        }
+    }
+}
+
+
 struct OnBoardingContentView: View {
     
     @State private var willMove = false
     
     var body: some View {
         NavigationView {
-            TabView {
+//            ScrollView(.horizontal) {
+                
+                            TabView {
                 onBoardView(systemImageName: "simple",
                             title: "Sostegno",
                             description: "In ogni momento, cerca contatti utili alla tua situazione in un’interfaccia semplice e veloce.\n\nScegli tra una lista o una mappa interattiva che si aggiorna con la tua posizione.", on: false)
@@ -29,18 +60,18 @@ struct OnBoardingContentView: View {
                 //                /*@START_MENU_TOKEN@*/Text("Button")/*@END_MENU_TOKEN@*/
                 //            }
                 
-                
             }
             .navigationTitle("Ciao")
             .navigationBarHidden(true)
         }
-        .edgesIgnoringSafeArea([.top, .bottom])
-        
-        .tabViewStyle(.page(indexDisplayMode: .always))
-        .indexViewStyle(.page(backgroundDisplayMode: .always))
-        
+                .edgesIgnoringSafeArea([.top, .bottom])
+//                .tabViewStyle(.page(indexDisplayMode: .always))        .indexViewStyle(.page(backgroundDisplayMode: .always))
+                .tabViewStyle(.page)
+                .indexViewStyle(.page(backgroundDisplayMode: .always))
+        //
     }
 }
+
 
 
 struct onBoardView: View {
@@ -70,7 +101,7 @@ struct onBoardView: View {
                 
             }
             if (on == true) {
-                NavigationLink(destination: ContentView()) {
+                NavigationLink(destination: TView()) {
                     Text("Continua")
                         .overlay(RoundedRectangle(cornerRadius: 40).stroke(.black, lineWidth: 0.5).frame(width: 100, height: 30))
                         .padding(.top, 10)
