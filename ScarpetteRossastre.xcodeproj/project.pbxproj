@@ -17,7 +17,6 @@
 		822EE209275A223700D3DA2D /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822EE202275A223700D3DA2D /* OnBoardingView.swift */; };
 		822EE20A275A223700D3DA2D /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822EE203275A223700D3DA2D /* Quiz.swift */; };
 		822EE20B275A223700D3DA2D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822EE204275A223700D3DA2D /* HomeView.swift */; };
-		822EE211275A22AE00D3DA2D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 822EE20F275A22AE00D3DA2D /* Info.plist */; };
 		822EE212275A22AE00D3DA2D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822EE210275A22AE00D3DA2D /* Color.swift */; };
 		822EE214275A234800D3DA2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822EE213275A234800D3DA2D /* ContentView.swift */; };
 /* End PBXBuildFile section */
@@ -34,7 +33,6 @@
 		822EE202275A223700D3DA2D /* OnBoardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		822EE203275A223700D3DA2D /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		822EE204275A223700D3DA2D /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		822EE20F275A22AE00D3DA2D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		822EE210275A22AE00D3DA2D /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		822EE213275A234800D3DA2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				822EE210275A22AE00D3DA2D /* Color.swift */,
-				822EE20F275A22AE00D3DA2D /* Info.plist */,
 				822EE20D275A224000D3DA2D /* Views */,
 				822EE203275A223700D3DA2D /* Quiz.swift */,
 				822EE1F1275A215600D3DA2D /* ScarpetteRossastreApp.swift */,
@@ -162,7 +159,6 @@
 			files = (
 				822EE1F9275A215700D3DA2D /* Preview Assets.xcassets in Resources */,
 				822EE1F6275A215700D3DA2D /* Assets.xcassets in Resources */,
-				822EE211275A22AE00D3DA2D /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +317,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -350,6 +347,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
