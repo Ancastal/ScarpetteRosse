@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23ADB9D3275A23D400033A4A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23ADB9D2275A23D400033A4A /* MapView.swift */; };
 		822EE1F2275A215600D3DA2D /* ScarpetteRossastreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822EE1F1275A215600D3DA2D /* ScarpetteRossastreApp.swift */; };
 		822EE1F6275A215700D3DA2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 822EE1F5275A215700D3DA2D /* Assets.xcassets */; };
 		822EE1F9275A215700D3DA2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 822EE1F8275A215700D3DA2D /* Preview Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23ADB9D2275A23D400033A4A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		822EE1EE275A215600D3DA2D /* ScarpetteRossastre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScarpetteRossastre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		822EE1F1275A215600D3DA2D /* ScarpetteRossastreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScarpetteRossastreApp.swift; sourceTree = "<group>"; };
 		822EE1F5275A215700D3DA2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				822EE200275A223700D3DA2D /* TView.swift */,
 				822EE204275A223700D3DA2D /* HomeView.swift */,
 				822EE213275A234800D3DA2D /* ContentView.swift */,
+				23ADB9D2275A23D400033A4A /* MapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				822EE20B275A223700D3DA2D /* HomeView.swift in Sources */,
 				822EE214275A234800D3DA2D /* ContentView.swift in Sources */,
 				822EE1F2275A215600D3DA2D /* ScarpetteRossastreApp.swift in Sources */,
+				23ADB9D3275A23D400033A4A /* MapView.swift in Sources */,
 				822EE208275A223700D3DA2D /* MoreView.swift in Sources */,
 				822EE212275A22AE00D3DA2D /* Color.swift in Sources */,
 			);
