@@ -76,11 +76,9 @@ struct ContentView: View {
                             .foregroundColor(didTap1 ? Color.white : Color.blue)
                             .background(didTap1 ? Color.blue : Color.white)
                             .overlay(
-                                Rectangle()
+                                RoundedRectangle(cornerRadius: 40)
                                     .strokeBorder(.black, lineWidth: 0.25)
-                                    .frame(width: .infinity)
-                                
-                                
+                                    .frame(width: 300)
                             )
                             .foregroundColor(.white)
                             .padding(5)
@@ -104,9 +102,9 @@ struct ContentView: View {
                             .foregroundColor(didTap2 ? Color.white : Color.blue)
                             .background(didTap2 ? Color.blue : Color.white)
                             .overlay(
-                                Rectangle()
+                                RoundedRectangle(cornerRadius: 40)
                                     .strokeBorder(.black, lineWidth: 0.25)
-                                    .frame(width: .infinity)
+                                    .frame(width: 300)
                                 
                                 
                             )
@@ -133,13 +131,13 @@ struct ContentView: View {
                             .foregroundColor(didTap3 ? Color.white : Color.blue)
                             .background(didTap3 ? Color.blue : Color.white)
                             .overlay(
-                                Rectangle()
+                                RoundedRectangle(cornerRadius: 40)
                                     .strokeBorder(.black, lineWidth: 0.25)
-                                    .frame(width: .infinity)
+                                    .frame(width: 300)
         
                             )
                             .foregroundColor(.white)
-                            .padding(5)
+                            .padding(.bottom, 30)
                         
                     }
                 }
