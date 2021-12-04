@@ -47,10 +47,10 @@ struct Home: View{
             
             Map(coordinateRegion: $managerDelegate.region, interactionModes: .all, showsUserLocation: true, userTrackingMode: $tracking, annotationItems: managerDelegate.pins) { pin in
                 MapAnnotation(coordinate: pin.location.coordinate) {
-//                    VStack {                                                  Pin personalizzato con TapGesture
-//                        Circle().frame(width: 10, height: 10)                 Come mostrare nella modal solo i pin vicini?
+//                    VStack {                                       <---       Pin personalizzato con TapGesture
+//                        Circle().frame(width: 10, height: 10)                 [Come mostrare nella modal solo i pin vicini?
 //                        Text(testo)                                           Forse testando pin.location.coordinate se
-//                                //     ...                                    all'interno di un certo range.
+//                                //     ...                                    all'interno di un certo range.]
 //                            }                                     Esempio:
 //                                                               var location = coordinates + 2
 //                                                               if (coordinates...location).contains(pin){aggiungi a modale pin.info}
@@ -58,7 +58,7 @@ struct Home: View{
 //                            testo = "Works"
 //                    }
                 }
-//                MapPin(coordinate: pin.location.coordinate, tint: .green)        Pin standard
+//                MapPin(coordinate: pin.location.coordinate, tint: .green)        <--- Pin standard
                 
                 
             }.edgesIgnoringSafeArea(.all)
