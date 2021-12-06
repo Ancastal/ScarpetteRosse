@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		23ADB9D3275A23D400033A4A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23ADB9D2275A23D400033A4A /* MapView.swift */; };
 		23E0BD1A275E051300982A86 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E0BD19275E051300982A86 /* BottomSheetView.swift */; };
-		820604B4275E112300542C0A /* Prova.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820604B3275E112300542C0A /* Prova.swift */; };
 		820604E8275E4B2C00542C0A /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 820604E3275E4B2C00542C0A /* landmarkData.json */; };
 		820604E9275E4B2C00542C0A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820604E4275E4B2C00542C0A /* Color.swift */; };
 		820604EA275E4B2C00542C0A /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820604E6275E4B2C00542C0A /* ModelData.swift */; };
@@ -30,7 +29,6 @@
 /* Begin PBXFileReference section */
 		23ADB9D2275A23D400033A4A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		23E0BD19275E051300982A86 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
-		820604B3275E112300542C0A /* Prova.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prova.swift; sourceTree = "<group>"; };
 		820604E3275E4B2C00542C0A /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		820604E4275E4B2C00542C0A /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		820604E6275E4B2C00542C0A /* ModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
@@ -130,7 +128,6 @@
 				822EE213275A234800D3DA2D /* ContentView.swift */,
 				23ADB9D2275A23D400033A4A /* MapView.swift */,
 				23E0BD19275E051300982A86 /* BottomSheetView.swift */,
-				820604B3275E112300542C0A /* Prova.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,7 +205,6 @@
 			files = (
 				822EE206275A223700D3DA2D /* ShareView.swift in Sources */,
 				822EE207275A223700D3DA2D /* TView.swift in Sources */,
-				820604B4275E112300542C0A /* Prova.swift in Sources */,
 				822EE20A275A223700D3DA2D /* Quiz.swift in Sources */,
 				820604E9275E4B2C00542C0A /* Color.swift in Sources */,
 				822EE209275A223700D3DA2D /* OnBoardingView.swift in Sources */,
