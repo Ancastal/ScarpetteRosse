@@ -40,30 +40,48 @@ struct Home: View{
     @StateObject var managerDelegate = locationDelegate()
     @State var testo = "Test"
     var location = 40.855056601724044...42.855056601724044
+    @State private var bottomSheetShown = false
+
     var body: some View {
-        
-        VStack{
-            //            Map(coordinateRegion: $region, interactionModes: .all, showsUserLocation: true, userTrackingMode: $tracking)
-            
-            Map(coordinateRegion: $managerDelegate.region, interactionModes: .all, showsUserLocation: true, userTrackingMode: $tracking, annotationItems: managerDelegate.pins) { pin in
-//                    MapPin(coordinate: pin.location.coordinate, tint: .green) //  <--- Pin standard
-                    
-                MapAnnotation(coordinate: pin.location.coordinate) {
-                    VStack {                                       //<---       Pin personalizzato con TapGesture
-                        Circle().frame(width: 10, height: 10)        //         [Come mostrare nella modal solo i pin vicini?
-                        Text(testo)                                  //         Forse testando pin.location.coordinate se
-                                                     //          all'interno di un certo range.]
-                            }                                    // Esempio:
-//                                                               var location = coordinates + 2
-//                                                               if (coordinates...location).contains(pin){aggiungi a modale pin.info}
-                        .onTapGesture {
-                            
-                    }
-            } //.edgesIgnoringSafeArea(.all)
-                   }.onAppear{
-                       manager.delegate = managerDelegate
+        GeometryReader { geometry in
+            VStack{
+
+                //            Map(coordinateRegion: $region, interactionModes: .all, showsUserLocation: true, userTrackingMode: $tracking)
+                
+                Map(coordinateRegion: $managerDelegate.region, interactionModes: .all, showsUserLocation: true, userTrackingMode: $tracking, annotationItems: managerDelegate.pins) { pin in
+    //                    MapPin(coordinate: pin.location.coordinate, tint: .green) //  <--- Pin standard
+                        
+                    MapAnnotation(coordinate: pin.location.coordinate) {
+                        VStack {                                       //<---       Pin personalizzato con TapGesture
+                            Circle().frame(width: 100, height: 100)        //         [Come mostrare nella modal solo i pin vicini?
+                            Text(testo)                                  //         Forse testando pin.location.coordinate se
+                                                         //          all'interno di un certo range.]
+                                }                                    // Esempio:
+    //                                                               var location = coordinates + 2
+    //                                                               if (coordinates...location).contains(pin){aggiungi a modale pin.info}
+                            .onTapGesture {
+                                
+                        }
+                        
+                } //.edgesIgnoringSafeArea(.all)
+                       }.onAppear{
+                           manager.delegate = managerDelegate
+                               
+                       }
+                       .edgesIgnoringSafeArea(.all)
+
+                
                    }
-               }
+            BottomSheetView(
+                isOpen: self.$bottomSheetShown,
+                maxHeight: geometry.size.height * 0.7
+            ) {
+                Color.blue
+            }
+        }.edgesIgnoringSafeArea(.all)
+        
+        
+        
            }
 }
 
