@@ -14,7 +14,10 @@ struct MyPin: Identifiable {
 struct Pin : Identifiable{
     var id = UUID()
     var location : CLLocation
-    
+    var nomeAssociazione: String
+    var indirizzo: String
+    var numeroTelefono: String
+    var descrizione: String
 }
 
 
@@ -22,8 +25,10 @@ struct MapView: View {
     
     var body: some View {
         Home()
+        
     }
 }
+
 
 
 struct Home: View{
@@ -38,51 +43,68 @@ struct Home: View{
     @State var manager = CLLocationManager()
     
     @StateObject var managerDelegate = locationDelegate()
-    @State var testo = "Test"
+    
     var location = 40.855056601724044...42.855056601724044
     @State private var bottomSheetShown = false
-
+    @State var nomeAssociazionePin = "Nome Associazione"
+    @State var indirizzoPin = "via asdfasdfa"
+    @State var numeroTelefonoPin = "000 0000000"
+    @State var descrizionePin = "Descrizione"
+    
     var body: some View {
+        
         GeometryReader { geometry in
             VStack{
-
+                
                 //            Map(coordinateRegion: $region, interactionModes: .all, showsUserLocation: true, userTrackingMode: $tracking)
                 
                 Map(coordinateRegion: $managerDelegate.region, interactionModes: .all, showsUserLocation: true, userTrackingMode: $tracking, annotationItems: managerDelegate.pins) { pin in
-    //                    MapPin(coordinate: pin.location.coordinate, tint: .green) //  <--- Pin standard
-                        
+                    //                    MapPin(coordinate: pin.location.coordinate, tint: .green) //  <--- Pin standard
+                    
                     MapAnnotation(coordinate: pin.location.coordinate) {
                         VStack {                                       //<---       Pin personalizzato con TapGesture
-                            Circle().frame(width: 100, height: 100)        //         [Come mostrare nella modal solo i pin vicini?
-                            Text(testo)                                  //         Forse testando pin.location.coordinate se
-                                                         //          all'interno di un certo range.]
-                                }                                    // Esempio:
-    //                                                               var location = coordinates + 2
-    //                                                               if (coordinates...location).contains(pin){aggiungi a modale pin.info}
-                            .onTapGesture {
-                                
+                            Image(systemName: "mappin.circle.fill")
+                                .font(.system(size: 30))
+                                .foregroundColor(.red)
+                            
+                            //         [Come mostrare nella modal solo i pin vicini?
+                            //         Forse testando pin.location.coordinate se
+                            //          all'interno di un certo range.]
+                        }                                    // Esempio:
+                        //                                                               var location = coordinates + 2
+                        //                                                               if (coordinates...location).contains(pin){aggiungi a modale pin.info}
+                        .onTapGesture {
+                            indirizzoPin = pin.indirizzo
+                            nomeAssociazionePin = pin.nomeAssociazione
+                            numeroTelefonoPin = pin.numeroTelefono
+                            descrizionePin = pin.descrizione
                         }
                         
-                } //.edgesIgnoringSafeArea(.all)
-                       }.onAppear{
-                           manager.delegate = managerDelegate
-                               
-                       }
-                       .edgesIgnoringSafeArea(.all)
-
+                    } //.edgesIgnoringSafeArea(.all)
+                }.onAppear{
+                    manager.delegate = managerDelegate
+                    
+                }
+                .edgesIgnoringSafeArea(.all)
                 
-                   }
+                
+            }
             BottomSheetView(
                 isOpen: self.$bottomSheetShown,
                 maxHeight: geometry.size.height * 0.7
             ) {
-                Color.blue
+                Text(nomeAssociazionePin).font(.title)
+                Text(indirizzoPin)
+                Text("\n\n\n\n")
+                Text(numeroTelefonoPin)
+                Text(descrizionePin)
+                
             }
         }.edgesIgnoringSafeArea(.all)
         
         
         
-           }
+    }
 }
 
 class locationDelegate: NSObject,ObservableObject,CLLocationManagerDelegate{
@@ -116,8 +138,16 @@ class locationDelegate: NSObject,ObservableObject,CLLocationManagerDelegate{
         
         //        Creo array myPin
         let myPin: [Pin] = [
-            Pin(location: CLLocation(latitude:40.855056601724044, longitude:14.272703345425093)),
-            Pin(location: CLLocation(latitude:40.85273323820153, longitude:14.333115270988346))
+            Pin(location: CLLocation(latitude:40.855056601724044, longitude:14.272703345425093),
+                nomeAssociazione: "Centro aniviolenza X",
+                indirizzo: "Prova",
+                numeroTelefono: "081 8849186",
+                descrizione: "asdfasdfasdfasdfasdfasdf"),
+            Pin(location: CLLocation(latitude:40.85273323820153, longitude:14.333115270988346),
+                nomeAssociazione: "Kassandre" ,
+                indirizzo: "Prova1",
+                numeroTelefono: "081 3333333",
+                descrizione: "sdfasdggjajsdfjasd")
         ]
         
         pins = []
