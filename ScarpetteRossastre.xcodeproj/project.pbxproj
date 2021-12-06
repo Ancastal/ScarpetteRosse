@@ -13,6 +13,7 @@
 		820604E9275E4B2C00542C0A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820604E4275E4B2C00542C0A /* Color.swift */; };
 		820604EA275E4B2C00542C0A /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820604E6275E4B2C00542C0A /* ModelData.swift */; };
 		820604EB275E4B2C00542C0A /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820604E7275E4B2C00542C0A /* Landmark.swift */; };
+		820604ED275E583700542C0A /* QuizHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820604EC275E583700542C0A /* QuizHome.swift */; };
 		822EE1F2275A215600D3DA2D /* ScarpetteRossastreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822EE1F1275A215600D3DA2D /* ScarpetteRossastreApp.swift */; };
 		822EE1F6275A215700D3DA2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 822EE1F5275A215700D3DA2D /* Assets.xcassets */; };
 		822EE1F9275A215700D3DA2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 822EE1F8275A215700D3DA2D /* Preview Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		820604E4275E4B2C00542C0A /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		820604E6275E4B2C00542C0A /* ModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		820604E7275E4B2C00542C0A /* Landmark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		820604EC275E583700542C0A /* QuizHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizHome.swift; sourceTree = "<group>"; };
 		822EE1EE275A215600D3DA2D /* ScarpetteRossastre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScarpetteRossastre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		822EE1F1275A215600D3DA2D /* ScarpetteRossastreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScarpetteRossastreApp.swift; sourceTree = "<group>"; };
 		822EE1F5275A215700D3DA2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				822EE213275A234800D3DA2D /* ContentView.swift */,
 				23ADB9D2275A23D400033A4A /* MapView.swift */,
 				23E0BD19275E051300982A86 /* BottomSheetView.swift */,
+				820604EC275E583700542C0A /* QuizHome.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				822EE20A275A223700D3DA2D /* Quiz.swift in Sources */,
 				820604E9275E4B2C00542C0A /* Color.swift in Sources */,
 				822EE209275A223700D3DA2D /* OnBoardingView.swift in Sources */,
+				820604ED275E583700542C0A /* QuizHome.swift in Sources */,
 				822EE20B275A223700D3DA2D /* HomeView.swift in Sources */,
 				822EE214275A234800D3DA2D /* ContentView.swift in Sources */,
 				822EE1F2275A215600D3DA2D /* ScarpetteRossastreApp.swift in Sources */,

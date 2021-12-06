@@ -19,7 +19,7 @@ extension View {
                     .navigationBarHidden(true)
                 NavigationLink(destination: view
                                 .navigationBarTitle("")
-                                .navigationBarHidden(true),
+                                .navigationBarHidden(true).navigationBarBackButtonHidden(true),
                                isActive: binding
                 ) {
                     EmptyView()
@@ -173,6 +173,8 @@ struct ContentView: View {
             }
         }
         .navigate(to: MapView(), when: $willMoveToNextScreen)
+        .navigationTitle("Ciao")
+        .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
     }
     
