@@ -46,7 +46,8 @@ struct Home: View{
             //            Map(coordinateRegion: $region, interactionModes: .all, showsUserLocation: true, userTrackingMode: $tracking)
             
             Map(coordinateRegion: $managerDelegate.region, interactionModes: .all, showsUserLocation: true, userTrackingMode: $tracking, annotationItems: managerDelegate.pins) { pin in
-                MapAnnotation(coordinate: pin.location.coordinate) {
+                    MapPin(coordinate: pin.location.coordinate, tint: .green)      //  <--- Pin standard
+//                MapAnnotation(coordinate: pin.location.coordinate) {
 //                    VStack {                                       <---       Pin personalizzato con TapGesture
 //                        Circle().frame(width: 10, height: 10)                 [Come mostrare nella modal solo i pin vicini?
 //                        Text(testo)                                           Forse testando pin.location.coordinate se
@@ -57,16 +58,12 @@ struct Home: View{
 //                        .onTapGesture {
 //                            testo = "Works"
 //                    }
-                }
-//                MapPin(coordinate: pin.location.coordinate, tint: .green)        <--- Pin standard
-                
-                
             }.edgesIgnoringSafeArea(.all)
-        }.onAppear{
-            manager.delegate = managerDelegate
-        }
-    }
-}
+                   }.onAppear{
+                       manager.delegate = managerDelegate
+                   }
+               }
+           }
 
 class locationDelegate: NSObject,ObservableObject,CLLocationManagerDelegate{
     var pins : [Pin] = []

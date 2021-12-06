@@ -87,7 +87,7 @@ struct ContentView: View {
                         }
                         
                     }) {
-                        Text("Si")
+                        Text("Si, l'ho vissuto.")
                             .fontWeight(.thin)
                             .frame(width: metrics.size.width, height: 70)
                         
@@ -118,7 +118,7 @@ struct ContentView: View {
                         }
                         
                     }) {
-                        Text("No")
+                        Text("Non l'ho vissuto.")
                             .fontWeight(.thin)
 
                             .frame(width: metrics.size.width, height: 70)
@@ -150,7 +150,7 @@ struct ContentView: View {
                         }
                         
                     }) {
-                        Text("Forse")
+                        Text("Forse l'ho vissuta.")
                             .fontWeight(.thin)
 
                             .frame(width: 500, height: 70)
