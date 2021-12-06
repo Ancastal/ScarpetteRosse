@@ -46,10 +46,10 @@ struct Home: View{
     
     var location = 40.855056601724044...42.855056601724044
     @State private var bottomSheetShown = false
-    @State var nomeAssociazionePin = "Nome Associazione"
-    @State var indirizzoPin = "via asdfasdfa"
-    @State var numeroTelefonoPin = "000 0000000"
-    @State var descrizionePin = "Descrizione"
+    @State var nomeAssociazionePin = "Tocca su un puntino"
+    @State var indirizzoPin = "Ti forniremo più indicazioni"
+    @State var numeroTelefonoPin = ""
+    @State var descrizionePin = ""
     
     var body: some View {
         
@@ -95,9 +95,17 @@ struct Home: View{
             ) {
                 Text(nomeAssociazionePin).font(.title)
                 Text(indirizzoPin)
-                Text("\n\n\n\n")
-                Text(numeroTelefonoPin)
-                Text(descrizionePin)
+                Text("\n\n")
+                List{
+                    
+                    Text("Contatti: \(numeroTelefonoPin)")
+                    
+                    Text(descrizionePin)
+                }
+                
+                
+                
+                
                 
             }
         }.edgesIgnoringSafeArea(.all)
@@ -126,7 +134,7 @@ class locationDelegate: NSObject,ObservableObject,CLLocationManagerDelegate{
             print("Authorized")
             manager.startUpdatingLocation()
         } else {
-            print("not authorizeeeeed")
+            print("not authorizeed")
             manager.requestWhenInUseAuthorization()
         }
     }
@@ -138,16 +146,31 @@ class locationDelegate: NSObject,ObservableObject,CLLocationManagerDelegate{
         
         //        Creo array myPin
         let myPin: [Pin] = [
-            Pin(location: CLLocation(latitude:40.855056601724044, longitude:14.272703345425093),
-                nomeAssociazione: "Centro aniviolenza X",
-                indirizzo: "Prova",
-                numeroTelefono: "081 8849186",
-                descrizione: "asdfasdfasdfasdfasdfasdf"),
-            Pin(location: CLLocation(latitude:40.85273323820153, longitude:14.333115270988346),
-                nomeAssociazione: "Kassandre" ,
-                indirizzo: "Prova1",
-                numeroTelefono: "081 3333333",
-                descrizione: "sdfasdggjajsdfjasd")
+            Pin(location: CLLocation(latitude:40.90730440345204, longitude:14.75453973651237),
+                nomeAssociazione: "Centro Antiviolenza PdZ A02",
+                indirizzo: "Via Nazionale 222 presso il Centro Sociale P. Campanello 80013 - Mercogliano (AV)",
+                numeroTelefono: "0825-682501",
+                descrizione: "Centro antiviolenza"),
+            Pin(location: CLLocation(latitude:41.039990244809694, longitude:14.382515760918347),
+                nomeAssociazione: "Cooperativa Eva" ,
+                indirizzo: "Via G. Amendola, 15, 81024 Maddaloni CE",
+                numeroTelefono: "082-3204145",
+                descrizione: "Informazioni sulla Cooperativa Eva"),
+            Pin(location: CLLocation(latitude:40.944596372450285, longitude:14.36566292163162),
+                nomeAssociazione: "La Casa di Marinella",
+                indirizzo: "Via Volturno, 71, 80011 Acerra NA",
+                numeroTelefono: "081-5201470",
+                descrizione: "Informazioni su La Casa di Marinella"),
+            Pin(location: CLLocation(latitude:40.85258986902009, longitude:14.333050897689262),
+                nomeAssociazione: "Sportello Donna Le Kassandre",
+                indirizzo: "Corso Ponticelli, 40, 80147 Napoli NA",
+                numeroTelefono: "388-0979950",
+                descrizione: "Informazioni su Sportello Donna Le Kassandre"),
+            Pin(location: CLLocation(latitude:40.84578935394306, longitude:14.36968345635139),
+                nomeAssociazione: "Sportello Lilith",
+                indirizzo: "Via Luca Giordano, 24, 80040 San Sebastiano Al Vesuvio NA",
+                numeroTelefono: "331-9021391",
+                descrizione: "Informazioni su Sportello Lilith")
         ]
         
         pins = []
