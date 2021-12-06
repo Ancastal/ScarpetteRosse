@@ -10,4 +10,7 @@
 import Foundation
 import SwiftUI
 
-let myColor = Color("myCustomBlue")
+let blue = Color("myCustomBlue")
+let bluegrad = Color("Blue_Gradient")
+let purplegrad = Color("Purple_Gradient")
+

@@ -15,6 +15,7 @@ struct TView: View {
             MapView().tabItem { Label("Map", systemImage: "map.fill") }
             ShareView().tabItem { Label("Info", systemImage: "info.circle.fill") }
         }.tabViewStyle(DefaultTabViewStyle())
+            .accentColor(purplegrad)
         
     }
 }

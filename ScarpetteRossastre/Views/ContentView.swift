@@ -46,16 +46,32 @@ struct ContentView: View {
             
             NavigationView {
                 VStack {
+                    ZStack {
+                        Rectangle()
+                            .fill(LinearGradient(gradient: Gradient(colors: [purplegrad, bluegrad]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                            .offset(y: -260)
+                            .frame(height:
+                                    metrics.size.height * 0.50).overlay(
+                                        RoundedRectangle(cornerRadius: 20).overlay(RoundedRectangle(cornerRadius: 20).strokeBorder(.black, lineWidth: 0.5))
+                                            .foregroundColor(.white)
+                                            .frame(width: metrics.size.width * 0.8,
+                                                   height: metrics.size.height * 0.3)
+                                            .offset(x:0, y:-100)
+                                            .shadow(radius:15)
+                                        
+                                    )
+                        
+                        Text(quiz[x])
+                            .font(.title2)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(.black)
+                            .padding(.horizontal, 70.0)
+                            .offset(y: -90)
+                        
+                        
+                    }
                     
-                    Text(quiz[x])
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .padding(.all, 40.0)
-                        .frame(width: 300.0)
-                        .overlay(RoundedRectangle(cornerRadius: 40)
-                                    .strokeBorder(.black, lineWidth: 0.5))
-                    //                        .offset(y: -150)
-                        .position(x: metrics.size.width * 0.5, y: metrics.size.height * 0.05)
                     
                     //                    VStack(spacing: 0) {
                     Button(action: {
@@ -72,16 +88,21 @@ struct ContentView: View {
                         
                     }) {
                         Text("Si")
+                            .fontWeight(.thin)
                             .frame(width: metrics.size.width, height: 70)
+                        
                             .foregroundColor(didTap1 ? Color.white : Color.blue)
+                            .font(.title)
+                        
                             .background(didTap1 ? Color.blue : Color.white)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 40)
-                                    .strokeBorder(.black, lineWidth: 0.25)
+                                    .strokeBorder(.blue, lineWidth: 1)
                                     .frame(width: 300)
                             )
                             .foregroundColor(.white)
                             .padding(5)
+                        
                         
                     }
                     Button(action: {
@@ -98,12 +119,15 @@ struct ContentView: View {
                         
                     }) {
                         Text("No")
+                            .fontWeight(.thin)
+
                             .frame(width: metrics.size.width, height: 70)
+                            .font(.title)
                             .foregroundColor(didTap2 ? Color.white : Color.blue)
                             .background(didTap2 ? Color.blue : Color.white)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 40)
-                                    .strokeBorder(.black, lineWidth: 0.25)
+                                    .strokeBorder(.blue, lineWidth: 1)
                                     .frame(width: 300)
                                 
                                 
@@ -127,17 +151,20 @@ struct ContentView: View {
                         
                     }) {
                         Text("Forse")
+                            .fontWeight(.thin)
+
                             .frame(width: 500, height: 70)
                             .foregroundColor(didTap3 ? Color.white : Color.blue)
+                            .font(.title)
                             .background(didTap3 ? Color.blue : Color.white)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 40)
-                                    .strokeBorder(.black, lineWidth: 0.25)
+                                    .strokeBorder(.blue, lineWidth: 1)
                                     .frame(width: 300)
-        
+                                
                             )
                             .foregroundColor(.white)
-                            .padding(.bottom, 30)
+                            .padding(.bottom, 100)
                         
                     }
                 }
