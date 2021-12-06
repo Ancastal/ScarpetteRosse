@@ -46,24 +46,26 @@ struct Home: View{
             //            Map(coordinateRegion: $region, interactionModes: .all, showsUserLocation: true, userTrackingMode: $tracking)
             
             Map(coordinateRegion: $managerDelegate.region, interactionModes: .all, showsUserLocation: true, userTrackingMode: $tracking, annotationItems: managerDelegate.pins) { pin in
-                    MapPin(coordinate: pin.location.coordinate, tint: .green)      //  <--- Pin standard
-//                MapAnnotation(coordinate: pin.location.coordinate) {
-//                    VStack {                                       <---       Pin personalizzato con TapGesture
-//                        Circle().frame(width: 10, height: 10)                 [Come mostrare nella modal solo i pin vicini?
-//                        Text(testo)                                           Forse testando pin.location.coordinate se
-//                                //     ...                                    all'interno di un certo range.]
-//                            }                                     Esempio:
+//                    MapPin(coordinate: pin.location.coordinate, tint: .green) //  <--- Pin standard
+                    
+                MapAnnotation(coordinate: pin.location.coordinate) {
+                    VStack {                                       //<---       Pin personalizzato con TapGesture
+                        Circle().frame(width: 10, height: 10)        //         [Come mostrare nella modal solo i pin vicini?
+                        Text(testo)                                  //         Forse testando pin.location.coordinate se
+                                                     //          all'interno di un certo range.]
+                            }                                    // Esempio:
 //                                                               var location = coordinates + 2
 //                                                               if (coordinates...location).contains(pin){aggiungi a modale pin.info}
-//                        .onTapGesture {
-//                            testo = "Works"
-//                    }
-            }.edgesIgnoringSafeArea(.all)
+                        .onTapGesture {
+                            
+                    }
+            } //.edgesIgnoringSafeArea(.all)
                    }.onAppear{
                        manager.delegate = managerDelegate
                    }
                }
            }
+}
 
 class locationDelegate: NSObject,ObservableObject,CLLocationManagerDelegate{
     var pins : [Pin] = []
