@@ -13,4 +13,10 @@ import SwiftUI
 let blue = Color("myCustomBlue")
 let bluegrad = Color("Blue_Gradient")
 let purplegrad = Color("Purple_Gradient")
+let red = Color("Red")
+let violet = Color("Violet")
+let yellow = Color("Yellow")
+let lightyellow = Color("Light-Violet")
+let orange = Color("Orange")
+
 
