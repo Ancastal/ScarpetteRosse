@@ -22,7 +22,6 @@
 		822EE209275A223700D3DA2D /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822EE202275A223700D3DA2D /* OnBoardingView.swift */; };
 		822EE20A275A223700D3DA2D /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822EE203275A223700D3DA2D /* Quiz.swift */; };
 		822EE20B275A223700D3DA2D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822EE204275A223700D3DA2D /* HomeView.swift */; };
-		822EE212275A22AE00D3DA2D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822EE210275A22AE00D3DA2D /* Color.swift */; };
 		822EE214275A234800D3DA2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822EE213275A234800D3DA2D /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +42,6 @@
 		822EE202275A223700D3DA2D /* OnBoardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		822EE203275A223700D3DA2D /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		822EE204275A223700D3DA2D /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		822EE210275A22AE00D3DA2D /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		822EE213275A234800D3DA2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +61,7 @@
 			children = (
 				820604E3275E4B2C00542C0A /* landmarkData.json */,
 				820604E4275E4B2C00542C0A /* Color.swift */,
+				822EE203275A223700D3DA2D /* Quiz.swift */,
 			);
 			name = Resources;
 			path = "ScarpetteRossastre/Nuova roba/Resources";
@@ -99,9 +98,7 @@
 		822EE1F0275A215600D3DA2D /* ScarpetteRossastre */ = {
 			isa = PBXGroup;
 			children = (
-				822EE210275A22AE00D3DA2D /* Color.swift */,
 				822EE20D275A224000D3DA2D /* Views */,
-				822EE203275A223700D3DA2D /* Quiz.swift */,
 				822EE1F1275A215600D3DA2D /* ScarpetteRossastreApp.swift */,
 				822EE1F5275A215700D3DA2D /* Assets.xcassets */,
 				822EE1F7275A215700D3DA2D /* Preview Content */,
@@ -214,7 +211,6 @@
 				23ADB9D3275A23D400033A4A /* MapView.swift in Sources */,
 				23E0BD1A275E051300982A86 /* BottomSheetView.swift in Sources */,
 				822EE208275A223700D3DA2D /* MoreView.swift in Sources */,
-				822EE212275A22AE00D3DA2D /* Color.swift in Sources */,
 				820604EA275E4B2C00542C0A /* ModelData.swift in Sources */,
 				820604EB275E4B2C00542C0A /* Landmark.swift in Sources */,
 			);
