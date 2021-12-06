@@ -61,13 +61,17 @@ struct OnBoardingContentView: View {
                 //            }
                 
             }
-            .navigationTitle("Ciao")
+            .navigationTitle("")
             .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
         }
                 .edgesIgnoringSafeArea([.top, .bottom])
 //                .tabViewStyle(.page(indexDisplayMode: .always))        .indexViewStyle(.page(backgroundDisplayMode: .always))
                 .tabViewStyle(.page)
                 .indexViewStyle(.page(backgroundDisplayMode: .always))
+                .navigationTitle("")
+                .navigationBarHidden(true)
+                .navigationBarBackButtonHidden(true)
         //
     }
 }
@@ -101,7 +105,10 @@ struct onBoardView: View {
                 
             }
             if (on == true) {
-                NavigationLink(destination: TView()) {
+                NavigationLink(destination: TView()
+                                .navigationTitle("")
+                                .navigationBarHidden(true)
+                                .navigationBarBackButtonHidden(true)) {
                     Text("Continua")
                         .overlay(RoundedRectangle(cornerRadius: 40).stroke(.black, lineWidth: 0.5).frame(width: 100, height: 30))
                         .padding(.top, 10)
