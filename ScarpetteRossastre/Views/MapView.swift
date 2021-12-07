@@ -46,10 +46,11 @@ struct Home: View{
     
     var location = 40.855056601724044...42.855056601724044
     @State private var bottomSheetShown = false
-    @State var nomeAssociazionePin = "Tocca su un puntino"
-    @State var indirizzoPin = "Ti forniremo più indicazioni"
+    @State var nomeAssociazionePin = "Mappa Associazioni"
+    @State var indirizzoPin = "Associazioni anti-violenza vicino a te"
     @State var numeroTelefonoPin = ""
     @State var descrizionePin = ""
+    @State var cittàPin = ""
     
     var body: some View {
         
@@ -59,12 +60,12 @@ struct Home: View{
                 //            Map(coordinateRegion: $region, interactionModes: .all, showsUserLocation: true, userTrackingMode: $tracking)
                 
                 Map(coordinateRegion: $managerDelegate.region, interactionModes: .all, showsUserLocation: true, userTrackingMode: $tracking, annotationItems: managerDelegate.lands) { pin in
-                    //                    MapPin(coordinate: pin.location.coordinate, tint: .green) //  <--- Pin standard
+//                                        MapPin(coordinate: pin.location.coordinate, tint: .green) //  <--- Pin standard
                     
                     MapAnnotation(coordinate: pin.locationCoordinate) {
                         VStack {                                       //<---       Pin personalizzato con TapGesture
                             Image(systemName: "mappin.circle.fill")
-                                .font(.system(size: 30))
+                                .font(.system(size: 20))
                                 .foregroundColor(.red)
                             
                             //         [Come mostrare nella modal solo i pin vicini?
@@ -74,10 +75,11 @@ struct Home: View{
                         //                                                               var location = coordinates + 2
                         //                                                               if (coordinates...location).contains(pin){aggiungi a modale pin.info}
                         .onTapGesture {
-                            indirizzoPin = pin.name
-//                            nomeAssociazionePin = pin.nomeAssociazione
-//                            numeroTelefonoPin = pin.numeroTelefono
-//                            descrizionePin = pin.descrizione
+                            indirizzoPin = pin.nomeAssociazione
+                            nomeAssociazionePin = pin.nomeAssociazione
+                            numeroTelefonoPin = pin.nomeAssociazione
+                            descrizionePin = pin.nomeAssociazione
+                            cittàPin = pin.nomeAssociazione
                         }
                         
                     } //.edgesIgnoringSafeArea(.all)
@@ -93,19 +95,36 @@ struct Home: View{
                 isOpen: self.$bottomSheetShown,
                 maxHeight: geometry.size.height * 0.7
             ) {
-                Text(nomeAssociazionePin).font(.title)
-                Text(indirizzoPin)
-                Text("\n\n")
-                List{
-                    
-                    Text("Contatti: \(numeroTelefonoPin)")
-                    
-                    Text(descrizionePin)
+                if nomeAssociazionePin == "Mappa Associazioni" {
+                Text(nomeAssociazionePin).font(.title).bold()
+                        .frame(alignment: .leading).padding(7)
+                        .padding(.trailing, 70)
+                        
+                
+                Text(indirizzoPin).foregroundColor(.gray)
+                    .padding(.trailing, 60)
+                } else {
+                    VStack {
+                        HStack{
+                            Text("Associazione Aurora S.R.L.").bold().padding(.trailing, 90).font(.title)
+                            Text("Napoli").foregroundColor(.gray).padding()
+                        }
+                        Divider()
+                        Text("INDIRIZZO").fontWeight(.semibold).foregroundColor(.secondary).padding(.leading, -175)
+                        Text("Via Trento 13\n80034 Marigliano\nItalia").padding(.leading, -175).padding(1)
+                        Divider()
+                        Text("NUMERO DI TELEFONO").fontWeight(.semibold).foregroundColor(.secondary).padding(.leading, -175)
+                        Text("081 841 41 26").padding(.leading, -180).padding(1).foregroundColor(.blue)
+                        Divider()
+                    }
                 }
-                
-                
-                
-                
+//                Text("\n\n")
+//                List{
+//
+//                    Text("Contatti: \(numeroTelefonoPin)")
+//
+//                    Text(descrizionePin)
+//                }
                 
             }
         }.edgesIgnoringSafeArea(.all)
@@ -146,37 +165,36 @@ class locationDelegate: NSObject,ObservableObject,CLLocationManagerDelegate{
         
         
         //        Creo array myPin
-//        let myPin: [Pin] = [
-//            Pin(location: CLLocation(latitude:40.90730440345204, longitude:14.75453973651237),
-//                nomeAssociazione: "Centro Antiviolenza PdZ A02",
-//                indirizzo: "Via Nazionale 222 presso il Centro Sociale P. Campanello 80013 - Mercogliano (AV)",
-//                numeroTelefono: "0825-682501",
-//                descrizione: "Centro antiviolenza"),
-//            Pin(location: CLLocation(latitude:41.039990244809694, longitude:14.382515760918347),
-//                nomeAssociazione: "Cooperativa Eva" ,
-//                indirizzo: "Via G. Amendola, 15, 81024 Maddaloni CE",
-//                numeroTelefono: "082-3204145",
-//                descrizione: "Informazioni sulla Cooperativa Eva"),
-//            Pin(location: CLLocation(latitude:40.944596372450285, longitude:14.36566292163162),
-//                nomeAssociazione: "La Casa di Marinella",
-//                indirizzo: "Via Volturno, 71, 80011 Acerra NA",
-//                numeroTelefono: "081-5201470",
-//                descrizione: "Informazioni su La Casa di Marinella"),
-//            Pin(location: CLLocation(latitude:40.85258986902009, longitude:14.333050897689262),
-//                nomeAssociazione: "Sportello Donna Le Kassandre",
-//                indirizzo: "Corso Ponticelli, 40, 80147 Napoli NA",
-//                numeroTelefono: "388-0979950",
-//                descrizione: "Informazioni su Sportello Donna Le Kassandre"),
-//            Pin(location: CLLocation(latitude:40.84578935394306, longitude:14.36968345635139),
-//                nomeAssociazione: "Sportello Lilith",
-//                indirizzo: "Via Luca Giordano, 24, 80040 San Sebastiano Al Vesuvio NA",
-//                numeroTelefono: "331-9021391",
-//                descrizione: "Informazioni su Sportello Lilith")
-//        ]
+        //        let myPin: [Pin] = [
+        //            Pin(location: CLLocation(latitude:40.90730440345204, longitude:14.75453973651237),
+        //                nomeAssociazione: "Centro Antiviolenza PdZ A02",
+        //                indirizzo: "Via Nazionale 222 presso il Centro Sociale P. Campanello 80013 - Mercogliano (AV)",
+        //                numeroTelefono: "0825-682501",
+        //                descrizione: "Centro antiviolenza"),
+        //            Pin(location: CLLocation(latitude:41.039990244809694, longitude:14.382515760918347),
+        //                nomeAssociazione: "Cooperativa Eva" ,
+        //                indirizzo: "Via G. Amendola, 15, 81024 Maddaloni CE",
+        //                numeroTelefono: "082-3204145",
+        //                descrizione: "Informazioni sulla Cooperativa Eva"),
+        //            Pin(location: CLLocation(latitude:40.944596372450285, longitude:14.36566292163162),
+        //                nomeAssociazione: "La Casa di Marinella",
+        //                indirizzo: "Via Volturno, 71, 80011 Acerra NA",
+        //                numeroTelefono: "081-5201470",
+        //                descrizione: "Informazioni su La Casa di Marinella"),
+        //            Pin(location: CLLocation(latitude:40.85258986902009, longitude:14.333050897689262),
+        //                nomeAssociazione: "Sportello Donna Le Kassandre",
+        //                indirizzo: "Corso Ponticelli, 40, 80147 Napoli NA",
+        //                numeroTelefono: "388-0979950",
+        //                descrizione: "Informazioni su Sportello Donna Le Kassandre"),
+        //            Pin(location: CLLocation(latitude:40.84578935394306, longitude:14.36968345635139),
+        //                nomeAssociazione: "Sportello Lilith",
+        //                indirizzo: "Via Luca Giordano, 24, 80040 San Sebastiano Al Vesuvio NA",
+        //                numeroTelefono: "331-9021391",
+        //                descrizione: "Informazioni su Sportello Lilith")
+        //        ]
         
         pins = []
-
-        //        pins.append(Pin(location:locations.last!))            Pin GPS
+        
         
         for land in landmarks {
             lands.append(land)
@@ -193,6 +211,13 @@ class locationDelegate: NSObject,ObservableObject,CLLocationManagerDelegate{
                 hasSetRegion = true
             }
         }
+    }
+}
+
+
+struct MapView_Previews: PreviewProvider {
+    static var previews: some View {
+        MapView()
     }
 }
 
