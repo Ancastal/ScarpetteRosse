@@ -61,17 +61,14 @@ struct OnBoardingContentView: View {
                 //            }
                 
             }
-            .navigationTitle("")
+
             .navigationBarHidden(true)
-            .navigationBarBackButtonHidden(true)
         }
                 .edgesIgnoringSafeArea([.top, .bottom])
 //                .tabViewStyle(.page(indexDisplayMode: .always))        .indexViewStyle(.page(backgroundDisplayMode: .always))
                 .tabViewStyle(.page)
                 .indexViewStyle(.page(backgroundDisplayMode: .always))
-                .navigationTitle("")
-                .navigationBarHidden(true)
-                .navigationBarBackButtonHidden(true)
+
         //
     }
 }
@@ -106,8 +103,6 @@ struct onBoardView: View {
             }
             if (on == true) {
                 NavigationLink(destination: TView()
-//                                .navigationBarHidden(true)
-//                                .navigationBarBackButtonHidden(true)
                 ) {
                     Group {
                         Text("Continua")

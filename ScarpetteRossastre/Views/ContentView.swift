@@ -44,7 +44,7 @@ struct ContentView: View {
         
         GeometryReader { metrics in
             
-            NavigationView {
+
                 VStack {
 //                    Image(systemName: "gearshape.fill").title()
                     ZStack {
@@ -118,9 +118,9 @@ struct ContentView: View {
                         Text("Non l'ho vissuto")
                             .fontWeight(.light)
                             .frame(minWidth: 0, maxWidth: 300, minHeight: 50)
-                            .foregroundColor(didTap1 ? Color.white : Color.white)
+                            .foregroundColor(didTap2 ? Color.white : Color.white)
                             .font(.title3)
-                            .background(didTap1 ? Color.blue : Color.orange)
+                            .background(didTap2 ? Color.blue : Color.orange)
                             .cornerRadius(40)
                             .overlay(RoundedRectangle(cornerRadius:40).strokeBorder(.black, lineWidth: 0.5))
                             .padding(10)
@@ -144,14 +144,15 @@ struct ContentView: View {
                         Text("Forse l'ho vissuto")
                             .fontWeight(.light)
                             .frame(minWidth: 0, maxWidth: 300, minHeight: 50)
-                            .foregroundColor(didTap1 ? Color.white : Color.white)
+                            .foregroundColor(didTap3 ? Color.white : Color.white)
                             .font(.title3)
-                            .background(didTap1 ? Color.blue : Color.orange)
+                            .background(didTap3 ? Color.blue : Color.orange)
                             .cornerRadius(40)
                             .overlay(RoundedRectangle(cornerRadius:40).strokeBorder(.black, lineWidth: 0.5))
                             .padding(10)
                             .offset(y: -30)
                             .padding(.bottom, 50)
+                            .padding()
                         
                     }
                     Spacer()
@@ -160,10 +161,9 @@ struct ContentView: View {
                 //                    Text("Count: \(x)" + "-20\nScore: \(score)")
                 
             }
-        }
+        
         .navigate(to: MapView(), when: $willMoveToNextScreen)
-        .navigationBarHidden(true)
-        .navigationBarBackButtonHidden(true)
+
     }
     
 }

@@ -59,10 +59,10 @@ struct Home: View{
     var location = 40.855056601724044...42.855056601724044
     @State private var bottomSheetShown = false
     @State var nomeAssociazionePin = "Mappa Associazioni"
-    @State var indirizzoPin = "Associazioni anti-violenza vicino a te"
+    @State var indirizzoPin = ""
     @State var numeroTelefonoPin = ""
     @State var descrizionePin = ""
-    @State var cittàPin = ""
+    @State var cittàPin = "Assistenza, supporto legale..."
     let names = ["Holly", "Josh", "Rhonda", "Ted"]
     @State private var searchText = ""
     
@@ -96,11 +96,11 @@ struct Home: View{
                         //                                                               var location = coordinates + 2
                         //                                                               if (coordinates...location).contains(pin){aggiungi a modale pin.info}
                         .onTapGesture {
-                            indirizzoPin = pin.nomeAssociazione
+                            indirizzoPin = pin.indirizzo
                             nomeAssociazionePin = pin.nomeAssociazione
-                            numeroTelefonoPin = pin.nomeAssociazione
+                            numeroTelefonoPin = pin.numeroTelefono
                             descrizionePin = pin.nomeAssociazione
-                            cittàPin = pin.nomeAssociazione
+                            cittàPin = pin.città
                             bottomSheetHidden = .middle
                             
                         }
@@ -121,7 +121,7 @@ struct Home: View{
                         Text(nomeAssociazionePin)
                             .font(.title).bold()
                         
-                        Text("Assistenza, supporto legale...")
+                        Text(cittàPin)
                             .font(.subheadline).foregroundColor(.secondary)
                         
                         Divider()
@@ -131,10 +131,10 @@ struct Home: View{
                     VStack(spacing: 0) {
                         Text("INDIRIZZO").foregroundColor(.gray).fontWeight(.semibold).frame(maxWidth: .infinity, alignment: .leading).padding(.leading, 10).padding(.top, 5)
                             .fixedSize(horizontal: false, vertical: true)
-                        Text("Via Nuova del Bosco 2\n80034\nMarigliano (NA)\nItalia").frame(maxWidth: .infinity, alignment: .leading).padding(.leading, 10).padding(.top, 5)
+                        Text(indirizzoPin).frame(maxWidth: .infinity, alignment: .leading).padding(.leading, 10).padding(.top, 5)
                         Divider()
                         Text("NUMERO DI TELEFONO").foregroundColor(.gray).fontWeight(.semibold).frame(maxWidth: .infinity, alignment: .leading).padding(.leading, 10).padding(.top, 5)
-                        Text("391 48 34 720").padding(.trailing, 255).frame(maxWidth: .infinity, alignment: .leading).padding(.leading, 10).padding(.vertical, 5)
+                        Text(numeroTelefonoPin).padding(.trailing, 255).frame(maxWidth: .infinity, alignment: .leading).padding(.leading, 10).padding(.vertical, 5)
                         Divider()
                     }
                 }

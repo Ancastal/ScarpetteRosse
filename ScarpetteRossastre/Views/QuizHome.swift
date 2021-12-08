@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct QuizHome: View {
+    @State private var showView = "LoginView"
     var body: some View {
+        NavigationView {
             VStack {
                 Text("Sei al sicuro?")
                     .font(.largeTitle).bold().padding()
@@ -30,14 +32,14 @@ struct QuizHome: View {
                 }
                 
                 Spacer()
-                
             }
-        
+            
+        }
     }
 }
-
-struct QuizHome_Previews: PreviewProvider {
-    static var previews: some View {
-        QuizHome()
+    
+    struct QuizHome_Previews: PreviewProvider {
+        static var previews: some View {
+            QuizHome()
+        }
     }
-}
