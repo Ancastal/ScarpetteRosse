@@ -2,6 +2,13 @@ import SwiftUI
 import MapKit
 import CoreLocation
 
+enum BottomSheetPosition: CGFloat, CaseIterable {
+    case middle = 0.4, bottom = 0.125, hidden = 0
+}
+
+enum BottomSheetHidden: CGFloat, CaseIterable {
+    case middle = 0.4, bottom = 0.125, hidden = 0
+}
 
 //Creo una nuova struct
 struct MyPin: Identifiable {
@@ -33,7 +40,12 @@ struct MapView: View {
 
 struct Home: View{
     
+    @State private var bottomSheetPosition: BottomSheetPosition = .middle
+    @State private var bottomSheetHidden: BottomSheetHidden = .bottom
     
+    let backgroundColors: [Color] = [Color(red: 0.2, green: 0.85, blue: 0.7), Color(red: 0.13, green: 0.55, blue: 0.45)]
+    let readMoreColors: [Color] = [Color(red: 0.70, green: 0.22, blue: 0.22), Color(red: 1, green: 0.32, blue: 0.32)]
+    let bookmarkColors: [Color] = [Color(red: 0.28, green: 0.28, blue: 0.53), Color(red: 0.44, green: 0.44, blue: 0.83)]
     
     
     
@@ -51,9 +63,18 @@ struct Home: View{
     @State var numeroTelefonoPin = ""
     @State var descrizionePin = ""
     @State var cittàPin = ""
+    let names = ["Holly", "Josh", "Rhonda", "Ted"]
+    @State private var searchText = ""
     
+    var searchResults: [String] {
+        if searchText.isEmpty {
+            return names
+        } else {
+            return names.filter { $0.contains(searchText)}
+        }
+    }
     var body: some View {
-        
+        NavigationView {
         GeometryReader { geometry in
             VStack{
                 
@@ -80,6 +101,8 @@ struct Home: View{
                             numeroTelefonoPin = pin.nomeAssociazione
                             descrizionePin = pin.nomeAssociazione
                             cittàPin = pin.nomeAssociazione
+                            bottomSheetHidden = .middle
+                            
                         }
                         
                     } //.edgesIgnoringSafeArea(.all)
@@ -91,45 +114,33 @@ struct Home: View{
                 
                 
             }
-            BottomSheetView(
-                isOpen: self.$bottomSheetShown,
-                maxHeight: geometry.size.height * 0.7
-            ) {
-                if nomeAssociazionePin == "Mappa Associazioni" {
-                Text(nomeAssociazionePin).font(.title).bold()
-                        .frame(alignment: .leading).padding(7)
-                        .padding(.trailing, 70)
+//            inserire bottomsheetview
+                .bottomSheet(bottomSheetPosition: self.$bottomSheetHidden, options: [.allowContentDrag, .showCloseButton(), .swipeToDismiss, .appleScrollBehavior], headerContent: {
+                    //The name of the book as the heading and the author as the subtitle with a divider.
+                    VStack(alignment: .leading) {
+                        Text(nomeAssociazionePin)
+                            .font(.title).bold()
                         
-                
-                Text(indirizzoPin).foregroundColor(.gray)
-                    .padding(.trailing, 60)
-                } else {
-                    VStack {
-                        HStack{
-                            Text("Associazione Aurora S.R.L.").bold().padding(.trailing, 90).font(.title)
-                            Text("Napoli").foregroundColor(.gray).padding()
-                        }
+                        Text("Assistenza, supporto legale...")
+                            .font(.subheadline).foregroundColor(.secondary)
+                        
                         Divider()
-                        Text("INDIRIZZO").fontWeight(.semibold).foregroundColor(.secondary).padding(.leading, -175)
-                        Text("Via Trento 13\n80034 Marigliano\nItalia").padding(.leading, -175).padding(1)
+                            .padding(.trailing, -30)
+                    }
+                }) {
+                    VStack(spacing: 0) {
+                        Text("INDIRIZZO").foregroundColor(.gray).fontWeight(.semibold).frame(maxWidth: .infinity, alignment: .leading).padding(.leading, 10).padding(.top, 5)
+                            .fixedSize(horizontal: false, vertical: true)
+                        Text("Via Nuova del Bosco 2\n80034\nMarigliano (NA)\nItalia").frame(maxWidth: .infinity, alignment: .leading).padding(.leading, 10).padding(.top, 5)
                         Divider()
-                        Text("NUMERO DI TELEFONO").fontWeight(.semibold).foregroundColor(.secondary).padding(.leading, -175)
-                        Text("081 841 41 26").padding(.leading, -180).padding(1).foregroundColor(.blue)
+                        Text("NUMERO DI TELEFONO").foregroundColor(.gray).fontWeight(.semibold).frame(maxWidth: .infinity, alignment: .leading).padding(.leading, 10).padding(.top, 5)
+                        Text("391 48 34 720").padding(.trailing, 255).frame(maxWidth: .infinity, alignment: .leading).padding(.leading, 10).padding(.vertical, 5)
                         Divider()
                     }
                 }
-//                Text("\n\n")
-//                List{
-//
-//                    Text("Contatti: \(numeroTelefonoPin)")
-//
-//                    Text(descrizionePin)
-//                }
-                
-            }
         }.edgesIgnoringSafeArea(.all)
         
-        
+        }
         
     }
 }

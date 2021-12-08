@@ -9,7 +9,6 @@ import SwiftUI
 
 struct QuizHome: View {
     var body: some View {
-        NavigationView {
             VStack {
                 Text("Sei al sicuro?")
                     .font(.largeTitle).bold().padding()
@@ -17,29 +16,23 @@ struct QuizHome: View {
                 Text("Riconoscere l’essenza di una relazione affettiva non è sempre facile. Questo questionario, totalmente anonimo, ha lo scopo di aiutare a riflettere sulle dinamiche vissute all’interno della coppia, per individuare comportamenti vessatori.  \nLeggi attentamente le domande, rifletti e rispondi con sincerità. Alla fine del test risulterà un profilo di rischio sulla base della tua situazione").padding(.horizontal, 30)
                     .font(.body)
                     .lineSpacing(10)
-                    .foregroundColor(.secondary)
+                    .foregroundColor(.primary)
                 Spacer()
-                NavigationLink(destination: ContentView().navigationBarBackButtonHidden(true).navigationBarHidden(true)) {
-                    Text("Fai il Test")
+                NavigationLink(destination: ContentView()) {
+                    Text("Prova il test")
                         .fontWeight(.semibold)
-                        .foregroundColor(.blue)
                         .font(.title3)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 40)
-                                .strokeBorder(.blue, lineWidth: 2)
-                                .frame(width: 200,height: 50)
-                        )
+                        .frame(minWidth: 0, maxWidth: 300)
+                        .padding(8)
                         .foregroundColor(.white)
-                        .padding(5)
+                        .background(orange)
+                        .cornerRadius(40)
                 }
                 
                 Spacer()
                 
             }
-            .navigationTitle("")
-            .navigationBarHidden(true)
-            .navigationBarBackButtonHidden(true)
-        }
+        
     }
 }
 

@@ -24,6 +24,9 @@
 		822EE20A275A223700D3DA2D /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822EE203275A223700D3DA2D /* Quiz.swift */; };
 		822EE20B275A223700D3DA2D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822EE204275A223700D3DA2D /* HomeView.swift */; };
 		822EE214275A234800D3DA2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822EE213275A234800D3DA2D /* ContentView.swift */; };
+		82F838CF275FA6B5008F0B7A /* BottomSheet2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F838CE275FA6B5008F0B7A /* BottomSheet2.swift */; };
+		82F838D2275FA748008F0B7A /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 82F838D1275FA748008F0B7A /* BottomSheet */; };
+		82F838D6275FAA93008F0B7A /* Bottom2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F838D5275FAA93008F0B7A /* Bottom2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +48,8 @@
 		822EE203275A223700D3DA2D /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		822EE204275A223700D3DA2D /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		822EE213275A234800D3DA2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		82F838CE275FA6B5008F0B7A /* BottomSheet2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet2.swift; sourceTree = "<group>"; };
+		82F838D5275FAA93008F0B7A /* Bottom2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bottom2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82F838D2275FA748008F0B7A /* BottomSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +134,8 @@
 				23ADB9D2275A23D400033A4A /* MapView.swift */,
 				23E0BD19275E051300982A86 /* BottomSheetView.swift */,
 				820604EC275E583700542C0A /* QuizHome.swift */,
+				82F838CE275FA6B5008F0B7A /* BottomSheet2.swift */,
+				82F838D5275FAA93008F0B7A /* Bottom2.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,6 +156,9 @@
 			dependencies = (
 			);
 			name = ScarpetteRossastre;
+			packageProductDependencies = (
+				82F838D1275FA748008F0B7A /* BottomSheet */,
+			);
 			productName = ScarpetteRossastre;
 			productReference = 822EE1EE275A215600D3DA2D /* ScarpetteRossastre.app */;
 			productType = "com.apple.product-type.application";
@@ -176,6 +187,9 @@
 				Base,
 			);
 			mainGroup = 822EE1E5275A215600D3DA2D;
+			packageReferences = (
+				82F838D0275FA748008F0B7A /* XCRemoteSwiftPackageReference "BottomSheet" */,
+			);
 			productRefGroup = 822EE1EF275A215600D3DA2D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -216,7 +230,9 @@
 				23E0BD1A275E051300982A86 /* BottomSheetView.swift in Sources */,
 				822EE208275A223700D3DA2D /* MoreView.swift in Sources */,
 				820604EA275E4B2C00542C0A /* ModelData.swift in Sources */,
+				82F838CF275FA6B5008F0B7A /* BottomSheet2.swift in Sources */,
 				820604EB275E4B2C00542C0A /* Landmark.swift in Sources */,
+				82F838D6275FAA93008F0B7A /* Bottom2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,9 +371,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -387,15 +404,16 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.ttranchese.ScarpetteRossastre;
+				PRODUCT_BUNDLE_IDENTIFIER = org.ancastal.ScarpetteRossastre;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -425,6 +443,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		82F838D0275FA748008F0B7A /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LucasMucGH/BottomSheet";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		82F838D1275FA748008F0B7A /* BottomSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82F838D0275FA748008F0B7A /* XCRemoteSwiftPackageReference "BottomSheet" */;
+			productName = BottomSheet;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 822EE1E6275A215600D3DA2D /* Project object */;
 }

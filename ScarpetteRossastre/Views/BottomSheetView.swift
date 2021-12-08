@@ -1,75 +1,64 @@
-import SwiftUI
-
-fileprivate enum Constants {
-    static let radius: CGFloat = 16
-    static let indicatorHeight: CGFloat = 6
-    static let indicatorWidth: CGFloat = 60
-    static let snapRatio: CGFloat = 0.25
-    static let minHeightRatio: CGFloat = 0.35
-}
-
-struct BottomSheetView<Content: View>: View {
-    @Binding var isOpen: Bool
-
-    let maxHeight: CGFloat
-    let minHeight: CGFloat
-    let content: Content
-
-    @GestureState private var translation: CGFloat = 0
-
-    private var offset: CGFloat {
-        isOpen ? 0 : maxHeight - minHeight
-    }
-
-    private var indicator: some View {
-        RoundedRectangle(cornerRadius: Constants.radius)
-            .fill(Color.secondary)
-            .frame(
-                width: Constants.indicatorWidth,
-                height: Constants.indicatorHeight
-        ).onTapGesture {
-            self.isOpen.toggle()
-        }
-    }
-
-    init(isOpen: Binding<Bool>, maxHeight: CGFloat, @ViewBuilder content: () -> Content) {
-        self.minHeight = maxHeight * Constants.minHeightRatio
-        self.maxHeight = maxHeight
-        self.content = content()
-        self._isOpen = isOpen
-    }
-
-    var body: some View {
-        GeometryReader { geometry in
-            VStack(spacing: 0) {
-                self.indicator.padding()
-                self.content
-            }
-            .frame(width: geometry.size.width, height: self.maxHeight, alignment: .top)
-            .background(Color(.secondarySystemBackground))
-            .cornerRadius(Constants.radius)
-            .frame(height: geometry.size.height, alignment: .bottom)
-            .offset(y: max(self.offset + self.translation, 0))
-            .animation(.interactiveSpring())
-            .gesture(
-                DragGesture().updating(self.$translation) { value, state, _ in
-                    state = value.translation.height
-                }.onEnded { value in
-                    let snapDistance = self.maxHeight * Constants.snapRatio
-                    guard abs(value.translation.height) > snapDistance else {
-                        return
-                    }
-                    self.isOpen = value.translation.height < 0
-                }
-            )
-        }
-    }
-}
-
-struct BottomSheetView_Previews: PreviewProvider {
-    static var previews: some View {
-        BottomSheetView(isOpen: .constant(false), maxHeight: 600) {
-            Rectangle().fill(Color.red)
-        }.edgesIgnoringSafeArea(.all)
-    }
-}
+//
+////
+////  BottomSheet2.swift
+////  ScarpetteRossastre
+////
+////  Created by Antonio Castaldo on 07/12/21.
+////
+//
+//import SwiftUI
+//import BottomSheet
+//
+////The custom BottomSheetPosition enum.
+//enum BottomSheetPosition: CGFloat, CaseIterable {
+//    case middle = 0.4, bottom = 0.125, hidden = 0
+//}
+//
+//enum BottomSheetHidden: CGFloat, CaseIterable {
+//    case middle = 0.4, bottom = 0.125, hidden = 0
+//}
+//    
+//
+//struct BottomSheetView: View {
+//    
+//    @State private var bottomSheetPosition: BottomSheetPosition = .middle
+//    @State private var bottomSheetHidden: BottomSheetHidden = .middle
+//    
+//    let backgroundColors: [Color] = [Color(red: 0.2, green: 0.85, blue: 0.7), Color(red: 0.13, green: 0.55, blue: 0.45)]
+//    let readMoreColors: [Color] = [Color(red: 0.70, green: 0.22, blue: 0.22), Color(red: 1, green: 0.32, blue: 0.32)]
+//    let bookmarkColors: [Color] = [Color(red: 0.28, green: 0.28, blue: 0.53), Color(red: 0.44, green: 0.44, blue: 0.83)]
+//    
+//    var body: some View {
+//        
+//        //A green gradient as a background that ignores the safe area.
+//        LinearGradient(gradient: Gradient(colors: self.backgroundColors), startPoint: .topLeading, endPoint: .bottomTrailing)
+//            .edgesIgnoringSafeArea(.all)
+//            
+//            .bottomSheet(bottomSheetPosition: self.$bottomSheetHidden, options: [.allowContentDrag, .showCloseButton(), .swipeToDismiss, .tapToDissmiss, .appleScrollBehavior], headerContent: {
+//                //The name of the book as the heading and the author as the subtitle with a divider.
+//                Text("Heading")
+//            }) {
+//                Text("Content")
+//            }
+//    }
+//}
+//
+////The gradient ButtonStyle.
+//struct BottomButton: ButtonStyle {
+//    
+//    let colors: [Color]
+//    
+//    func makeBody(configuration: Configuration) -> some View {
+//        configuration.label
+//            .font(.headline)
+//            .foregroundColor(.white)
+//            .padding()
+//            .background(LinearGradient(gradient: Gradient(colors: self.colors), startPoint: .topLeading, endPoint: .bottomTrailing))
+//    }
+//}
+//
+//struct BottomSheetView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        BottomSheetView()
+//    }
+//}

@@ -46,9 +46,10 @@ struct ContentView: View {
             
             NavigationView {
                 VStack {
+//                    Image(systemName: "gearshape.fill").title()
                     ZStack {
                         Rectangle()
-                            .fill(LinearGradient(gradient: Gradient(colors: [purplegrad, bluegrad]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                            .fill(LinearGradient(gradient: Gradient(colors: [orange, red]), startPoint: .topLeading, endPoint: .bottomTrailing))
                             .offset(y: -260)
                             .frame(height:
                                     metrics.size.height * 0.50).overlay(
@@ -56,7 +57,7 @@ struct ContentView: View {
                                             .foregroundColor(.white)
                                             .frame(width: metrics.size.width * 0.8,
                                                    height: metrics.size.height * 0.3)
-                                            .offset(x:0, y:-100)
+                                            .offset(x:0, y:-120)
                                             .shadow(radius:15)
                                         
                                     )
@@ -67,7 +68,7 @@ struct ContentView: View {
                             .multilineTextAlignment(.center)
                             .foregroundColor(.black)
                             .padding(.horizontal, 70.0)
-                            .offset(y: -90)
+                            .offset(y: -120)
                         
                         
                     }
@@ -87,21 +88,17 @@ struct ContentView: View {
                         }
                         
                     }) {
-                        Text("Si, l'ho vissuto.")
-                            .fontWeight(.thin)
-                            .frame(width: metrics.size.width, height: 70)
+                        Text("Si, l'ho vissuto")
+                            .fontWeight(.light)
+                            .frame(minWidth: 0, maxWidth: 300, minHeight: 50)
+                            .foregroundColor(didTap1 ? Color.white : Color.white)
+                            .font(.title3)
+                            .background(didTap1 ? Color.blue : Color.orange)
+                            .cornerRadius(40)
+                            .overlay(RoundedRectangle(cornerRadius:40).strokeBorder(.black, lineWidth: 0.5))
+                            .padding(10)
+                            .offset(y: -30)
                         
-                            .foregroundColor(didTap1 ? Color.white : Color.blue)
-                            .font(.title)
-                        
-                            .background(didTap1 ? Color.blue : Color.white)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 40)
-                                    .strokeBorder(.blue, lineWidth: 1)
-                                    .frame(width: 300)
-                            )
-                            .foregroundColor(.white)
-                            .padding(5)
                         
                         
                     }
@@ -118,22 +115,16 @@ struct ContentView: View {
                         }
                         
                     }) {
-                        Text("Non l'ho vissuto.")
-                            .fontWeight(.thin)
-
-                            .frame(width: metrics.size.width, height: 70)
-                            .font(.title)
-                            .foregroundColor(didTap2 ? Color.white : Color.blue)
-                            .background(didTap2 ? Color.blue : Color.white)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 40)
-                                    .strokeBorder(.blue, lineWidth: 1)
-                                    .frame(width: 300)
-                                
-                                
-                            )
-                            .foregroundColor(.white)
-                            .padding(5)
+                        Text("Non l'ho vissuto")
+                            .fontWeight(.light)
+                            .frame(minWidth: 0, maxWidth: 300, minHeight: 50)
+                            .foregroundColor(didTap1 ? Color.white : Color.white)
+                            .font(.title3)
+                            .background(didTap1 ? Color.blue : Color.orange)
+                            .cornerRadius(40)
+                            .overlay(RoundedRectangle(cornerRadius:40).strokeBorder(.black, lineWidth: 0.5))
+                            .padding(10)
+                            .offset(y: -30)
                         
                         
                     }
@@ -150,30 +141,27 @@ struct ContentView: View {
                         }
                         
                     }) {
-                        Text("Forse l'ho vissuta.")
-                            .fontWeight(.thin)
-
-                            .frame(width: 500, height: 70)
-                            .foregroundColor(didTap3 ? Color.white : Color.blue)
-                            .font(.title)
-                            .background(didTap3 ? Color.blue : Color.white)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 40)
-                                    .strokeBorder(.blue, lineWidth: 1)
-                                    .frame(width: 300)
-                                
-                            )
-                            .foregroundColor(.white)
-                            .padding(.bottom, 100)
+                        Text("Forse l'ho vissuto")
+                            .fontWeight(.light)
+                            .frame(minWidth: 0, maxWidth: 300, minHeight: 50)
+                            .foregroundColor(didTap1 ? Color.white : Color.white)
+                            .font(.title3)
+                            .background(didTap1 ? Color.blue : Color.orange)
+                            .cornerRadius(40)
+                            .overlay(RoundedRectangle(cornerRadius:40).strokeBorder(.black, lineWidth: 0.5))
+                            .padding(10)
+                            .offset(y: -30)
+                            .padding(.bottom, 50)
                         
                     }
+                    Spacer()
+                    Spacer()
                 }
                 //                    Text("Count: \(x)" + "-20\nScore: \(score)")
                 
             }
         }
         .navigate(to: MapView(), when: $willMoveToNextScreen)
-        .navigationTitle("Ciao")
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
     }

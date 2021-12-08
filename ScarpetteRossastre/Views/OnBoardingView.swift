@@ -106,15 +106,23 @@ struct onBoardView: View {
             }
             if (on == true) {
                 NavigationLink(destination: TView()
-                                .navigationTitle("")
-                                .navigationBarHidden(true)
-                                .navigationBarBackButtonHidden(true)) {
-                    Text("Continua")
-                        .overlay(RoundedRectangle(cornerRadius: 40).stroke(.black, lineWidth: 0.5).frame(width: 100, height: 30))
-                        .padding(.top, 10)
-                }}
+//                                .navigationBarHidden(true)
+//                                .navigationBarBackButtonHidden(true)
+                ) {
+                    Group {
+                        Text("Continua")
+                        .fontWeight(.semibold)
+                        .font(.title3)
+                        .frame(minWidth: 0, maxWidth: 120, minHeight: 40)
+
+                        .foregroundColor(.white)
+                        .background(red)
+                        .cornerRadius(40)
+                    }
+                    .padding(.bottom, -30)
+                }
         }
-        
+        }
         
     }
     
