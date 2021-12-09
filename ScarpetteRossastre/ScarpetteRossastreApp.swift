@@ -11,7 +11,7 @@ import SwiftUI
 struct ScarpetteRossastreApp: App {
     var body: some Scene {
         WindowGroup {
-            OnBoardingContentView()
+            onBoardTest()
         }
     }
 }
