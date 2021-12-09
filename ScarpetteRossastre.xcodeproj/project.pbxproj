@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		23ADB9D3275A23D400033A4A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23ADB9D2275A23D400033A4A /* MapView.swift */; };
 		23E0BD1A275E051300982A86 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E0BD19275E051300982A86 /* BottomSheetView.swift */; };
+		82034CAA2762428900F075E9 /* NumeriDiEmergenzaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82034CA92762428900F075E9 /* NumeriDiEmergenzaView.swift */; };
+		82034CAC2762429B00F075E9 /* SostegnoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82034CAB2762429B00F075E9 /* SostegnoView.swift */; };
+		82034CAE276242A500F075E9 /* DisclaimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82034CAD276242A500F075E9 /* DisclaimerView.swift */; };
 		820604E8275E4B2C00542C0A /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 820604E3275E4B2C00542C0A /* landmarkData.json */; };
 		820604E9275E4B2C00542C0A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820604E4275E4B2C00542C0A /* Color.swift */; };
 		820604EA275E4B2C00542C0A /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820604E6275E4B2C00542C0A /* ModelData.swift */; };
@@ -35,6 +38,9 @@
 /* Begin PBXFileReference section */
 		23ADB9D2275A23D400033A4A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		23E0BD19275E051300982A86 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		82034CA92762428900F075E9 /* NumeriDiEmergenzaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumeriDiEmergenzaView.swift; sourceTree = "<group>"; };
+		82034CAB2762429B00F075E9 /* SostegnoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SostegnoView.swift; sourceTree = "<group>"; };
+		82034CAD276242A500F075E9 /* DisclaimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclaimerView.swift; sourceTree = "<group>"; };
 		820604E3275E4B2C00542C0A /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		820604E4275E4B2C00542C0A /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		820604E6275E4B2C00542C0A /* ModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
@@ -145,6 +151,9 @@
 				82F838CE275FA6B5008F0B7A /* BottomSheet2.swift */,
 				82F838D5275FAA93008F0B7A /* Bottom2.swift */,
 				829EA3A327619ECF007A8A46 /* ResultView.swift */,
+				82034CA92762428900F075E9 /* NumeriDiEmergenzaView.swift */,
+				82034CAB2762429B00F075E9 /* SostegnoView.swift */,
+				82034CAD276242A500F075E9 /* DisclaimerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -230,10 +239,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82034CAA2762428900F075E9 /* NumeriDiEmergenzaView.swift in Sources */,
 				822EE206275A223700D3DA2D /* ShareView.swift in Sources */,
 				822EE207275A223700D3DA2D /* TView.swift in Sources */,
 				822EE20A275A223700D3DA2D /* Quiz.swift in Sources */,
 				820604E9275E4B2C00542C0A /* Color.swift in Sources */,
+				82034CAE276242A500F075E9 /* DisclaimerView.swift in Sources */,
 				822EE209275A223700D3DA2D /* OnBoardingView.swift in Sources */,
 				820604ED275E583700542C0A /* QuizHome.swift in Sources */,
 				822EE20B275A223700D3DA2D /* HomeView.swift in Sources */,
@@ -241,6 +252,7 @@
 				822EE1F2275A215600D3DA2D /* ScarpetteRossastreApp.swift in Sources */,
 				829EA3A02761215B007A8A46 /* onBoardTest.swift in Sources */,
 				23ADB9D3275A23D400033A4A /* MapView.swift in Sources */,
+				82034CAC2762429B00F075E9 /* SostegnoView.swift in Sources */,
 				23E0BD1A275E051300982A86 /* BottomSheetView.swift in Sources */,
 				822EE208275A223700D3DA2D /* MoreView.swift in Sources */,
 				820604EA275E4B2C00542C0A /* ModelData.swift in Sources */,

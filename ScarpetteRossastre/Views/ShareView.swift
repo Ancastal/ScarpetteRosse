@@ -7,21 +7,40 @@
 
 import SwiftUI
 
+
+
+
 struct ShareView: View {
+    
+    
     var body: some View {
-        VStack {
-            HStack{
-                Text("Associazione Aurora S.R.L.").bold().padding(.trailing, 90).font(.title)
-                Text("Napoli").foregroundColor(.gray).padding()
+
+            GeometryReader { metrics in
+                
+                Spacer()
+                List{
+                    
+                    NavigationLink(destination: NumeriDiEmergenzaView())
+                    {
+                        Text("Numeri di emergenza")
+                    }
+                    NavigationLink(destination: SostegnoView())
+                    {
+                        Text("Sostegno")
+                    }
+                    NavigationLink(destination: DisclaimerView())
+                    {
+                        Text("Disclaimer")
+                    }
+                
+                }.foregroundColor(.black)
+                    
+                
+                
+                Spacer()
             }
-            Divider()
-            Text("INDIRIZZO").fontWeight(.semibold).foregroundColor(.secondary).padding(.leading, -175)
-            Text("Via Trento 13\n80034 Marigliano\nItalia").padding(.leading, -175).padding(1)
-            Divider()
-            Text("NUMERO DI TELEFONO").fontWeight(.semibold).foregroundColor(.secondary).padding(.leading, -175)
-            Text("081 841 41 26").padding(.leading, -180).padding(1).foregroundColor(.blue)
-            Divider()
-        }
+            
+
     }
 }
 

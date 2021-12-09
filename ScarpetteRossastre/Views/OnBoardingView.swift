@@ -56,73 +56,20 @@ struct OnBoardingContentView: View {
                 onBoardView(systemImageName: "support",
                             title: "Semplicità",
                             description: "Datti un minuto per pensare alla tua relazione. Potrai riceverai un consiglio ideato da esperti in base alla tua situazione.\n\nEsplora le organizzazioni circostanti e condividi le tue esperienze in anonimo con altri utenti.", on: true)
-                //            Button(action: NavigationLink) {
-                //                /*@START_MENU_TOKEN@*/Text("Button")/*@END_MENU_TOKEN@*/
-                //            }
                 
             }
 
             .navigationBarHidden(true)
         }
                 .edgesIgnoringSafeArea([.top, .bottom])
-//                .tabViewStyle(.page(indexDisplayMode: .always))        .indexViewStyle(.page(backgroundDisplayMode: .always))
                 .tabViewStyle(.page)
                 .indexViewStyle(.page(backgroundDisplayMode: .always))
-
-        //
     }
 }
 
 
 
-struct onBoardView: View {
-    @State private var willMove = false
-    let systemImageName: String
-    let title: String
-    let description: String
-    @State var on: Bool
-    
-    var body: some View {
-        VStack(alignment: .center, spacing: 20) {
-            
-            Group{
-                
-                Image(systemImageName).resizable()
-                    .frame(width: 300.0, height: 200.0)
-                
-                Text(title)
-                    .font(.title).bold()
-                    .padding()
-                
-                Text(description)
-                    .font(.title3)
-                    .foregroundColor(.secondary)
-                    .padding(.horizontal, 30.0)
-                
-                
-            }
-            if (on == true) {
-                NavigationLink(destination: TView()
-                ) {
-                    Group {
-                        Text("Continua")
-                        .fontWeight(.semibold)
-                        .font(.title3)
-                        .frame(minWidth: 0, maxWidth: 120, minHeight: 40)
 
-                        .foregroundColor(.white)
-                        .background(red)
-                        .cornerRadius(40)
-                    }
-                    .padding(.bottom, -30)
-                }
-        }
-        }
-        
-    }
-    
-    
-}
 
 
 
