@@ -40,8 +40,8 @@ struct MapView: View {
 
 struct Home: View{
     
-    @State private var bottomSheetPosition: BottomSheetPosition = .middle
-    @State private var bottomSheetHidden: BottomSheetHidden = .bottom
+    @State private var bottomSheetPosition: BottomSheetPosition = .bottom
+    @State private var bottomSheetHidden: BottomSheetHidden = .hidden
     
     let backgroundColors: [Color] = [Color(red: 0.2, green: 0.85, blue: 0.7), Color(red: 0.13, green: 0.55, blue: 0.45)]
     let readMoreColors: [Color] = [Color(red: 0.70, green: 0.22, blue: 0.22), Color(red: 1, green: 0.32, blue: 0.32)]
@@ -86,7 +86,7 @@ struct Home: View{
                     MapAnnotation(coordinate: pin.locationCoordinate) {
                         VStack {                                       //<---       Pin personalizzato con TapGesture
                             Image(systemName: "mappin.circle.fill")
-                                .font(.system(size: 20))
+                                .font(.system(size: 40))
                                 .foregroundColor(.red)
                             
                             //         [Come mostrare nella modal solo i pin vicini?
@@ -109,8 +109,10 @@ struct Home: View{
                 }.onAppear{
                     manager.delegate = managerDelegate
                     
+                }.onTapGesture {
+                    bottomSheetHidden = .hidden
                 }
-                .edgesIgnoringSafeArea(.all)
+                .edgesIgnoringSafeArea(.top)
                 
                 
             }

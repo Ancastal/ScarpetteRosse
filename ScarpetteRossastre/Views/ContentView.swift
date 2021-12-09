@@ -95,7 +95,7 @@ struct ContentView: View {
                             .frame(minWidth: 0, maxWidth: 300, minHeight: 50)
                             .foregroundColor(didTap1 ? Color.white : Color.white)
                             .font(.title3)
-                            .background(didTap1 ? Color.blue : Color.orange)
+                            .background(didTap1 ? Color.yellow : Color.orange)
                             .cornerRadius(40)
                             .overlay(RoundedRectangle(cornerRadius:40).strokeBorder(.black, lineWidth: 0.5))
                             .padding(10)
@@ -124,7 +124,7 @@ struct ContentView: View {
                             .frame(minWidth: 0, maxWidth: 300, minHeight: 50)
                             .foregroundColor(didTap2 ? Color.white : Color.white)
                             .font(.title3)
-                            .background(didTap2 ? Color.blue : Color.orange)
+                            .background(didTap2 ? Color.yellow : Color.orange)
                             .cornerRadius(40)
                             .overlay(RoundedRectangle(cornerRadius:40).strokeBorder(.black, lineWidth: 0.5))
                             .padding(10)
@@ -153,7 +153,7 @@ struct ContentView: View {
                             .frame(minWidth: 0, maxWidth: 300, minHeight: 50)
                             .foregroundColor(didTap3 ? Color.white : Color.white)
                             .font(.title3)
-                            .background(didTap3 ? Color.blue : Color.orange)
+                            .background(didTap3 ? Color.yellow : Color.orange)
                             .cornerRadius(40)
                             .overlay(RoundedRectangle(cornerRadius:40).strokeBorder(.black, lineWidth: 0.5))
                             .padding(10)
@@ -177,7 +177,8 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environment(\.locale, .init(identifier: "it"))
+            
     }
 }
 

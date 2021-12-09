@@ -1,21 +1,366 @@
 [
-    
-    
-    
     {
-        "nomeAssociazione": "Genny",
-        "città": "Twentynine Palms",
-        "indirizzo": "California",
-        "id": 1001,
-        "numeroTelefono": "Joshua Tree National Park",
-        "coordinates": {
-            "longitude": 14.272703345425093,
-            "latitude": 40.855056601724044
+        "nomeAssociazione":"Centro Veneto Progetti Donna",
+        "città":"Padova",
+        "coordinates":{
+            "longitude":-45.40299853948683,
+            "latitude":11.86038415900039
         },
-        "descrizione": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
-        "imageName": "turtlerock"
+        "indirizzo":"Via Tripoli,3",
+        "numeroTelefono":"0498-721277",
+        "descrizione":"Associazione di Volontariato che offre sostegno a donne, italiane e straniere, in difficoltà e coinvolte in situazioni di violenza e maltrattamento familiare e non",
+        "id":1006,
+        "imageName":"safe"
+    },
+    {
+        "nomeAssociazione":"Casa delle donne per non subire Violenza Onlus",
+        "città":"Bologna",
+        "coordinates":{
+            "longitude":-45.50808093275009,
+            "latitude":9.18854387118533
         },
-       
-       
-       
+        "indirizzo":"Via dell’Oro, 3",
+        "numeroTelefono":"0532-333173",
+        "descrizione":"Servizi, Progetti e Sensibilizzazione",
+        "id":1007,
+        "imageName":"safe"
+    },
+    {
+        "nomeAssociazione":"Telefono Donna Onlus",
+        "città":"Milano",
+        "coordinates":{
+            "longitude":-45.50808093275009,
+            "latitude":9.18854387118533
+        },
+        "indirizzo":"Piazza Ospedale Maggiore, 3",
+        "numeroTelefono":"1464-6162744",
+        "descrizione":"Progetto psicologia clinica e Progetto psicologia sociale.",
+        "id":1008,
+        "imageName":"safe"
+    },
+    {
+        "nomeAssociazione":"Gulliver Società Cooperativa Sociale",
+        "città":"Modena",
+        "coordinates":{
+            "longitude":-44.63864128378476,
+            "latitude":10.887838076709494
+        },
+        "indirizzo":"Via Galileo Galilei",
+        "numeroTelefono":"0525-89511",
+        "descrizione":"Sostegno e integrazione sociale, Inclusione scolastica, famiglia 360, Divisione Poliambulatorio, Disabilità e Trasporti sociali",
+        "id":1009,
+        "imageName":"safe"
+    },
+    {
+        "nomeAssociazione":"Centro Antiviolenza di Torino",
+        "città":"Torino",
+        "coordinates":{
+            "longitude":-45.07565268463944,
+            "latitude":7.654085242364786
+        },
+        "indirizzo":"Via Trana, 3",
+        "numeroTelefono":"01-101131650",
+        "descrizione":"Centro per la cura degli abusi domestici",
+        "id":1010,
+        "imageName":"safe"
+    },
+    {
+        "nomeAssociazione":"Telefono Rosa",
+        "città":"Roma",
+        "coordinates":{
+            "longitude":-41.91532105073734,
+            "latitude":12.462497699943258
+        },
+        "indirizzo":"Via Giuseppe Mazzini",
+        "numeroTelefono":"06-37518282",
+        "descrizione":"Centro antiviolenza, Case Rifugio, Case di semiautonomia e Progetti",
+        "id":1011,
+        "imageName":"safe"
+    },
+    {
+        "nomeAssociazione":"Socrate Onlus Cooperative Sociale ",
+        "città":"Eboli",
+        "coordinates":{
+            "longitude":-41.12520606031195,
+            "latitude":14.791087830605871
+        },
+        "indirizzo":"Via San Giovanni Battista de la Calle, 5",
+        "numeroTelefono":"0824-316733",
+        "descrizione":"Accoglienza finalizzata all’analisi delle situazioni e dei bisogni, Colloqui di Counseling, Percorso di sostegno psicologico, Assistenza generale, Consulenza e Informazione.",
+        "id":1013,
+        "imageName":"safe"
+    },
+    {
+        "nomeAssociazione":"Associazione Safiya Onlus Polignano a mare",
+        "città":"Polignano a mare",
+        "coordinates":{
+            "longitude":-40.99278752106681,
+            "latitude":17.22671226368411
+        },
+        "indirizzo":"Via don Luigi Sturzo, sn 70044",
+        "numeroTelefono":"333-2640790",
+        "descrizione":"Ascolto, Aiuto, Supporto e Accoglienza",
+        "id":1014,
+        "imageName":"safe"
+    },
+    {
+        "nomeAssociazione":"Casa delle donne Ester Scardaccione Telefono donna",
+        "città":"Potenza",
+        "coordinates":{
+            "longitude":-40.63185085921105,
+            "latitude":15.800740530592043
+        },
+        "indirizzo":"Via don Luigi Sturzo, sn 70044",
+        "numeroTelefono":"333-2640790",
+        "descrizione":"Associazione di volontariato, supporto e ascolto",
+        "id":1015,
+        "imageName":"safe"
+    },
+    {
+        "nomeAssociazione":"Associazione Centro studi Ceteris",
+        "città":"Cagliari",
+        "coordinates":{
+            "longitude":-39.397489126148294,
+            "latitude":9.111166315476805
+        },
+        "indirizzo":" Via Domenico Cimarosa,7",
+        "numeroTelefono":"07-04492400",
+        "descrizione":"Sportello antistalking, Sensibilizzazione e prevenzione, Assistenza sociale, Consulenza legale e consulenza psicologica.",
+        "id":1016,
+        "imageName":"safe"
+    },
+    {
+        "nomeAssociazione":"Centro Antiviolenza Luna Onlus",
+        "città":"Lucca",
+        "coordinates":{
+            "longitude":-43.84182837600616,
+            "latitude":10.519026896268414
+        },
+        "indirizzo":"Via di Tiglio, 433",
+        "numeroTelefono":"0583-587897",
+        "descrizione":"Accoglienza telefonica, Consulenza psicologica, Consulenza legale, Orientamento al lavoro e autonomia abitativa, Sensibilizzazione e prevenzione, Raccolti dati, Case Rifugio, Codice Rosa Lucca, Progetti. ",
+        "id":1017,
+        "imageName":"safe"
+    },
+    {
+        "nomeAssociazione":"Associazione Donne e Giustizia",
+        "città":"Ancona",
+        "coordinates":{
+            "longitude":-43.617532015316094,
+            "latitude":13.509059398112049
+        },
+        "indirizzo":"Via Enrico Cialdini,24/A",
+        "numeroTelefono":"07-1205376",
+        "descrizione":"Ascolto e supporto gratuito a donne vittime di violenza maschile, sostenendole nel loro percorso di riappropriazione della propria sicurezza e libertà.",
+        "id":1018,
+        "imageName":"safe"
+    },
+    {
+        "nomeAssociazione":"Liberamente Donna",
+        "città":"Perugia",
+        "coordinates":{
+            "longitude":-49.54322850402854,
+            "latitude":12.432967830635445
+        },
+        "indirizzo":"Via Str. della Milizia, 141",
+        "numeroTelefono":"07-55941326",
+        "descrizione":"Aiuto e Assistenza gratuita, Violenza domestica, Assenza del giudizio, Rispetto della privacy, Autodeterminazione,  Empowerment",
+        "id":1020,
+        "imageName":"safe"
+    },
+    {
+        "nomeAssociazione":"Mignanego Società Cooperativa",
+        "città":"Genova",
+        "coordinates":{
+            "longitude":-44.52949465482786,
+            "latitude":8.91562255489181
+        },
+        "indirizzo":"Via Piave 91/93",
+        "numeroTelefono":"07-55941326",
+        "descrizione":"Accoglienza, Sostegno e ospitalità per le donne vittime di violenza domestica",
+        "id":1021,
+        "imageName":"safe"
+    },
+    {
+        "nomeAssociazione":"Associazione Centro Donne contro la Violenza di Aosta",
+        "città":"Aosta",
+        "coordinates":{
+            "longitude":-45.73712314933241,
+            "latitude":7.32520309817787
+        },
+        "indirizzo":"Via Torino,18",
+        "numeroTelefono":"0165-5238750",
+        "descrizione":"Il Centro accoglie Donne vittime di violenza e si rivolge in modo prioritario alle donne residenti in Valle d’Aosta o domiciliate nella regione.  Accoglienza, ascolto e orientamento in un’ottica di sicurezza. Assistenza psicologica e legale. Percorsi di accompagnamento al lavoro tramite orientamento e progetti specifici",
+        "id":1022,
+        "imageName":"safe"
+    },
+    {
+        "nomeAssociazione":"A.U.R.O.R.A",
+        "città":"Napoli",
+        "coordinates":{
+            "longitude":40.8430451,
+            "latitude":14.2458669
+        },
+        "indirizzo":"Via Genova, 19, 80100 Napoli, Campania",
+        "numeroTelefono":"0817953194, 0817953195",
+        "descrizione":"Finalità operative: a) casa accoglienza per donne, anche immigrate sole o con figli \n b) ascolto e accoglienza \n c) presa in carico di singoli casi \n d) sostegno psicologico \n e) consulenza e assistenza legale \n f) indirizzamento verso il sistema sanitario o verso case di accoglienza",
+        "id":1023,
+        "imageName":"safe"
+    },
+    {
+        "nomeAssociazione":"Alice e il Bianconiglio",
+        "città":"Avellino",
+        "coordinates":{
+            "longitude":40.9193148,
+            "latitude":14.7875107
+        },
+        "indirizzo":"Via Piave 29/d 83100 - Avellino (AV)",
+        "numeroTelefono":"327-7317827",
+        "descrizione":"Perseguire l'interesse generale della comunità, la promozione umana e l'integrazione sociale dei cittadini",
+        "id":1024,
+        "imageName":"safe"
+    },
+    {
+        "nomeAssociazione":"Centro Antiviolenza PdZ A02",
+        "città":"Mercogliano",
+        "coordinates":{
+            "longitude":40.90730440345204,
+            "latitude":14.75453973651237
+        },
+        "indirizzo":"Via Nazionale 222 presso il Centro Sociale P. Campanello 80013 - Mercogliano (AV)",
+        "numeroTelefono":"0825-682501, numero emergenza 389-1326629",
+        "descrizione":"Finalità operative: ",
+        "id":1025,
+        "imageName":"safe"
+    },
+    {
+        "nomeAssociazione":"La Casa di Marinella",
+        "città":"Acerra",
+        "coordinates":{
+            "longitude":40.944596372450285,
+            "latitude":14.36566292163162
+        },
+        "indirizzo":"Via Volturno, 71, 80011 Acerra (NA)",
+        "numeroTelefono":"081-5201470",
+        "descrizione":" Offre alla donna in situazione di violenza un ascolto sia telefonico che in presenza",
+        "id":1027,
+        "imageName":"safe"
+    },
+    {
+        "nomeAssociazione":"Sportello Lilith",
+        "città":"San Sebastiano al Vesuvio",
+        "coordinates":{
+            "longitude":40.84578935394306,
+            "latitude":14.36968345635139
+        },
+        "indirizzo":"Via Luca Giordano, 24, 80040 San Sebastiano Al Vesuvio (NA)",
+        "numeroTelefono":"333-19021391",
+        "descrizione":"Consulenza legale, consulenza psicologica, orientamento al lavoro",
+        "id":1029,
+        "imageName":"safe"
+    },
+    {
+        "nomeAssociazione":"Telefono Rosa - Spazio Donna",
+        "città":"Caserta",
+        "coordinates":{
+            "longitude":41.05558229225908,
+            "latitude":14.341820288337223
+        },
+        "indirizzo":"Via Paul Harris, Palazzo della Salute, 6° Piano, 81100 Caserta (CE)",
+        "numeroTelefono":"0823-354126",
+        "descrizione":"Il centro offre consulenza legale, medica e psicologica, assistenza sociale",
+        "id":1030,
+        "imageName":"safe"
+    },
+    {
+        "nomeAssociazione":"A.N.G.E.LI. Antiviolenza",
+        "città":"Lentini",
+        "coordinates":{
+            "longitude":37.297978764393996,
+            "latitude":15.00478661086252
+        },
+        "indirizzo":"Via degli Studi 2, 96016 - Lentini (SR)",
+        "numeroTelefono":"095-7835316, emergenza  333-2073841",
+        "descrizione":"L'associazione si prodiga per contrastare ogni sorta di crudeltà e violenza, su donne bambini e incoraggialo studio dei principiatici e morali. Nasce dall'esperienza delle Pari Opportunità",
+        "id":1031,
+        "imageName":"safe"
+    },
+    {
+        "nomeAssociazione":"Al tuo fianco",
+        "città":"Roccalumera",
+        "coordinates":{
+            "longitude":37.97444509871345,
+            "latitude":15.39330074548443
+        },
+        "indirizzo":"Via Umberto I, 198, 98027 - roccalumera (ME)",
+        "numeroTelefono":"320-6329120",
+        "descrizione":"Il centro offre supporto a donne minori che subiscono violenze e maltrattamenti, ma soprattutto si impegna ad elaborare assieme alle vittime un percorso individuale dia aiuto",
+        "id":1032,
+        "imageName":"safe"
+    },
+    {
+        "nomeAssociazione":"Associazione Donne contro la violenza Onlus - Crema",
+        "città":"Crema",
+        "coordinates":{
+            "longitude":45.36250212396189,
+            "latitude":9.680750858626535
+        },
+        "indirizzo":"Via Mercato, 27, 26013 Crema (CR)",
+        "numeroTelefono":"037-380999",
+        "descrizione":"Accoglienza e ospitalità",
+        "id":1033,
+        "imageName":"safe"
+    },
+    {
+        "nomeAssociazione":"Casa Rifugio Zefiro",
+        "città":"Ancona",
+        "coordinates":{
+            "longitude":43.61644685502167,
+            "latitude":13.515030697775316
+        },
+        "indirizzo":"P.zza Stamira 13  60122 - Ancona (AN)",
+        "numeroTelefono":"071-2075383, emergenza 335-7681975",
+        "descrizione":"Consulenza legale, Accoglienza, Case rifugio,Gruppi di sostegno",
+        "id":1034,
+        "imageName":"safe"
+    },
+    {
+        "nomeAssociazione":"Centro Donna Lilith",
+        "città":"Latina",
+        "coordinates":{
+            "longitude":41.46861049930527,
+            "latitude":12.905805321647534
+        },
+        "indirizzo":"Via Fratelli Bandiera, 34, 04100 Latina (LT)",
+        "numeroTelefono":"0773664165",
+        "descrizione":"Colloqui di prima accoglienza nei quali fornire informazioni tecniche e consulenze per rispondere ai bisogni immediati e alle urgenze  delle donne che ci contattano, colloqui di sostegno per donne che vogliono superare lo stato di temporanea difficoltà attraverso percorsi autonomi, ospitalità per donne sole o con figli, supporto e formazione",
+        "id":1036,
+        "imageName":"safe"
+    },
+    {
+        "nomeAssociazione":"Centro antiviolenza Ananke",
+        "città":"Pescara",
+        "coordinates":{
+            "longitude":42.450444801446885,
+            "latitude":14.201901340066234
+        },
+        "indirizzo":"Via Tavo, 248, 65128 Pescara (PE)",
+        "numeroTelefono":"0854-315294",
+        "descrizione":"Supporto per donne che subiscono violenza fisica, violenza sessuale, violenza psicologica, violenza economica,stalking meccanismi della violenza",
+        "id":1037,
+        "imageName":"safe"
+    },
+    {
+        "nomeAssociazione":"Io donna",
+        "città":"Brindisi",
+        "coordinates":{
+            "longitude":40.618647137780975,
+            "latitude":17.934979118696596
+        },
+        "indirizzo":"Via Leonardo Da Vinci, 32, 72100 Brindisi (BR)",
+        "numeroTelefono":"0831-522034",
+        "descrizione":"Opera come luogo di organizzazione politica e culturale che promuove progetti e servizi a favore delle donne di una prospettiva di genere",
+        "id":1039,
+        "imageName":"safe"
+    }
 ]
