@@ -169,7 +169,7 @@ struct ContentView: View {
                 
             }
         
-        .navigate(to: ResultView(showResult: "alcuneDifficoltà"), when: $willMoveToNextScreen)
+        .navigate(to: ResultView(showResult: "relazioneViolenta"), when: $willMoveToNextScreen)
 
     }
     

@@ -26,7 +26,6 @@
 		822EE214275A234800D3DA2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822EE213275A234800D3DA2D /* ContentView.swift */; };
 		829EA39E27610DC6007A8A46 /* Tesrt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829EA39D27610DC6007A8A46 /* Tesrt.swift */; };
 		829EA3A02761215B007A8A46 /* onBoardTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829EA39F2761215B007A8A46 /* onBoardTest.swift */; };
-		829EA3A22761297C007A8A46 /* TestProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829EA3A12761297C007A8A46 /* TestProgress.swift */; };
 		829EA3A427619ECF007A8A46 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829EA3A327619ECF007A8A46 /* ResultView.swift */; };
 		82F838CF275FA6B5008F0B7A /* BottomSheet2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F838CE275FA6B5008F0B7A /* BottomSheet2.swift */; };
 		82F838D2275FA748008F0B7A /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 82F838D1275FA748008F0B7A /* BottomSheet */; };
@@ -54,7 +53,6 @@
 		822EE213275A234800D3DA2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		829EA39D27610DC6007A8A46 /* Tesrt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tesrt.swift; sourceTree = "<group>"; };
 		829EA39F2761215B007A8A46 /* onBoardTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onBoardTest.swift; sourceTree = "<group>"; };
-		829EA3A12761297C007A8A46 /* TestProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProgress.swift; sourceTree = "<group>"; };
 		829EA3A327619ECF007A8A46 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		82F838CE275FA6B5008F0B7A /* BottomSheet2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet2.swift; sourceTree = "<group>"; };
 		82F838D5275FAA93008F0B7A /* Bottom2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bottom2.swift; sourceTree = "<group>"; };
@@ -96,7 +94,6 @@
 		822EE1E5275A215600D3DA2D = {
 			isa = PBXGroup;
 			children = (
-				829EA3A12761297C007A8A46 /* TestProgress.swift */,
 				829EA39F2761215B007A8A46 /* onBoardTest.swift */,
 				829EA39D27610DC6007A8A46 /* Tesrt.swift */,
 				820604E5275E4B2C00542C0A /* Models */,
@@ -197,6 +194,8 @@
 			knownRegions = (
 				en,
 				Base,
+				it,
+				ru,
 			);
 			mainGroup = 822EE1E5275A215600D3DA2D;
 			packageReferences = (
@@ -230,7 +229,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				822EE206275A223700D3DA2D /* ShareView.swift in Sources */,
-				829EA3A22761297C007A8A46 /* TestProgress.swift in Sources */,
 				822EE207275A223700D3DA2D /* TView.swift in Sources */,
 				822EE20A275A223700D3DA2D /* Quiz.swift in Sources */,
 				820604E9275E4B2C00542C0A /* Color.swift in Sources */,
@@ -312,6 +310,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -366,6 +365,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
