@@ -77,6 +77,8 @@ struct ContentView: View {
                     //                    VStack(spacing: 0) {
                     Button(action: {
                         didTap1 = true
+                        let impactHeavy = UIImpactFeedbackGenerator(style: .soft)
+                            impactHeavy.impactOccurred()
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
                             didTap1 = false
                         }
@@ -104,6 +106,8 @@ struct ContentView: View {
                     }
                     Button(action: {
                         didTap2 = true
+                        let impactHeavy = UIImpactFeedbackGenerator(style: .soft)
+                            impactHeavy.impactOccurred()
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
                             didTap2 = false
                         }
@@ -130,7 +134,10 @@ struct ContentView: View {
                     }
                     Button(action: {
                         didTap3 = true
+                        let impactHeavy = UIImpactFeedbackGenerator(style: .soft)
+                            impactHeavy.impactOccurred()
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                            
                             didTap3 = false
                         }
                         if (x < 19) == false {
