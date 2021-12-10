@@ -31,6 +31,7 @@
 		829EA39E27610DC6007A8A46 /* Tesrt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829EA39D27610DC6007A8A46 /* Tesrt.swift */; };
 		829EA3A02761215B007A8A46 /* onBoardTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829EA39F2761215B007A8A46 /* onBoardTest.swift */; };
 		829EA3A427619ECF007A8A46 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829EA3A327619ECF007A8A46 /* ResultView.swift */; };
+		82A68E862762E8AF0025EF11 /* FaceIDLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A68E852762E8AF0025EF11 /* FaceIDLogin.swift */; };
 		82F838CF275FA6B5008F0B7A /* BottomSheet2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F838CE275FA6B5008F0B7A /* BottomSheet2.swift */; };
 		82F838D2275FA748008F0B7A /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 82F838D1275FA748008F0B7A /* BottomSheet */; };
 		82F838D6275FAA93008F0B7A /* Bottom2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F838D5275FAA93008F0B7A /* Bottom2.swift */; };
@@ -62,6 +63,7 @@
 		829EA39D27610DC6007A8A46 /* Tesrt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tesrt.swift; sourceTree = "<group>"; };
 		829EA39F2761215B007A8A46 /* onBoardTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onBoardTest.swift; sourceTree = "<group>"; };
 		829EA3A327619ECF007A8A46 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		82A68E852762E8AF0025EF11 /* FaceIDLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceIDLogin.swift; sourceTree = "<group>"; };
 		82F838CE275FA6B5008F0B7A /* BottomSheet2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet2.swift; sourceTree = "<group>"; };
 		82F838D5275FAA93008F0B7A /* Bottom2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bottom2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +104,7 @@
 		822EE1E5275A215600D3DA2D = {
 			isa = PBXGroup;
 			children = (
+				82A68E852762E8AF0025EF11 /* FaceIDLogin.swift */,
 				82034CAF27625B7F00F075E9 /* Localizable.strings */,
 				829EA39F2761215B007A8A46 /* onBoardTest.swift */,
 				829EA39D27610DC6007A8A46 /* Tesrt.swift */,
@@ -264,6 +267,7 @@
 				829EA39E27610DC6007A8A46 /* Tesrt.swift in Sources */,
 				829EA3A427619ECF007A8A46 /* ResultView.swift in Sources */,
 				820604EB275E4B2C00542C0A /* Landmark.swift in Sources */,
+				82A68E862762E8AF0025EF11 /* FaceIDLogin.swift in Sources */,
 				82F838D6275FAA93008F0B7A /* Bottom2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
