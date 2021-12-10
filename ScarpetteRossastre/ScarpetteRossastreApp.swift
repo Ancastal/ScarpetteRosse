@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct ScarpetteRossastreApp: App {
+struct ScarpeRosseApp: App {
     @State var showOnBoarding: Bool = true
     var body: some Scene {
         WindowGroup {

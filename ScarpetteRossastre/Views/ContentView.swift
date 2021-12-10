@@ -106,7 +106,7 @@ struct ContentView: View {
                         
                         Text(quiz[Int(x)])
                             .font(.title3)
-                            .fontWeight(.thin)
+                            .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                             .foregroundColor(.black)
                             .padding(.horizontal, 70.0)
@@ -132,7 +132,7 @@ struct ContentView: View {
                         
                     }) {
                         Text("Si, l'ho vissuto")
-                            .fontWeight(.light)
+                            .fontWeight(.medium)
                             .frame(minWidth: 0, maxWidth: 300, minHeight: 50)
                             .foregroundColor(didTap1 ? Color.white : Color.white)
                             .font(.title3)
@@ -160,7 +160,7 @@ struct ContentView: View {
                         
                     }) {
                         Text("Non l'ho vissuto")
-                            .fontWeight(.light)
+                            .fontWeight(.medium)
                             .frame(minWidth: 0, maxWidth: 300, minHeight: 50)
                             .foregroundColor(didTap2 ? Color.white : Color.white)
                             .font(.title3)
@@ -189,7 +189,7 @@ struct ContentView: View {
                         
                     }) {
                         Text("Forse l'ho vissuto")
-                            .fontWeight(.light)
+                            .fontWeight(.medium)
                             .frame(minWidth: 0, maxWidth: 300, minHeight: 50)
                             .foregroundColor(didTap3 ? Color.white : Color.white)
                             .font(.title3)

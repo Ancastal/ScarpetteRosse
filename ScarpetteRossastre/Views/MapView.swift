@@ -131,12 +131,12 @@ struct Home: View{
                     }
                 }) {
                     VStack(spacing: 0) {
-                        Text("INDIRIZZO").foregroundColor(.gray).fontWeight(.semibold).frame(maxWidth: .infinity, alignment: .leading).padding(.leading, 10).padding(.top, 5)
+                        Text("INDIRIZZO").foregroundColor(.gray).fontWeight(.semibold).frame(maxWidth: .infinity, alignment: .leading).padding(.leading, 15).padding(.top, 5)
                             .fixedSize(horizontal: false, vertical: true)
-                        Text(indirizzoPin).frame(maxWidth: .infinity, alignment: .leading).padding(.leading, 10).padding(.top, 5)
+                        Text(indirizzoPin).frame(maxWidth: .infinity, alignment: .leading).padding(.leading, 15).padding(.vertical, 5)
                         Divider()
-                        Text("NUMERO DI TELEFONO").foregroundColor(.gray).fontWeight(.semibold).frame(maxWidth: .infinity, alignment: .leading).padding(.leading, 10).padding(.top, 5)
-                        Text(numeroTelefonoPin).padding(.trailing, 255).frame(maxWidth: .infinity, alignment: .leading).padding(.leading, 10).padding(.vertical, 5)
+                        Text("NUMERO DI TELEFONO").foregroundColor(.gray).fontWeight(.semibold).frame(maxWidth: .infinity, alignment: .leading).padding(.leading, 15).padding(.top, 5)
+                        Text(numeroTelefonoPin).padding(.trailing, 255).frame(maxWidth: .infinity, alignment: .leading).padding(.leading, 15).padding(.vertical, 5)
                         Divider()
                     }
                 }

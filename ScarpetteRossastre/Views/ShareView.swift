@@ -17,8 +17,6 @@ struct ShareView: View {
 
             GeometryReader { metrics in
                 NavigationView {
-                Spacer()
-                    
                 List{
                     Section(header: Text("INFORMAZIONI").foregroundColor(.gray).fontWeight(.semibold)) {
                     NavigationLink(destination: NumeriDiEmergenzaView())
@@ -36,10 +34,10 @@ struct ShareView: View {
                     }
                 }.foregroundColor(.black)
                     
-                
-                
+                    .navigationBarBackButtonHidden(true)
+                    .navigationBarHidden(true)
                 Spacer()
-                        .navigationBarHidden(true)
+                        
                 }
             }
             

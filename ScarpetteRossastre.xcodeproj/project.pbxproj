@@ -49,7 +49,7 @@
 		820604E6275E4B2C00542C0A /* ModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		820604E7275E4B2C00542C0A /* Landmark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		820604EC275E583700542C0A /* QuizHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizHome.swift; sourceTree = "<group>"; };
-		822EE1EE275A215600D3DA2D /* ScarpetteRossastre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScarpetteRossastre.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		822EE1EE275A215600D3DA2D /* ScarpeRosse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScarpeRosse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		822EE1F1275A215600D3DA2D /* ScarpetteRossastreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScarpetteRossastreApp.swift; sourceTree = "<group>"; };
 		822EE1F5275A215700D3DA2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		822EE1F8275A215700D3DA2D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -60,6 +60,7 @@
 		822EE203275A223700D3DA2D /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		822EE204275A223700D3DA2D /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		822EE213275A234800D3DA2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		822F482B2763A3CF004F5143 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		829EA39D27610DC6007A8A46 /* Tesrt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tesrt.swift; sourceTree = "<group>"; };
 		829EA39F2761215B007A8A46 /* onBoardTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onBoardTest.swift; sourceTree = "<group>"; };
 		829EA3A327619ECF007A8A46 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
@@ -118,7 +119,7 @@
 		822EE1EF275A215600D3DA2D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				822EE1EE275A215600D3DA2D /* ScarpetteRossastre.app */,
+				822EE1EE275A215600D3DA2D /* ScarpeRosse.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,7 +185,7 @@
 				82F838D1275FA748008F0B7A /* BottomSheet */,
 			);
 			productName = ScarpetteRossastre;
-			productReference = 822EE1EE275A215600D3DA2D /* ScarpetteRossastre.app */;
+			productReference = 822EE1EE275A215600D3DA2D /* ScarpeRosse.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -279,6 +280,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				82034CB027625B7F00F075E9 /* es */,
+				822F482B2763A3CF004F5143 /* ru */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -429,11 +431,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.ancastal.ScarpetteRossastre;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.ancastal.ScarpeRosse;
+				PRODUCT_NAME = ScarpeRosse;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -462,11 +464,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.ancastal.ScarpetteRossastre;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.ancastal.ScarpeRosse;
+				PRODUCT_NAME = ScarpeRosse;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

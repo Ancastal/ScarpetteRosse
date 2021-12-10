@@ -11,9 +11,9 @@ struct TView: View {
     var body: some View {
         
         TabView() {
-            QuizHome(score: 0.0).tabItem { Label("Questionario", systemImage: "q.circle.fill") }
-            MapView().tabItem { Label("Map", systemImage: "map.fill") }
-            ShareView().tabItem { Label("Info", systemImage: "info.circle.fill") }
+            QuizHome(score: 0.0).tabItem { Label(LocalizedStringKey("Questionario"), systemImage: "q.circle.fill") }
+            MapView().tabItem { Label(LocalizedStringKey("Mappe"), systemImage: "map.fill") }
+            ShareView().tabItem { Label(LocalizedStringKey("Informazioni"), systemImage: "info.circle.fill") }
         }.tabViewStyle(DefaultTabViewStyle())
             .accentColor(orange)
         
