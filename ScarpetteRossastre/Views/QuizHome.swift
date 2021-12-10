@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct QuizHome: View {
+    @State var score: Double
     @State private var showView = "LoginView"
     var body: some View {
         NavigationView {
@@ -20,7 +21,7 @@ struct QuizHome: View {
                     .lineSpacing(10)
                     .foregroundColor(.primary)
                 Spacer()
-                NavigationLink(destination: ContentView(score: .constant(0.0))) {
+                NavigationLink(destination: ContentView(score: score)) {
                     Text("Prova il test")
                         .fontWeight(.semibold)
                         .font(.title3)
@@ -40,6 +41,6 @@ struct QuizHome: View {
     
     struct QuizHome_Previews: PreviewProvider {
         static var previews: some View {
-            QuizHome()
+            QuizHome(score: 0.0)
         }
     }

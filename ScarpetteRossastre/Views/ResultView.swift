@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ResultView: View {
     @State var showResult: String
-    @State var score: Double
+    @Binding var score: Double
     
     var body: some View {
         
@@ -43,15 +43,15 @@ struct ResultView: View {
                         }
                     }
                 }.onAppear(perform: {
-                    if (score <= 4.8) {
+                    if (score <= 4.6) {
                         showResult = "nessunaDifficoltà"
-                    } else if (score >= 4.8) && (score <= 9.6) {
+                    } else if (score >= 4.6) && (score <= 9.2) {
                         showResult = "alcuneDifficoltà"
-                    } else if (score >= 9.6) && (score <= 14.4) {
+                    } else if (score >= 9.2) && (score <= 13.8) {
                         showResult = "relazioneViolenta"
-                    } else if (score >= 14.4) && (score <= 19.2) {
+                    } else if (score >= 13.8) && (score <= 18.4) {
                         showResult = "definitivamenteViolenta"
-                    } else if (score >= 19.2) && (score <= 24) {
+                    } else if (score >= 18.4) && (score <= 23) {
                         showResult = "esplicitamenteViolenta"
                     }
                 })
@@ -77,15 +77,15 @@ struct ResultView: View {
                     }
                 }.padding()
                     .onAppear(perform: {
-                        if (score <= 4.8) {
+                        if (score <= 4.6) {
                             showResult = "nessunaDifficoltà"
-                        } else if (score >= 4.8) && (score <= 9.6) {
+                        } else if (score >= 4.6) && (score <= 9.2) {
                             showResult = "alcuneDifficoltà"
-                        } else if (score >= 9.6) && (score <= 14.4) {
+                        } else if (score >= 9.2) && (score <= 13.8) {
                             showResult = "relazioneViolenta"
-                        } else if (score >= 14.4) && (score <= 19.2) {
+                        } else if (score >= 13.8) && (score <= 18.4) {
                             showResult = "definitivamenteViolenta"
-                        } else if (score >= 19.2) && (score <= 24) {
+                        } else if (score >= 18.4) && (score <= 23) {
                             showResult = "esplicitamenteViolenta"
                         }
                     })
@@ -114,15 +114,15 @@ struct ResultView: View {
                         }
                     }
                 }.onAppear(perform: {
-                    if (score <= 4.8) {
+                    if (score <= 4.6) {
                         showResult = "nessunaDifficoltà"
-                    } else if (score >= 4.8) && (score <= 9.6) {
+                    } else if (score >= 4.6) && (score <= 9.2) {
                         showResult = "alcuneDifficoltà"
-                    } else if (score >= 9.6) && (score <= 14.4) {
+                    } else if (score >= 9.2) && (score <= 13.8) {
                         showResult = "relazioneViolenta"
-                    } else if (score >= 14.4) && (score <= 19.2) {
+                    } else if (score >= 13.8) && (score <= 18.4) {
                         showResult = "definitivamenteViolenta"
-                    } else if (score >= 19.2) && (score <= 24) {
+                    } else if (score >= 18.4) && (score <= 23) {
                         showResult = "esplicitamenteViolenta"
                     }
                 })
@@ -147,15 +147,15 @@ struct ResultView: View {
                         }
                     }
                 }.onAppear(perform: {
-                    if (score <= 4.8) {
+                    if (score <= 4.6) {
                         showResult = "nessunaDifficoltà"
-                    } else if (score >= 4.8) && (score <= 9.6) {
+                    } else if (score >= 4.6) && (score <= 9.2) {
                         showResult = "alcuneDifficoltà"
-                    } else if (score >= 9.6) && (score <= 14.4) {
+                    } else if (score >= 9.2) && (score <= 13.8) {
                         showResult = "relazioneViolenta"
-                    } else if (score >= 14.4) && (score <= 19.2) {
+                    } else if (score >= 13.8) && (score <= 18.4) {
                         showResult = "definitivamenteViolenta"
-                    } else if (score >= 19.2) && (score <= 24) {
+                    } else if (score >= 18.4) && (score <= 23) {
                         showResult = "esplicitamenteViolenta"
                     }
                 })
@@ -167,7 +167,7 @@ struct ResultView: View {
                         orange.ignoresSafeArea()
                         ScrollView {
                             ZStack {
-                                Text("Dalle risposte che hai dato t'appò")
+                                Text("Dalle risposte che hai dato sembra che la tua sia una relazione che non mostra nessuna conflittualità")
                                     .fontWeight(.light)
                                     .frame(minWidth: 0, maxWidth: 330, minHeight: 50)
                                     .padding(.all, 18)
@@ -181,15 +181,15 @@ struct ResultView: View {
                         }
                     }
                 }.onAppear(perform: {
-                    if (score <= 4.8) {
+                    if (score <= 4.6) {
                         showResult = "nessunaDifficoltà"
-                    } else if (score >= 4.8) && (score <= 9.6) {
+                    } else if (score >= 4.6) && (score <= 9.2) {
                         showResult = "alcuneDifficoltà"
-                    } else if (score >= 9.6) && (score <= 14.4) {
+                    } else if (score >= 9.2) && (score <= 13.8) {
                         showResult = "relazioneViolenta"
-                    } else if (score >= 14.4) && (score <= 19.2) {
+                    } else if (score >= 13.8) && (score <= 18.4) {
                         showResult = "definitivamenteViolenta"
-                    } else if (score >= 19.2) && (score <= 24) {
+                    } else if (score >= 18.4) && (score <= 23) {
                         showResult = "esplicitamenteViolenta"
                     }
                 })
@@ -206,6 +206,6 @@ struct ResultView: View {
 
 struct ResultView_Previews: PreviewProvider {
     static var previews: some View {
-        ResultView(showResult: "alcuneDifficoltà", score: 5.0)
+        ResultView(showResult: "alcuneDifficoltà", score: .constant(5.0))
     }
 }

@@ -33,7 +33,7 @@ extension View {
 
 struct ContentView: View {
     @State private var percentAnimated: CGFloat = .zero
-    @Binding var score: Double
+    @State var score: Double
     @State private var willMoveToNextScreen = false
     @State private var x = 0.0
     @State private var didTap1:Bool = false
@@ -123,7 +123,7 @@ struct ContentView: View {
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
                             didTap1 = false
                         }
-                        if (x < 22) == false {
+                        if (x < 23) == false {
                             willMoveToNextScreen = true
                         } else {
                             x += 1
@@ -151,7 +151,7 @@ struct ContentView: View {
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
                             didTap2 = false
                         }
-                        if (x < 22) == false {
+                        if (x < 23) == false {
                             willMoveToNextScreen = true
                         } else {
                             x += 1
@@ -180,7 +180,7 @@ struct ContentView: View {
                             
                             didTap3 = false
                         }
-                        if (x < 22) == false {
+                        if (x < 23) == false {
                             willMoveToNextScreen = true
                         } else {
                             x += 1
@@ -203,9 +203,9 @@ struct ContentView: View {
 
                     }
                     Text("\(score)")
-                    Text("\(x, specifier: " %.0f") / 24") .padding(.top, 10).offset(y: -20)
+                    Text("\(x, specifier: " %.0f") / 23") .padding(.top, 10).offset(y: -20)
 
-                        ProgressView(value: x, total: 20).accentColor(orange).frame(width: 250, alignment: .center).padding(.bottom, 10).offset(y: -20)
+                        ProgressView(value: x, total: 23).accentColor(orange).frame(width: 250, alignment: .center).padding(.bottom, 10).offset(y: -20)
 
                     
                    
@@ -213,7 +213,7 @@ struct ContentView: View {
                 //                    Text("Count: \(x)" + "-20\nScore: \(score)")
                 
             }
-        .navigate(to: ResultView(showResult: "relazioneViolenta", score: score), when: $willMoveToNextScreen)
+        .navigate(to: ResultView(showResult: "relazioneViolenta", score: $score), when: $willMoveToNextScreen)
         .accentColor(.white)
     }
     
@@ -221,7 +221,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(score: .constant(5.0))
+        ContentView(score: 5.0)
             
     }
 }
