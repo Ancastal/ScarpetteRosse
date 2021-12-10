@@ -20,7 +20,7 @@ struct QuizHome: View {
                     .lineSpacing(10)
                     .foregroundColor(.primary)
                 Spacer()
-                NavigationLink(destination: ContentView()) {
+                NavigationLink(destination: ContentView(score: .constant(0.0))) {
                     Text("Prova il test")
                         .fontWeight(.semibold)
                         .font(.title3)

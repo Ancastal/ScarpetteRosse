@@ -9,12 +9,16 @@ import SwiftUI
 
 struct ResultView: View {
     @State var showResult: String
+    @State var score: Double
+    
     var body: some View {
+        
         switch showResult
         {
         case "alcuneDifficoltà":
             GeometryReader { metrics in
                 orange.ignoresSafeArea()
+                
                 VStack {
                     
                     Text("Risultato").font(.title)
@@ -38,7 +42,19 @@ struct ResultView: View {
                             
                         }
                     }
-                }
+                }.onAppear(perform: {
+                    if (score <= 4.8) {
+                        showResult = "nessunaDifficoltà"
+                    } else if (score >= 4.8) && (score <= 9.6) {
+                        showResult = "alcuneDifficoltà"
+                    } else if (score >= 9.6) && (score <= 14.4) {
+                        showResult = "relazioneViolenta"
+                    } else if (score >= 14.4) && (score <= 19.2) {
+                        showResult = "definitivamenteViolenta"
+                    } else if (score >= 19.2) && (score <= 24) {
+                        showResult = "esplicitamenteViolenta"
+                    }
+                })
                 
             }
         case "relazioneViolenta":
@@ -60,6 +76,19 @@ struct ResultView: View {
                         
                     }
                 }.padding()
+                    .onAppear(perform: {
+                        if (score <= 4.8) {
+                            showResult = "nessunaDifficoltà"
+                        } else if (score >= 4.8) && (score <= 9.6) {
+                            showResult = "alcuneDifficoltà"
+                        } else if (score >= 9.6) && (score <= 14.4) {
+                            showResult = "relazioneViolenta"
+                        } else if (score >= 14.4) && (score <= 19.2) {
+                            showResult = "definitivamenteViolenta"
+                        } else if (score >= 19.2) && (score <= 24) {
+                            showResult = "esplicitamenteViolenta"
+                        }
+                    })
                 
                 //            }
                 
@@ -84,7 +113,19 @@ struct ResultView: View {
                             
                         }
                     }
-                }
+                }.onAppear(perform: {
+                    if (score <= 4.8) {
+                        showResult = "nessunaDifficoltà"
+                    } else if (score >= 4.8) && (score <= 9.6) {
+                        showResult = "alcuneDifficoltà"
+                    } else if (score >= 9.6) && (score <= 14.4) {
+                        showResult = "relazioneViolenta"
+                    } else if (score >= 14.4) && (score <= 19.2) {
+                        showResult = "definitivamenteViolenta"
+                    } else if (score >= 19.2) && (score <= 24) {
+                        showResult = "esplicitamenteViolenta"
+                    }
+                })
             }
         case "esplicitamenteViolenta":
             GeometryReader { metrics in
@@ -105,7 +146,19 @@ struct ResultView: View {
                             }
                         }
                     }
-                }
+                }.onAppear(perform: {
+                    if (score <= 4.8) {
+                        showResult = "nessunaDifficoltà"
+                    } else if (score >= 4.8) && (score <= 9.6) {
+                        showResult = "alcuneDifficoltà"
+                    } else if (score >= 9.6) && (score <= 14.4) {
+                        showResult = "relazioneViolenta"
+                    } else if (score >= 14.4) && (score <= 19.2) {
+                        showResult = "definitivamenteViolenta"
+                    } else if (score >= 19.2) && (score <= 24) {
+                        showResult = "esplicitamenteViolenta"
+                    }
+                })
             }
         case "nessunaDifficoltà":
             GeometryReader { metrics in
@@ -114,7 +167,7 @@ struct ResultView: View {
                         orange.ignoresSafeArea()
                         ScrollView {
                             ZStack {
-                                Text("RELAZIONE CON NESSUNA DIFFICOLTÀ\n\nDalle risposte che hai dato sembra che la tua sia una relazione che non mostra nessuna conflittualità.")
+                                Text("Dalle risposte che hai dato t'appò")
                                     .fontWeight(.light)
                                     .frame(minWidth: 0, maxWidth: 330, minHeight: 50)
                                     .padding(.all, 18)
@@ -124,20 +177,35 @@ struct ResultView: View {
                                     .cornerRadius(20)
                                     .overlay(RoundedRectangle(cornerRadius:20).strokeBorder(.black, lineWidth: 0.5))
                             }
+                            
                         }
                     }
-                }
-                .padding()
+                }.onAppear(perform: {
+                    if (score <= 4.8) {
+                        showResult = "nessunaDifficoltà"
+                    } else if (score >= 4.8) && (score <= 9.6) {
+                        showResult = "alcuneDifficoltà"
+                    } else if (score >= 9.6) && (score <= 14.4) {
+                        showResult = "relazioneViolenta"
+                    } else if (score >= 14.4) && (score <= 19.2) {
+                        showResult = "definitivamenteViolenta"
+                    } else if (score >= 19.2) && (score <= 24) {
+                        showResult = "esplicitamenteViolenta"
+                    }
+                })
             }
+            
         default:
             Text("Default") // you should never reach this
         }
         
     }
-}
+    
+    }
+
 
 struct ResultView_Previews: PreviewProvider {
     static var previews: some View {
-        ResultView(showResult: "alcuneDifficoltà")
+        ResultView(showResult: "alcuneDifficoltà", score: 5.0)
     }
 }
