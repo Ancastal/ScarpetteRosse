@@ -85,9 +85,8 @@ struct Home: View{
                     
                     MapAnnotation(coordinate: pin.locationCoordinate) {
                         VStack {                                       //<---       Pin personalizzato con TapGesture
-                            Image(systemName: "mappin.and.ellipse")
-                                .font(.system(size: 40))
-                                .foregroundColor(.red)
+                            Image("Logo-1").resizable().clipShape(Circle()).frame(width: 50.0, height: 50.0)
+                                
                                 
                             
                             //         [Come mostrare nella modal solo i pin vicini?
@@ -221,7 +220,7 @@ class locationDelegate: NSObject,ObservableObject,CLLocationManagerDelegate{
             self.location = location
             
             if hasSetRegion == false{
-                region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: CLLocationDistance(exactly: 50000)!, longitudinalMeters: CLLocationDistance(exactly: 50000)!)
+                region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: CLLocationDistance(exactly: 25000)!, longitudinalMeters: CLLocationDistance(exactly: 25000)!)
                 hasSetRegion = true
             }
         }
