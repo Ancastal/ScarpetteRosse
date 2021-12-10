@@ -9,7 +9,12 @@ import SwiftUI
 
 struct DisclaimerView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack (alignment: .leading){
+        Text("Disclaimer").font(.title).bold().padding(.bottom, 10)
+        Text("Il test utilizzato all'interno della app ScarpeRosse è stato fornito da Reama Network - Rete per l'Empowerment e l'Auto Mutuo Aiuto (Sportello Antiviolenza Online.")
+            Spacer()
+        }.padding(.horizontal, 20)
+        
     }
 }
 

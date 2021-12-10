@@ -85,9 +85,10 @@ struct Home: View{
                     
                     MapAnnotation(coordinate: pin.locationCoordinate) {
                         VStack {                                       //<---       Pin personalizzato con TapGesture
-                            Image(systemName: "mappin.circle.fill")
-                                .font(.system(size: 20))
+                            Image(systemName: "mappin.and.ellipse")
+                                .font(.system(size: 40))
                                 .foregroundColor(.red)
+                                
                             
                             //         [Come mostrare nella modal solo i pin vicini?
                             //         Forse testando pin.location.coordinate se

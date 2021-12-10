@@ -13,7 +13,7 @@ struct onBoardView: View {
     let title: String
     let description: String
     @State var on: Bool
-    
+    @Binding var showOnBoarding: Bool
     var body: some View {
         VStack(alignment: .center, spacing: 20) {
             
@@ -34,7 +34,9 @@ struct onBoardView: View {
                 
             }
             if (on == true) {
-                NavigationLink(destination: TView()
+                Button(action: {
+                    showOnBoarding = false
+                }
                 ) {
                     Group {
                         Text("Continua")
@@ -58,7 +60,7 @@ struct onBoardView: View {
 
 struct onBoardTest: View {
     @State private var showView = "onBoard"
-        
+    @Binding var showOnBoarding: Bool
         var body: some View
         {
             switch showView
@@ -68,15 +70,15 @@ struct onBoardTest: View {
                                     TabView {
                         onBoardView(systemImageName: "simple",
                                     title: "Sostegno",
-                                    description: "In ogni momento, cerca contatti utili alla tua situazione in un’interfaccia semplice e veloce.\n\nScegli tra una lista o una mappa interattiva che si aggiorna con la tua posizione.", on: false)
+                                    description: "In ogni momento, cerca contatti utili alla tua situazione in un’interfaccia semplice e veloce.\n\nScegli tra una lista o una mappa interattiva che si aggiorna con la tua posizione.", on: false, showOnBoarding: $showOnBoarding)
                         
                         onBoardView(systemImageName: "safe",
                                     title: "Sicurezza",
-                                    description: "La nostra app è totalmente anonima e nessun dato sarà registrato o mantenuto.\n\nL’accesso tramite password ti garantisce che solo tu potrai accedervi.", on: false)
+                                    description: "La nostra app è totalmente anonima e nessun dato sarà registrato o mantenuto.\n\nL’accesso tramite password ti garantisce che solo tu potrai accedervi.", on: false, showOnBoarding: $showOnBoarding)
                         
                         onBoardView(systemImageName: "support",
                                     title: "Semplicità",
-                                    description: "Datti un minuto per pensare alla tua relazione. Potrai riceverai un consiglio ideato da esperti in base alla tua situazione.\n\nEsplora le organizzazioni circostanti e condividi le tue esperienze in anonimo con altri utenti.", on: true)
+                                    description: "Datti un minuto per pensare alla tua relazione. Potrai riceverai un consiglio ideato da esperti in base alla tua situazione.\n\nEsplora le organizzazioni circostanti e condividi le tue esperienze in anonimo con altri utenti.", on: true, showOnBoarding: $showOnBoarding)
                         
                     }
 
@@ -95,7 +97,10 @@ struct onBoardTest: View {
                             .lineSpacing(10)
                             .foregroundColor(.primary)
                         Spacer()
-                        NavigationLink(destination: ContentView()) {
+                        Button (action: {
+                            showOnBoarding = false
+                        }
+                        ) {
                             Text("Prova il test")
                                 .fontWeight(.semibold)
                                 .font(.title3)
@@ -124,6 +129,6 @@ struct onBoardTest: View {
 
 struct onBoardTest_Previews: PreviewProvider {
     static var previews: some View {
-        onBoardTest()
+        onBoardTest(showOnBoarding: .constant(true))
     }
 }

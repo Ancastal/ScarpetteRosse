@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct ScarpetteRossastreApp: App {
+    @State var showOnBoarding: Bool = true
     var body: some Scene {
         WindowGroup {
-            OnBoardingContentView()
+            ZStack {
+                TView()
+                if showOnBoarding {
+                    OnBoardingContentView(showOnBoarding: $showOnBoarding)
+                        .background(Color.white)
+                }
+            }
         }
     }
 }

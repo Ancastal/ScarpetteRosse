@@ -362,5 +362,332 @@
         "descrizione":"Opera come luogo di organizzazione politica e culturale che promuove progetti e servizi a favore delle donne di una prospettiva di genere",
         "id":1039,
         "imageName":"safe"
-    }
+    },
+    {
+            "nomeAssociazione": "Associazione Terra Viva, Cento Antiviolenza e antistalking, discriminazioni",
+            "città": "Roma",
+            "indirizzo": "Via Santa Maria delle Grazie",
+            "id": 1001,
+            "numeroTelefono": "3314141603",
+            "coordinates": {
+                "longitude": -40.92590584746062,
+                "latitude": 14.1739400024854
+            },
+            "descrizione": "assistenza psicologica - legale - socio assistenziale gratuita per donne e minori vittime di violenza, stalking e discriminazioni",
+            "imageName": "turtlerock"
+            },
+           
+     
+
+     {
+            "nomeAssociazione": "Associazione Volontarie Telefono Rosa",
+            "città": "Napoli",
+            "indirizzo": "Via Adriano, presso Polifunzionale",
+            "id": 1002,
+            "numeroTelefono": "0817958860",
+            "coordinates": {
+                "longitude": -40.98669532851346,
+                "latitude": 13.524576548569582
+            },
+            "descrizione": "Obiettivi dell’Associazione: contrastare il fenomeno della violenza; \n dare ascolto alle sofferenze e al disagio delle donne che subiscono soprusi; \n elaborare percorsi di sensibilizzazione con lo scopo di rimuovere le cause della violenza; \n promuovere una cultura paritaria e di non violenza; elaborare dati statistici al fine di restituire al pubblico e alle istituzioni un andamento sul fenomeno della violenza.",
+            "imageName": "turtlerock"
+            },
+
+      {
+            "nomeAssociazione": "Centro Antiviolenza Trento",
+            "città": "Trento",
+            "indirizzo": "Via Dogana, 1",
+            "id": 1003,
+            "numeroTelefono": "0461220048",
+            "coordinates": {
+                "longitude": -46.07341831092868,
+                "latitude": 11.1206447623061501
+            },
+            "descrizione": "Ci rivolgiamo alle donne che subiscono violenza; alle persone che, nella loro sfera privata o lavorativa sono in contatto con donne in situazioni di violenza.",
+            "imageName": "turtlerock"
+            },
+        
+    {
+            "nomeAssociazione": "Centro Thamaia Onlus",
+            "città": "Palermo",
+            "indirizzo": "Via Giuseppe Maccherone, 14",
+            "id": 1004,
+            "numeroTelefono": "0957223990",
+            "coordinates": {
+                "longitude": -37.5198299747238,
+                "latitude": 15.101941486330285
+            },
+            "descrizione": "L’Associazione Thamaia è una Organizzazione Non Lucrativa di Utilità Sociale (ONLUS) la cui finalità è quella di promuovere e favorire una migliore qualità della vita delle donne e dei minori che vivono condizioni di violenza e maltrattamento familiare.",
+            "imageName": "turtlerock"
+            },
+
+     {
+            "nomeAssociazione": "Associazione Differenza Donna APS",
+            "città": "Roma",
+            "indirizzo": "Viale di Villa Pamphili, 71/C",
+            "id": 1005,
+            "numeroTelefono": "0658332575",
+            "coordinates": {
+                "longitude": -37.5198299747238,
+                "latitude": 12.457102279834968
+            },
+            "descrizione": "La nostra missione è di fare di ogni donna una persona valorizzata, autorevole, economicamente indipendente, ricca di dignità e saggezza: una donna che conosca il valore della differenza di genere e operi in solidarietà con le altre donne.",
+            "imageName": "turtlerock"
+            },
+
+         
+    {
+            "nomeAssociazione": "A.U.R.O.R.A",
+            "città": "Napoli",
+            "coordinates": {
+                "longitude": 40.8430451,
+                "latitude": 14.2458669
+            },
+            "indirizzo": "Via Genova, 19, 80100 Napoli, Campania",
+            "numeroTelefono": "0817953194, 0817953195",
+            "descrizione": "Finalità operative: a) casa accoglienza per donne, anche immigrate sole o con figli \n b) ascolto e accoglienza \n c) presa in carico di singoli casi \n d) sostegno psicologico \n e) consulenza e assistenza legale \n f) indirizzamento verso il sistema sanitario o verso case di accoglienza",
+            "id": 1023,
+            "imageName": "safe"
+
+            },
+
+
+    {
+            "nomeAssociazione": "Alice e il Bianconiglio",
+            "città": "Avellino",
+            "coordinates": {
+                "longitude": 40.9193148,
+                "latitude": 14.7875107
+            },
+            "indirizzo": "Via Piave 29/d 83100 - Avellino (AV)",
+            "numeroTelefono": "3277317827",
+            "descrizione": "Nel centro opera una equipe di sole donne formata da 1 coordinatrice, 2 assistenti sociali, 1 psicoterapeuta, 1 avvocato penalista, 1 avvocato civilista, 1 sociologa, 1 educatrice, 1 mediatrice, 1 referente per monitoraggio e raccolta dati, 1 esperta nella comunicazione.",
+            "id": 1024,
+            "imageName": "safe"
+        },
+
+    {
+            "nomeAssociazione": "Centro Antiviolenza PdZ A02",
+            "città": "Mercogliano",
+            "coordinates": {
+                "longitude": 40.90730440345204,
+                "latitude": 14.75453973651237
+            },
+            "indirizzo": "Via Nazionale 222 presso il Centro Sociale P. Campanello 80013 - Mercogliano (AV)",
+            "numeroTelefono": "0825682501, numero emergenza 389-1326629",
+            "descrizione": "Il Centro Antiviolenza è aperto a tutte le donne residenti nell’Ambito che hanno subito violenza fisica, psicologica, emotiva, sessuale o economica da parte del partner, dell’ex partner o da un membro della famiglia, o che sono esposte alla minaccia di violenza",
+            "id": 1025,
+            "imageName": "safe"
+        },
+
+
+    {
+            "nomeAssociazione": "Cooperativa Eva",
+            "città": "Maddaloni",
+            "coordinates": {
+                "longitude": 41.039990244809694,
+                "latitude": 14.382515760918347
+            },
+            "indirizzo": "Via G. Amendola, 15, 81024 Maddaloni (CE)",
+            "numeroTelefono": "0823204145",
+            "descrizione": "Obiettivi della cooperativa: il percorso intende offrire uno spazio di riflessione e condivisione sulla realtà della violenza maschile contro le donne esplorandone la genesi e le diverse dimensioni degli attuali scenari.  ",
+            "id": 1026,
+            "imageName": "safe"
+        },
+
+
+    {
+            "nomeAssociazione": "La Casa di Marinella",
+            "città": "Acerra",
+            "coordinates": {
+                "longitude": 40.944596372450285,
+                "latitude": 14.36566292163162
+            },
+            "indirizzo": "Via Volturno, 71, 80011 Acerra (NA)",
+            "numeroTelefono": "0815201470",
+            "descrizione": "La Casa di Marinella Onlus offre alla donna in situazione di violenza un ascolto sia telefonico che in presenza.",
+            "id": 1027,
+            "imageName": "safe"
+        },
+
+
+    {
+            "nomeAssociazione": "Sportello Donna Le Kassandre",
+            "città": "Napoli",
+            "coordinates": {
+                "longitude": 40.85258986902009,
+                "latitude": 14.333050897689262
+            },
+            "indirizzo": "Corso Ponticelli, 40, 80147 Napoli (NA)",
+            "numeroTelefono": "3880979950",
+            "descrizione": "Finalità operative: essere uno spazio dove le donne possano incontrarsi, crescere e progettare insieme e dove poter valorizzare se stesse, non solo in termini di competenze, ma anche come portavoci di culture e identità specifiche.",
+            "id": 1028,
+            "imageName": "safe"
+        },
+
+
+    {
+            "nomeAssociazione": "Sportello Lilith",
+            "città": "San Sebastiano al Vesuvio",
+            "coordinates": {
+                "longitude": 40.84578935394306,
+                "latitude": 14.36968345635139
+            },
+            "indirizzo": "Via Luca Giordano, 24, 80040 San Sebastiano Al Vesuvio (NA)",
+            "numeroTelefono": "33319021391",
+            "descrizione": "È un progetto di donne per donne, al fine di realizzare sul territorio vesuviano e di Caserta un centro antiviolenza di assistenza e supporto alle donne vittime di violenza. Il centro si prefigge di essere anche un luogo di aggregazione per quante sono costrette a vivere il dramma della violenza nel privato delle mura domestiche.",
+            "id": 1029,
+            "imageName": "safe"
+        },
+
+
+
+    {
+            "nomeAssociazione": "Telefono Rosa - Spazio Donna",
+            "città": "Caserta",
+            "coordinates": {
+                "longitude": 41.05558229225908,
+                "latitude": 14.341820288337223
+            },
+            "indirizzo": "Via Paul Harris, Palazzo della Salute, 6° Piano, 81100 Caserta (CE)",
+            "numeroTelefono": "0823354126",
+            "descrizione": "L’obiettivo primario del Telefono Rosa è far sì che ogni donna, anche se lontana ed isolata, sia in grado di conoscere e sviluppare le proprie possibilità, confrontarsi con altre donne per la risoluzione dei problemi; combattere la diffusione degli abusi e la violenza di genere.",
+            "id": 1030,
+            "imageName": "safe"
+        },
+
+
+    {
+            "nomeAssociazione": "A.N.G.E.LI. Antiviolenza",
+            "città": "Lentini",
+            "coordinates": {
+                "longitude": 37.297978764393996,
+                "latitude": 15.00478661086252
+            },
+            "indirizzo": "Via degli Studi 2, 96016 - Lentini (SR)",
+            "numeroTelefono": "0957835316, emergenza  333-2073841",
+            "descrizione": "L’associazione si prodiga per contrastare ogni sorta di crudeltà e violenza, su donne e bambini e incoraggia lo studio dei principi etici e morali.",
+            "id": 1031,
+            "imageName": "safe"
+        },
+
+
+    {
+            "nomeAssociazione": "Al tuo fianco",
+            "città": "Roccalumera",
+            "coordinates": {
+                "longitude": 37.97444509871345,
+                "latitude": 15.39330074548443
+            },
+            "indirizzo": "Via Umberto I, 198, 98027 - roccalumera (ME)",
+            "numeroTelefono": "3206329120",
+            "descrizione": "Il centro antiviolenza si occupa di dare supporto a donne e minori che subiscono violenze e maltrattamenti, ma soprattutto si impegna ad elaborare assieme alle vittime un percorso individuale dia aiuto. Lo scopo principale è quello di venire incontro a tutte le situazioni di disagio e violenza sulle donne e minori, comunque esercitate. Esso offre i seguenti interventi: ascolto telefonico; colloqui di accoglienza; consulenza psicologica;assistenza legale; sportello antistalking.",
+            "id": 1032,
+            "imageName": "safe"
+        },
+
+
+    {
+            "nomeAssociazione": "Associazione Donne contro la violenza Onlus - Crema",
+            "città": "Crema",
+            "coordinates": {
+                "longitude": 45.36250212396189,
+                "latitude":  9.680750858626535
+            },
+            "indirizzo": "Via Mercato, 27, 26013 Crema (CR)",
+            "numeroTelefono": "037380999",
+            "descrizione": "La mission dell’Associazione è offrire solidarietà e sostegno alle donne che vivono situazioni di disagio e/o maltrattamento e diffondere nel territorio la cultura del rispetto per ogni persona. L’obiettivo è quello di offrire aiuto alle donne vittime di violenza, molestie, maltrattamenti, stalking o che vivono il disagio famigliare, attraverso la relazione con altre donne, garantendone l’anonimato.",
+            "id": 1033,
+            "imageName": "safe"
+        },
+
+
+    {
+            "nomeAssociazione": "Casa Rifugio Zefiro",
+            "città": "Ancona",
+            "coordinates": {
+                "longitude": 43.61644685502167,
+                "latitude":  13.515030697775316
+            },
+            "indirizzo": "P.zza Stamira 13  60122 - Ancona (AN)",
+            "numeroTelefono": "0712075383, emergenza 3357681975",
+            "descrizione": "Accogliamo l’altro nella sua complessità e ricchezza, senza definirlo nel suo stato di bisogno. Riponiamo fiducia nelle sue risorse, entrandoci in relazione. \n  Crediamo nella formazione che valorizza le competenze delle diverse figure professionali, nel lavoro in équipe e nel miglioramento continuo, con i suoi rischi e opportunità. \n  Collaboriamo con le reti locali e nazionali per realizzare interventi diversificati, innovativi e di qualità, integrando la nostra esperienza con la storia del territorio.",
+            "id": 1034,
+            "imageName": "safe"
+        },
+
+
+    {
+            "nomeAssociazione": "Casa delle donne contro la violenza Onlus - Modena",
+            "città": "Modena",
+            "coordinates": {
+                "longitude": 44.63271530737832,
+                "latitude":  10.93879163278071
+            },
+            "indirizzo": "Strada Vaciglio, 6 – 41125 Modena",
+            "numeroTelefono": "059361050",
+            "descrizione": "Tutte le nostre attività si basano sulla pratica della relazione tra donne e hanno come obbiettivo il sostegno delle donne nella ricerca e attuazione del loro progetto di autodeterminazione. Qualunque esso sia, senza giudizio, e nel rispetto totale della privacy di ognuna.",
+            "id": 1035,
+            "imageName": "safe"
+        },
+
+
+    {
+            "nomeAssociazione": "Centro Donna Lilith",
+            "città": "Latina",
+            "coordinates": {
+                "longitude": 41.46861049930527,
+                "latitude":  12.905805321647534
+            },
+            "indirizzo": "Via Fratelli Bandiera, 34, 04100 Latina (LT)",
+            "numeroTelefono": "0773664165",
+            "descrizione": "Il Centro Donna Lilith è un'associazione che da più di trentanni opera nel territorio di Latina e provincia per sostenere le donne che vogliono dire basta alla violenza di genere e domestica.",
+            "id": 1036,
+            "imageName": "safe"
+        },
+
+
+    {
+            "nomeAssociazione": "Centro antiviolenza Ananke",
+            "città": "Pescara",
+            "coordinates": {
+                "longitude": 42.450444801446885,
+                "latitude":  14.201901340066234
+            },
+            "indirizzo": "Via Tavo, 248, 65128 Pescara (PE)",
+            "numeroTelefono": "0854315294",
+            "descrizione": "Finalità operative: – far emergere e combattere ogni forma di violenza intra ed extra familiare contro le donne ed i minori, \n  – promuovere, progettare, organizzare e gestire interventi e servizi (centri e/o case rifugio) in favore di donne che hanno subito maltrattamenti e/o violenze, della loro prole e di minori; \n  – organizzare attività culturali e sociali e di sensibilizzazione che siano occasione di incontro e confronto sui temi di cui si occupa ",
+            "id": 1037,
+            "imageName": "safe"
+        },
+
+
+    {
+            "nomeAssociazione": "Il Cerchio delle relazioni",
+            "città": "Genova",
+            "coordinates": {
+                "longitude": 44.40627746515358,
+                "latitude":  8.943356598357639
+            },
+            "indirizzo": "Piazza Colombo, 1, 16121 Genova (GE)",
+            "numeroTelefono": "010541224",
+            "descrizione": "L’équipe di lavoro della cooperativa ha una pluriennale esperienza sulle problematiche della violenza di genere. É composta da consulenti d’accoglienza, pedagogiste, psicologhe-psicoterapeute, avvocate, orientatrici, mediatrici interculturali, formatrici.",
+            "id": 1038,
+            "imageName": "safe"
+        },
+
+
+    {
+            "nomeAssociazione": "Io donna",
+            "città": "Brindisi",
+            "coordinates": {
+                "longitude": 40.618647137780975,
+                "latitude":  17.934979118696596
+            },
+            "indirizzo": "Via Leonardo Da Vinci, 32, 72100 Brindisi (BR)",
+            "numeroTelefono": "0831522034",
+            "descrizione": "L’associazione gestisce un centro antiviolenza che offre ascolto, sostegno e orientamento alle donne italiane e straniere attraverso colloqui individuali, consulenze giuridiche e psicologiche, contatti con altri servizi ed istituzioni e percorsi di gruppo. Interviene nei casi di violenza domestica, violenza e molestie sessuali anche sui luoghi di lavoro, atti persecutori e violenza assistita.",
+            "id": 1039,
+            "imageName": "safe"
+        }
 ]

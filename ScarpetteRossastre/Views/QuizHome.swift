@@ -34,7 +34,7 @@ struct QuizHome: View {
                 Spacer()
             }
             
-        }
+        }.accentColor(.white)
     }
 }
     

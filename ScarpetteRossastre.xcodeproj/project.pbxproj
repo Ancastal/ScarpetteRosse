@@ -12,6 +12,7 @@
 		82034CAA2762428900F075E9 /* NumeriDiEmergenzaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82034CA92762428900F075E9 /* NumeriDiEmergenzaView.swift */; };
 		82034CAC2762429B00F075E9 /* SostegnoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82034CAB2762429B00F075E9 /* SostegnoView.swift */; };
 		82034CAE276242A500F075E9 /* DisclaimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82034CAD276242A500F075E9 /* DisclaimerView.swift */; };
+		82034CB127625B7F00F075E9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82034CAF27625B7F00F075E9 /* Localizable.strings */; };
 		820604E8275E4B2C00542C0A /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 820604E3275E4B2C00542C0A /* landmarkData.json */; };
 		820604E9275E4B2C00542C0A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820604E4275E4B2C00542C0A /* Color.swift */; };
 		820604EA275E4B2C00542C0A /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820604E6275E4B2C00542C0A /* ModelData.swift */; };
@@ -41,6 +42,7 @@
 		82034CA92762428900F075E9 /* NumeriDiEmergenzaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumeriDiEmergenzaView.swift; sourceTree = "<group>"; };
 		82034CAB2762429B00F075E9 /* SostegnoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SostegnoView.swift; sourceTree = "<group>"; };
 		82034CAD276242A500F075E9 /* DisclaimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclaimerView.swift; sourceTree = "<group>"; };
+		82034CB027625B7F00F075E9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		820604E3275E4B2C00542C0A /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		820604E4275E4B2C00542C0A /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		820604E6275E4B2C00542C0A /* ModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		822EE1E5275A215600D3DA2D = {
 			isa = PBXGroup;
 			children = (
+				82034CAF27625B7F00F075E9 /* Localizable.strings */,
 				829EA39F2761215B007A8A46 /* onBoardTest.swift */,
 				829EA39D27610DC6007A8A46 /* Tesrt.swift */,
 				820604E5275E4B2C00542C0A /* Models */,
@@ -227,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				822EE1F9275A215700D3DA2D /* Preview Assets.xcassets in Resources */,
+				82034CB127625B7F00F075E9 /* Localizable.strings in Resources */,
 				822EE1F6275A215700D3DA2D /* Assets.xcassets in Resources */,
 				820604E8275E4B2C00542C0A /* landmarkData.json in Resources */,
 			);
@@ -265,6 +269,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		82034CAF27625B7F00F075E9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82034CB027625B7F00F075E9 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		822EE1FA275A215700D3DA2D /* Debug */ = {

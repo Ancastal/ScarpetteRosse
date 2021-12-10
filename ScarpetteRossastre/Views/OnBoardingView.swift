@@ -37,39 +37,34 @@ struct CircleButton: View {
 
 
 struct OnBoardingContentView: View {
-    
+    @Binding var showOnBoarding: Bool
     @State private var willMove = false
     
     var body: some View {
-        NavigationView {
 //            ScrollView(.horizontal) {
                 
                             TabView {
                 onBoardView(systemImageName: "simple",
                             title: "Sostegno",
-                            description: "In ogni momento, cerca contatti utili alla tua situazione in un’interfaccia semplice e veloce.\n\nScegli tra una lista o una mappa interattiva che si aggiorna con la tua posizione.", on: false)
+                            description: "In ogni momento, cerca contatti utili alla tua situazione in un’interfaccia semplice e veloce.\n\nScegli tra una lista o una mappa interattiva che si aggiorna con la tua posizione.", on: false, showOnBoarding: $showOnBoarding)
                 
                 onBoardView(systemImageName: "safe",
                             title: "Sicurezza",
-                            description: "La nostra app è totalmente anonima e nessun dato sarà registrato o mantenuto.\n\nL’accesso tramite password ti garantisce che solo tu potrai accedervi.", on: false)
+                            description: "La nostra app è totalmente anonima e nessun dato sarà registrato o mantenuto.\n\nL’accesso tramite password ti garantisce che solo tu potrai accedervi.", on: false, showOnBoarding: $showOnBoarding)
                 
                 onBoardView(systemImageName: "support",
                             title: "Semplicità",
-                            description: "Datti un minuto per pensare alla tua relazione. Potrai riceverai un consiglio ideato da esperti in base alla tua situazione.\n\nEsplora le organizzazioni circostanti e condividi le tue esperienze in anonimo con altri utenti.", on: true)
+                            description: "Datti un minuto per pensare alla tua relazione. Potrai riceverai un consiglio ideato da esperti in base alla tua situazione.\n\nEsplora le organizzazioni circostanti e condividi le tue esperienze in anonimo con altri utenti.", on: true, showOnBoarding: $showOnBoarding)
                 
             }
 
-            .navigationBarHidden(true)
-        }
                 .edgesIgnoringSafeArea([.top, .bottom])
+//                .tabViewStyle(.page(indexDisplayMode: .always))        .indexViewStyle(.page(backgroundDisplayMode: .always))
                 .tabViewStyle(.page)
                 .indexViewStyle(.page(backgroundDisplayMode: .always))
+
     }
 }
-
-
-
-
 
 
 
@@ -78,7 +73,7 @@ struct OnBoardingContentView: View {
 
 struct OnBoardingView_Previews: PreviewProvider {
     static var previews: some View {
-        OnBoardingContentView()
+        OnBoardingContentView(showOnBoarding: .constant(true))
             .preferredColorScheme(.light)
     }
 }

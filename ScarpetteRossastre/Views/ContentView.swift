@@ -16,7 +16,8 @@ extension View {
         NavigationView {
             ZStack {
                 self.navigationBarTitle("")
-                    .navigationBarHidden(true)
+                    .accentColor(.white)
+//                    .navigationBarHidden(false)
                 NavigationLink(destination: view
                                 .navigationBarTitle("")
                                 .navigationBarHidden(true).navigationBarBackButtonHidden(true),
@@ -26,7 +27,7 @@ extension View {
                 }
             }
         }
-        .navigationViewStyle(.stack)
+//        .navigationViewStyle(.stack)
     }
 }
 
@@ -46,33 +47,73 @@ struct ContentView: View {
             
 
                 VStack {
+                    
+//                    Text("Questionario").foregroundColor(.black).font(.title).bold().zIndex(100)
 //                    Image(systemName: "gearshape.fill").title()
                     ZStack {
+//                        orange.frame(height: 300).ignoresSafeArea()
+//                        Text(quiz[Int(x)])
+//                            .font(.title2).fontWeight(.thin)
+//                            .frame(width: metrics.size.width * 0.8, height: metrics.size.height * 0.35)
+//                            .multilineTextAlignment(.center)
+//                            .background(.white)
+//                            .foregroundColor(.black)
+//                            .cornerRadius(30)
+//                            .overlay(RoundedRectangle(cornerRadius:30)
+//                                        .strokeBorder(.black, lineWidth: 0.5))
+//                            .frame(alignment: .top)
+                           
+                            
+//                        Rectangle()
+//                            .fill(LinearGradient(gradient: Gradient(colors: [orange, red]), startPoint: .topLeading, endPoint: .bottomTrailing))
+//                            .offset(y: -220)
+//                            .ignoresSafeArea()
+//
+//                            .frame(height:
+//                                    metrics.size.height * 0.20).overlay(
+//                                        RoundedRectangle(cornerRadius: 20).overlay(RoundedRectangle(cornerRadius: 20).strokeBorder(.black, lineWidth: 0.5))
+//                                            .foregroundColor(.white)
+//                                            .frame(width: metrics.size.width * 0.8,
+//                                                   height: metrics.size.height * 0.35)
+//                                            .offset(x:0, y:-20)
+//                                            .shadow(radius:15)
+//
+//                                    )
+//                            .ignoresSafeArea()
+//
+//                        Text(quiz[Int(x)])
+//                            .font(.title2)
+//                            .fontWeight(.thin)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(.black)
+//                            .padding(.horizontal, 70.0)
+//                            .offset(y: -20)
+                        
                         Rectangle()
                             .fill(LinearGradient(gradient: Gradient(colors: [orange, red]), startPoint: .topLeading, endPoint: .bottomTrailing))
-                            .offset(y: -220)
+                            .offset(y: -80)
+                            .edgesIgnoringSafeArea(.top)
                             .frame(height:
-                                    metrics.size.height * 0.50).overlay(
+                                    metrics.size.height * 0.20).overlay(
                                         RoundedRectangle(cornerRadius: 20).overlay(RoundedRectangle(cornerRadius: 20).strokeBorder(.black, lineWidth: 0.5))
                                             .foregroundColor(.white)
                                             .frame(width: metrics.size.width * 0.8,
-                                                   height: metrics.size.height * 0.35)
-                                            .offset(x:0, y:-20)
+                                                   height: metrics.size.height * 0.4)
+                                            .offset(x:0, y:-40)
                                             .shadow(radius:15)
                                         
                                     )
                         
                         Text(quiz[Int(x)])
-                            .font(.title2)
+                            .font(.title3)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                             .foregroundColor(.black)
                             .padding(.horizontal, 70.0)
-                            .offset(y: -20)
-                        
+                            .offset(y: -40)
                         
                     }
-                    
+                    Spacer()
                     
                     //                    VStack(spacing: 0) {
                     Button(action: {
@@ -99,8 +140,7 @@ struct ContentView: View {
                             .cornerRadius(40)
                             .overlay(RoundedRectangle(cornerRadius:40).strokeBorder(.black, lineWidth: 0.5))
                             .padding(10)
-                            .offset(y: 0)
-                        
+                            .offset(y: -20)
                         
                         
                     }
@@ -128,8 +168,8 @@ struct ContentView: View {
                             .cornerRadius(40)
                             .overlay(RoundedRectangle(cornerRadius:40).strokeBorder(.black, lineWidth: 0.5))
                             .padding(10)
-                            .offset(y: 0)
-                        
+                            .offset(y: -20)
+
                         
                     }
                     Button(action: {
@@ -157,27 +197,31 @@ struct ContentView: View {
                             .cornerRadius(40)
                             .overlay(RoundedRectangle(cornerRadius:40).strokeBorder(.black, lineWidth: 0.5))
                             .padding(10)
-                            .offset(y: 0)
+                            .offset(y: -20)
 
         
 
                     }
-                    ProgressView(value: x, total: 20).accentColor(orange).frame(width: 250, alignment: .center).padding(.vertical, 30)
-                    Spacer()
+                    
+                    Text("\(x, specifier: " %.0f") / 24") .padding(.top, 10)                            .offset(y: -20)
+
+                        ProgressView(value: x, total: 20).accentColor(orange).frame(width: 250, alignment: .center).padding(.bottom, 10)                            .offset(y: -20)
+
+                    
+                   
                 }
                 //                    Text("Count: \(x)" + "-20\nScore: \(score)")
                 
             }
-        
         .navigate(to: ResultView(showResult: "relazioneViolenta"), when: $willMoveToNextScreen)
-
+        .accentColor(.white)
     }
     
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.locale, .init(identifier: "it"))
+        ContentView().environment(\.locale, .init(identifier: "en"))
             
     }
 }

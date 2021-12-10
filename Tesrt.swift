@@ -12,7 +12,7 @@ struct Tesrt: View {
     @State private var percentAnimated: CGFloat = .zero
     @State private var score:Double = 0.0
     @State private var willMoveToNextScreen = false
-    @State private var x: Int = 0
+    @State private var x = 0.0
     @State private var didTap1:Bool = false
     @State private var didTap2:Bool = false
     @State private var didTap3:Bool = false
@@ -54,10 +54,7 @@ struct Tesrt: View {
 //                   }
                case "Quiz":
                    GeometryReader { metrics in
-                       
-
                            VStack {
-                               
            //                    Image(systemName: "gearshape.fill").title()
                                ZStack {
                                    Rectangle()
@@ -69,18 +66,18 @@ struct Tesrt: View {
                                                        .foregroundColor(.white)
                                                        .frame(width: metrics.size.width * 0.8,
                                                               height: metrics.size.height * 0.35)
-                                                       .offset(x:0, y:-50)
+                                                       .offset(x:0, y:-20)
                                                        .shadow(radius:15)
                                                    
                                                )
                                    
-                                   Text(quiz[x])
+                                   Text(quiz[Int(x)])
                                        .font(.title2)
                                        .fontWeight(.thin)
                                        .multilineTextAlignment(.center)
                                        .foregroundColor(.black)
                                        .padding(.horizontal, 70.0)
-                                       .offset(y: -50)
+                                       .offset(y: -20)
                                    
                                    
                                }
@@ -89,6 +86,8 @@ struct Tesrt: View {
                                //                    VStack(spacing: 0) {
                                Button(action: {
                                    didTap1 = true
+                                   let impactHeavy = UIImpactFeedbackGenerator(style: .soft)
+                                       impactHeavy.impactOccurred()
                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
                                        didTap1 = false
                                    }
@@ -105,17 +104,19 @@ struct Tesrt: View {
                                        .frame(minWidth: 0, maxWidth: 300, minHeight: 50)
                                        .foregroundColor(didTap1 ? Color.white : Color.white)
                                        .font(.title3)
-                                       .background(didTap1 ? Color.blue : Color.orange)
+                                       .background(didTap1 ? Color.yellow : Color.orange)
                                        .cornerRadius(40)
                                        .overlay(RoundedRectangle(cornerRadius:40).strokeBorder(.black, lineWidth: 0.5))
                                        .padding(10)
-                                       .offset(y: 10)
+                                       .offset(y: 0)
                                    
                                    
                                    
                                }
                                Button(action: {
                                    didTap2 = true
+                                   let impactHeavy = UIImpactFeedbackGenerator(style: .soft)
+                                       impactHeavy.impactOccurred()
                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
                                        didTap2 = false
                                    }
@@ -132,17 +133,20 @@ struct Tesrt: View {
                                        .frame(minWidth: 0, maxWidth: 300, minHeight: 50)
                                        .foregroundColor(didTap2 ? Color.white : Color.white)
                                        .font(.title3)
-                                       .background(didTap2 ? Color.blue : Color.orange)
+                                       .background(didTap2 ? Color.yellow : Color.orange)
                                        .cornerRadius(40)
                                        .overlay(RoundedRectangle(cornerRadius:40).strokeBorder(.black, lineWidth: 0.5))
                                        .padding(10)
-                                       .offset(y: 10)
+                                       .offset(y: 0)
                                    
                                    
                                }
                                Button(action: {
                                    didTap3 = true
+                                   let impactHeavy = UIImpactFeedbackGenerator(style: .soft)
+                                       impactHeavy.impactOccurred()
                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                                       
                                        didTap3 = false
                                    }
                                    if (x < 19) == false {
@@ -158,22 +162,23 @@ struct Tesrt: View {
                                        .frame(minWidth: 0, maxWidth: 300, minHeight: 50)
                                        .foregroundColor(didTap3 ? Color.white : Color.white)
                                        .font(.title3)
-                                       .background(didTap3 ? Color.blue : Color.orange)
+                                       .background(didTap3 ? Color.yellow : Color.orange)
                                        .cornerRadius(40)
                                        .overlay(RoundedRectangle(cornerRadius:40).strokeBorder(.black, lineWidth: 0.5))
                                        .padding(10)
-                                       .offset(y: 10)
-                                       .padding(.bottom, 50)
-                                   
+                                       .offset(y: 0)
+
+                   
+
                                }
+                               ProgressView(value: x, total: 20).accentColor(orange).frame(width: 250, alignment: .center).padding(.vertical, 30)
                                Spacer()
-                               Spacer()
-                           }.transition(.move(edge: .trailing))
+                           }
                            //                    Text("Count: \(x)" + "-20\nScore: \(score)")
                            
-                       }.transition(.move(edge: .trailing))
-//
-//                   .navigate(to: MapView(), when: $willMoveToNextScreen)
+                       }
+                   
+                   .navigate(to: ResultView(showResult: "relazioneViolenta"), when: $willMoveToNextScreen)
                case "NextView":
                    Text("This is the NextView")
                    Button("Back")

@@ -14,8 +14,12 @@ struct ResultView: View {
         {
         case "alcuneDifficoltà":
             GeometryReader { metrics in
+                orange.ignoresSafeArea()
                 VStack {
+                    
+                    Text("Risultato").font(.title)
                     ZStack {
+                        
                         orange.ignoresSafeArea()
                         ScrollView {
                             ZStack {
@@ -41,7 +45,6 @@ struct ResultView: View {
             GeometryReader { metrics in
                 orange.edgesIgnoringSafeArea(.top)
                 ZStack {
-                    
                     ScrollView {
                         Text(LocalizedStringKey("RELAZIONE VIOLENTA\n\nDalle risposte che hai dato sembra che la tua sia una relazione violenta. È importante distinguere i conflitti dai comportamenti violenti. Il tuo compagno si sta comportando ogni volta con più aggressività per risolvere i conflitti e la tensione per te comincia ad accumularsi. Devi controllare la situazione con attenzione perché i segnali fanno pensare che la situazione non migliorerà in futuro. Non si devono giustificare i comportamenti che mortificano e provocano malessere. I momenti di aggressività e rabbia spesso sono seguiti da momenti di calma apparente, false riappacificazioni, che poi si ripetono nuovamente.\n\nMeglio chiedere aiuto, non è possibile aspettare ancora.\n\nConfrontati con coloro che hanno esperienza di violenza sulle donne scrivendo allo Sportello Antiviolenza online: sportello@reamanetwork.org , oppure chiama il 1522 – numero verde contro la violenza: ti sarà indicato il centro antiviolenza più vicino alla zona/città in cui vivi che potrà aiutarti a uscire da questa situazione.\n\nRicorda sempre che in caso di pericolo è fondamentale chiamare subito il 112. Racconta l’accaduto e chiedi aiuto!"))
                             .fontWeight(.light)
@@ -135,6 +138,6 @@ struct ResultView: View {
 
 struct ResultView_Previews: PreviewProvider {
     static var previews: some View {
-        ResultView(showResult: "relazioneViolenta")
+        ResultView(showResult: "alcuneDifficoltà")
     }
 }

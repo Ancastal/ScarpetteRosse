@@ -16,7 +16,7 @@ struct ShareView: View {
     var body: some View {
 
             GeometryReader { metrics in
-                
+                NavigationView {
                 Spacer()
                 List{
                     
@@ -38,6 +38,8 @@ struct ShareView: View {
                 
                 
                 Spacer()
+                        .navigationBarHidden(true)
+                }
             }
             
 
