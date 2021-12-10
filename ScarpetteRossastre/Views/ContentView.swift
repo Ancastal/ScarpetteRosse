@@ -202,7 +202,6 @@ struct ContentView: View {
         
 
                     }
-                    Text("\(score)")
                     Text("\(x, specifier: " %.0f") / 23") .padding(.top, 10).offset(y: -20)
 
                         ProgressView(value: x, total: 23).accentColor(orange).frame(width: 250, alignment: .center).padding(.bottom, 10).offset(y: -20)

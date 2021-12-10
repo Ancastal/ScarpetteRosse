@@ -18,21 +18,22 @@ struct ShareView: View {
             GeometryReader { metrics in
                 NavigationView {
                 Spacer()
-                List{
                     
+                List{
+                    Section(header: Text("INFORMAZIONI").foregroundColor(.gray).fontWeight(.semibold)) {
                     NavigationLink(destination: NumeriDiEmergenzaView())
                     {
                         Text("Numeri di emergenza")
                     }
                     NavigationLink(destination: SostegnoView())
                     {
-                        Text("Sostegno")
+                        Text("Riconoscere una violenza")
                     }
                     NavigationLink(destination: DisclaimerView())
                     {
                         Text("Disclaimer")
                     }
-                
+                    }
                 }.foregroundColor(.black)
                     
                 

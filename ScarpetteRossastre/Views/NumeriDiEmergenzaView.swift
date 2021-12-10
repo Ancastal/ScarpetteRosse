@@ -11,7 +11,7 @@ struct NumeriDiEmergenzaView: View {
     var body: some View {
         VStack {
             Group {
-                Text("Numeri utili in caso di violenza:").font(.title).bold().padding(.top, 10)
+                Text("Numeri di Emergenza").font(.title).bold().padding(.top, 10)
                 Divider()
                 Text("CARABINIERI").foregroundColor(.gray).fontWeight(.semibold)
                 Text("112")
