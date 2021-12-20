@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="en.lproj/Localizable.strings" datatype="plaintext" source-language="en" target-language="ru">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.1" build-num="13A1030d"/>
+    </header>
+    <body>
+      <trans-unit id="A causa dei problemi con il tuo compagno hai avuto una delle seguenti alterazioni: perdita di appetito o sonnolenza?" xml:space="preserve">
+        <source>A causa dei problemi con il tuo compagno hai avuto una delle seguenti alterazioni: perdita di appetito o sonnolenza?</source>
+        <target>Из-за проблем с вашим партнером вы заметили одно из следующих изменений: потеря аппетита или сонливость?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Ancora: scarso rendimento nelle tue attività, abbandono delle abitudini, allontanamento da amici e familiari?" xml:space="preserve">
+        <source>Ancora: scarso rendimento nelle tue attività, abbandono delle abitudini, allontanamento da amici e familiari?</source>
+        <target>Больше: плохая деятельность в вашей работе, отказ от привычек, отчуждение от друзей и семьи?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Back" xml:space="preserve">
+        <source>Back</source>
+        <target>Назад</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Content" xml:space="preserve">
+        <source>Content</source>
+        <target>содержание</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Continua" xml:space="preserve">
+        <source>Continua</source>
+        <target>продолжить</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Critica costantemente i tuoi comportamenti e/o esagera i tuoi difetti in pubblico o in privato?" xml:space="preserve">
+        <source>Critica costantemente i tuoi comportamenti e/o esagera i tuoi difetti in pubblico o in privato?</source>
+        <target>Постоянно критикует ваше поведение и/или преувеличиваете ваши недостатки в публичной или частной жизни?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Default" xml:space="preserve">
+        <source>Default</source>
+        <target>Дефолт</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Dopo averti umiliato e/o colpito fisicamente, il tuo compagno si mostra affettuoso e attento, e ti promette che non accadrà mai più?" xml:space="preserve">
+        <source>Dopo averti umiliato e/o colpito fisicamente, il tuo compagno si mostra affettuoso e attento, e ti promette che non accadrà mai più?</source>
+        <target>После унижения и/или физического применения силы, ваш партнер проявляет привязанность и заботу, и обещает, что это больше никогда не повторится?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Forse l'ho vissuto" xml:space="preserve">
+        <source>Forse l'ho vissuto</source>
+        <target>Может быть, такое случалось</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Ha esercitato pressioni o ti ha obbligato a consumare droghe?" xml:space="preserve">
+        <source>Ha esercitato pressioni o ti ha obbligato a consumare droghe?</source>
+        <target>Он давил на вас или заставлял принимать наркотики?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Ha mai minacciato di uccidersi quando hai qualche problema con lui?" xml:space="preserve">
+        <source>Ha mai minacciato di uccidersi quando hai qualche problema con lui?</source>
+        <target>Он когда-нибудь угрожал покончить с собой, когда у вас с ним были проблемы?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Heading" xml:space="preserve">
+        <source>Heading</source>
+        <target>Заголовок</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Hello, World!" xml:space="preserve">
+        <source>Hello, World!</source>
+        <target>Привет, Мир!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Hide it" xml:space="preserve">
+        <source>Hide it</source>
+        <target>Скрыть это</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="INDIRIZZO" xml:space="preserve">
+        <source>INDIRIZZO</source>
+        <target>Адрес</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Info" xml:space="preserve">
+        <source>Info</source>
+        <target>Инфо</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Map" xml:space="preserve">
+        <source>Map</source>
+        <target>Карта</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="NUMERO DI TELEFONO" xml:space="preserve">
+        <source>NUMERO DI TELEFONO</source>
+        <target>Номер телефона</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Non l'ho vissuto" xml:space="preserve">
+        <source>Non l'ho vissuto</source>
+        <target>Нет, такого не случалось</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Prova il test" xml:space="preserve">
+        <source>Prova il test</source>
+        <target>Начните тест</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Quando parlate tra di voi ti senti male perché ti parla solo di sesso e vuole sapere delle tue relazioni precedenti?" xml:space="preserve">
+        <source>Quando parlate tra di voi ti senti male perché ti parla solo di sesso e vuole sapere delle tue relazioni precedenti?</source>
+        <target>Когда вы говорите друг с другом, вы чувствуете себя плохо, потому что он говорит только о сексе и хочет знать о ваших предыдущих отношениях?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Quando si rivolge a te, ti chiama con nomignoli che non ti piacciono e/o con parole sgradevoli?" xml:space="preserve">
+        <source>Quando si rivolge a te, ti chiama con nomignoli che non ti piacciono e/o con parole sgradevoli?</source>
+        <target>Когда он обращается к вам, он дает вам прозвища, которые вам не нравятся и/или использует неприятные слова?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Quando stai con lui ti senti tesa o hai la sensazione che qualsiasi cosa tu faccia lui si infastidisca?" xml:space="preserve">
+        <source>Quando stai con lui ti senti tesa o hai la sensazione che qualsiasi cosa tu faccia lui si infastidisca?</source>
+        <target>Когда вы с ним, вы чувствуете себя напряженно или у вас есть чувство, что что бы вы ни делали, он может расстроиться?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Quando uscite insieme e dovete decidere che fare, decide sempre lui?" xml:space="preserve">
+        <source>Quando uscite insieme e dovete decidere che fare, decide sempre lui?</source>
+        <target>Когда вы выходите вместе, куда-либо, решение выбора остается всегда за ним?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Quando vi arrabbiate o discutete hai mai temuto per la tua vita?" xml:space="preserve">
+        <source>Quando vi arrabbiate o discutete hai mai temuto per la tua vita?</source>
+        <target>Когда вы с вашим партнёром спорите/ругаетесь, приходилось ли вам опасаться за свою жизнь?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Questionario" xml:space="preserve">
+        <source>Questionario</source>
+        <target>Опрос</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="RELAZIONE CON ALCUNE DIFFICOLTÀ&#10;&#10;Dalle risposte che hai dato sembra che la tua sia una relazione con alcune conflittualità. Le discussioni o i problemi possono essere gestiti tra di voi. Le problematiche che presenta la tua relazione possono essere esterne alla coppia. È importante sviluppare capacità che possano aiutare a risolverli ma non sei all’interno di una relazione di violenza. Questo non significa che devi smettere di monitorare la tua relazione, parla con il tuo partner e non accettare nessun comportamento di prevaricazione, maltrattamento, svalorizzazione. Ciò non toglie che questi possono essere dei segnali di allarme di violenza.&#10;&#10;Se non ti senti sicura confrontati con coloro che hanno esperienza di violenza sulle donne scrivendo allo Sportello Antiviolenza online: sportello@reamanetwork.org , oppure chiama il 1522 – numero verde contro la violenza: ti sarà indicato il centro antiviolenza più vicino alla zona/città in cui vivi che potrà aiutarti a uscire da questa situazione.&#10;&#10;Ricorda sempre che in caso di pericolo è fondamentale chiamare subito il 112. Racconta l’accaduto e chiedi aiuto!" xml:space="preserve">
+        <source>RELAZIONE CON ALCUNE DIFFICOLTÀ
+
+Dalle risposte che hai dato sembra che la tua sia una relazione con alcune conflittualità. Le discussioni o i problemi possono essere gestiti tra di voi. Le problematiche che presenta la tua relazione possono essere esterne alla coppia. È importante sviluppare capacità che possano aiutare a risolverli ma non sei all’interno di una relazione di violenza. Questo non significa che devi smettere di monitorare la tua relazione, parla con il tuo partner e non accettare nessun comportamento di prevaricazione, maltrattamento, svalorizzazione. Ciò non toglie che questi possono essere dei segnali di allarme di violenza.
+
+Se non ti senti sicura confrontati con coloro che hanno esperienza di violenza sulle donne scrivendo allo Sportello Antiviolenza online: sportello@reamanetwork.org , oppure chiama il 1522 – numero verde contro la violenza: ti sarà indicato il centro antiviolenza più vicino alla zona/città in cui vivi che potrà aiutarti a uscire da questa situazione.
+
+Ricorda sempre che in caso di pericolo è fondamentale chiamare subito il 112. Racconta l’accaduto e chiedi aiuto!</source>
+        <target>ОТНОШЕНИЯ С НЕКОТОРЫМИ ТРУДНОСТЯМИ
+
+Судя по вашим ответам, похоже, что в ваших отношениях присутствуют некоторые конфликты. Недопонимания или проблемы могут быть решены между вами. Проблемы в ваших отношениях могут наблюдаться вне пары. Важно развивать навыки, которые могут помочь решить недопонимания, но вы не находитесь в проблематичных отношениях. Это не значит, что вы не должны анализировать ваши отношения, говорить со своим партнером, и вы не должны принимать какое-либо оскорбительное, обесценивающее поведение. Это не меняет того факта, что они могут быть тревожными признаками насилия. 
+
+Если вы не чувствуете себя в безопасности можете обратиться за помощью по электронной почте: sportello@reamanetwork.org , или позвонить бесплатно на номер 1522: Вам будет предоставлен ближайший центр в районе/городе, где вы живете, который поможет вам выйти из этой ситуации.
+
+Всегда помните, что в случае опасности необходимо немедленно позвонить 112. Расскажите, что случилось, и попросите помощи!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="RELAZIONE CON NESSUNA DIFFICOLTÀ&#10;&#10;Dalle risposte che hai dato sembra che la tua sia una relazione che non mostra nessuna conflittualità." xml:space="preserve">
+        <source>RELAZIONE CON NESSUNA DIFFICOLTÀ
+
+Dalle risposte che hai dato sembra che la tua sia una relazione che non mostra nessuna conflittualità.</source>
+        <target>ОТНОШЕНИЯ БЕЗ КАКИХ-ЛИБО ТРУДНОСТЕЙ
+
+Судя по вашим ответам, похоже, что в ваших отношениях нет конфликтов.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="RELAZIONE DEFINITIVAMENTE VIOLENTA&#10;&#10;Dalle risposte che hai dato sembra che la tua sia una relazione definitivamente violenta.&#10;Gli atti violenti nascono sulla base di qualsiasi pretesto e ogni volta con maggiore frequenza e intensità. Il rischio che questa situazione continui è alto. Speri ancora che le cose possano cambiare. Il tuo partner potrebbe farti pensare che tutto quel che succede è per colpa tua. Non è né giusto né normale che tutto ciò avvenga. Non sottovalutare la violenza, situazioni come queste che vanno avanti da molto tempo e continuano ad aumentare, non cesseranno mai.&#10;&#10;Cerca aiuto subito.&#10;&#10;Confrontati con coloro che hanno esperienza di violenza sulle donne scrivendo allo Sportello Antiviolenza online: sportello@reamanetwork.org , oppure chiama il 1522 – numero verde contro la violenza: ti sarà indicato il centro antiviolenza più vicino alla zona/città in cui vivi che potrà aiutarti a uscire da questa situazione.&#10;Ricorda sempre che in caso di pericolo è fondamentale chiamare subito il 112. Racconta l’accaduto e chiedi aiuto!" xml:space="preserve">
+        <source>RELAZIONE DEFINITIVAMENTE VIOLENTA
+
+Dalle risposte che hai dato sembra che la tua sia una relazione definitivamente violenta.
+Gli atti violenti nascono sulla base di qualsiasi pretesto e ogni volta con maggiore frequenza e intensità. Il rischio che questa situazione continui è alto. Speri ancora che le cose possano cambiare. Il tuo partner potrebbe farti pensare che tutto quel che succede è per colpa tua. Non è né giusto né normale che tutto ciò avvenga. Non sottovalutare la violenza, situazioni come queste che vanno avanti da molto tempo e continuano ad aumentare, non cesseranno mai.
+
+Cerca aiuto subito.
+
+Confrontati con coloro che hanno esperienza di violenza sulle donne scrivendo allo Sportello Antiviolenza online: sportello@reamanetwork.org , oppure chiama il 1522 – numero verde contro la violenza: ti sarà indicato il centro antiviolenza più vicino alla zona/città in cui vivi che potrà aiutarti a uscire da questa situazione.
+Ricorda sempre che in caso di pericolo è fondamentale chiamare subito il 112. Racconta l’accaduto e chiedi aiuto!</source>
+        <target>ОТНОШЕИЯ С ПРИСУДСТВИЕМ НАСИЛИЯ
+
+Судя по вашим ответам, ваши отношения определенно жестоки.
+Акты насилия совершаются под любым предлогом и каждый раз с большей частотой и интенсивностью. Опасность сохранения такой ситуации велика. Вы все еще надеетесь, что все изменится. Ваш партнер может заставить вас думать, что все, что происходит, то происходит по вашей вине. Это неправильно и ненормально. Не стоит недооценивать насилие, подобные ситуации, которые уже давно существуют и продолжают нарастать, никогда не прекратятся.
+
+Обратитесь сразу же за помощью.
+
+Обратитесь за помощью по электронной почте: sportello@reamanetwork.org , или позвонить бесплатно на номер 1522: Вам будет предоставлен ближайший центр в районе/городе, где вы живете, который поможет вам выйти из этой ситуации.
+
+Всегда помните, что в случае опасности необходимо немедленно позвонить 112. Расскажите, что случилось, и попросите о помощи!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="RELAZIONE ESPLICITAMENTE VIOLENTA&#10;&#10;Dalle risposte che hai dato sembra che la tua sia una relazione esplicitamente violenta.&#10;&#10;La tua vita è in pericolo, la tua salute fisica e/o mentale può essere severamente compromessa. Non lasciare passare ancora del tempo: può essere fatale! Il rischio che tu sia aggredita ancora una volta é molto elevato. Devi urgentemente prendere provvedimenti per la salvaguardia della tua incolumità e ricevere immediatamente un aiuto specialistico.&#10;&#10;Chiedi aiuto, racconta tutte le violenze che hai subito, non solo quelle fisiche, anche quelle psicologiche, verbali, sessuali.&#10;Confrontati con coloro che hanno esperienza di violenza sulle donne scrivendo allo Sportello Antiviolenza online: sportello@reamanetwork.org , oppure chiama il 1522 – numero verde contro la violenza: ti sarà indicato il centro antiviolenza più vicino alla zona/città in cui vivi che potrà aiutarti a uscire da questa situazione.&#10;&#10;Ricorda sempre che in caso di pericolo è fondamentale chiamare subito il 112. Racconta l’accaduto e chiedi aiuto!" xml:space="preserve">
+        <source>RELAZIONE ESPLICITAMENTE VIOLENTA
+
+Dalle risposte che hai dato sembra che la tua sia una relazione esplicitamente violenta.
+
+La tua vita è in pericolo, la tua salute fisica e/o mentale può essere severamente compromessa. Non lasciare passare ancora del tempo: può essere fatale! Il rischio che tu sia aggredita ancora una volta é molto elevato. Devi urgentemente prendere provvedimenti per la salvaguardia della tua incolumità e ricevere immediatamente un aiuto specialistico.
+
+Chiedi aiuto, racconta tutte le violenze che hai subito, non solo quelle fisiche, anche quelle psicologiche, verbali, sessuali.
+Confrontati con coloro che hanno esperienza di violenza sulle donne scrivendo allo Sportello Antiviolenza online: sportello@reamanetwork.org , oppure chiama il 1522 – numero verde contro la violenza: ti sarà indicato il centro antiviolenza più vicino alla zona/città in cui vivi che potrà aiutarti a uscire da questa situazione.
+
+Ricorda sempre che in caso di pericolo è fondamentale chiamare subito il 112. Racconta l’accaduto e chiedi aiuto!</source>
+        <target>ОТНОШЕНИЯ С ЯВНЫМ ПРОЯВЛЕНИЕМ НАСИЛИЯ
+
+Судя по вашим ответам, ваши отношения явно жестоки.
+
+Ваша жизнь в опасности, ваше физическое и/или психическое здоровье может быть серьезно подорвано. Не теряйте больше времени: это может быть смертельно! Риск того, что на вас снова нападут, очень велик. Вы должны срочно принять меры по обеспечению вашей безопасности и немедленно необходима помощь специалиста.
+
+Попросите о помощи, расскажите о насилии, от которого вы пострадали, не только физическом, но и психологическом, словесном, сексуальном.
+Обротитесь за помощью по электронной почте: sportello@reamanetwork.org , или позвоните бесплатно на номер 1522: Вам будет предоставлена ближайшаявий центр в районе/городе, где вы живете, который поможет вам выйти из этой ситуации.
+
+Всегда помните, что в случае опасности необходимо немедленно позвонить 112. Расскажите, что случилось, и попросите помощи!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="RELAZIONE VIOLENTA&#10;&#10;Dalle risposte che hai dato sembra che la tua sia una relazione violenta. È importante distinguere i conflitti dai comportamenti violenti. Il tuo compagno si sta comportando ogni volta con più aggressività per risolvere i conflitti e la tensione per te comincia ad accumularsi. Devi controllare la situazione con attenzione perché i segnali fanno pensare che la situazione non migliorerà in futuro. Non si devono giustificare i comportamenti che mortificano e provocano malessere. I momenti di aggressività e rabbia spesso sono seguiti da momenti di calma apparente, false riappacificazioni, che poi si ripetono nuovamente.&#10;&#10;Meglio chiedere aiuto, non è possibile aspettare ancora.&#10;&#10;Confrontati con coloro che hanno esperienza di violenza sulle donne scrivendo allo Sportello Antiviolenza online: sportello@reamanetwork.org , oppure chiama il 1522 – numero verde contro la violenza: ti sarà indicato il centro antiviolenza più vicino alla zona/città in cui vivi che potrà aiutarti a uscire da questa situazione.&#10;&#10;Ricorda sempre che in caso di pericolo è fondamentale chiamare subito il 112. Racconta l’accaduto e chiedi aiuto!" xml:space="preserve">
+        <source>RELAZIONE VIOLENTA
+
+Dalle risposte che hai dato sembra che la tua sia una relazione violenta. È importante distinguere i conflitti dai comportamenti violenti. Il tuo compagno si sta comportando ogni volta con più aggressività per risolvere i conflitti e la tensione per te comincia ad accumularsi. Devi controllare la situazione con attenzione perché i segnali fanno pensare che la situazione non migliorerà in futuro. Non si devono giustificare i comportamenti che mortificano e provocano malessere. I momenti di aggressività e rabbia spesso sono seguiti da momenti di calma apparente, false riappacificazioni, che poi si ripetono nuovamente.
+
+Meglio chiedere aiuto, non è possibile aspettare ancora.
+
+Confrontati con coloro che hanno esperienza di violenza sulle donne scrivendo allo Sportello Antiviolenza online: sportello@reamanetwork.org , oppure chiama il 1522 – numero verde contro la violenza: ti sarà indicato il centro antiviolenza più vicino alla zona/città in cui vivi che potrà aiutarti a uscire da questa situazione.
+
+Ricorda sempre che in caso di pericolo è fondamentale chiamare subito il 112. Racconta l’accaduto e chiedi aiuto!</source>
+        <target>ЖЕСТОКИЕ ОТНОШЕНИЯ
+
+Судя по вашим ответам, ваши отношения жестоки. Важно отличать конфликты от агрессивного поведения. Ваш партнер ведёт себя агрессивно каждый раз, чтобы разрешить конфликты, и напряжение для вас начинает нарастать. Вы должны внимательно следить за ситуацией, поскольку есть признаки того, что ситуация не улучшится в будущем. Вы не должны оправдывать поведение, которое вызывает недомогания. За моментами агрессии и гнева часто следуют моменты кажущегося спокойствия, ложного примирения, которые затем повторяются вновь.
+
+Не нужно больше ждать улучшений и обратиться за помощью.
+
+Обратитесь за помощью по электронной почте: sportello@reamanetwork.org , или позвонить бесплатно на номер 1522: Вам будет предоставлен ближайший центр в районе/городе, где вы живете, который поможет вам выйти из этой ситуации.
+
+Всегда помните, что в случае опасности необходимо немедленно позвонить 112. Расскажите, что случилось, и попросите о помощи!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Riconoscere l’essenza di una relazione affettiva non è sempre facile. Questo questionario, totalmente anonimo, ha lo scopo di aiutare a riflettere sulle dinamiche vissute all’interno della coppia, per individuare comportamenti vessatori.  &#10;Leggi attentamente le domande, rifletti e rispondi con sincerità. Alla fine del test risulterà un profilo di rischio sulla base della tua situazione" xml:space="preserve">
+        <source>Riconoscere l’essenza di una relazione affettiva non è sempre facile. Questo questionario, totalmente anonimo, ha lo scopo di aiutare a riflettere sulle dinamiche vissute all’interno della coppia, per individuare comportamenti vessatori.  
+Leggi attentamente le domande, rifletti e rispondi con sincerità. Alla fine del test risulterà un profilo di rischio sulla base della tua situazione</source>
+        <target>Распознавать суть эмоциональных отношений не всегда легко. Этот полностью анонимный вопросник направлен на то, чтобы помочь осмыслить динамику семейной жизни и выявить случаи жестокого обращения.
+Внимательно прочитайте вопросы, поразмыслите и ответьте на них искренне. В конце теста вы получите характеристику риска, основанную на вашей ситуации</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Se hai ceduto ai suoi desideri sessuali lo hai fatto per timore, per compiacenza o per la pressione subita?" xml:space="preserve">
+        <source>Se hai ceduto ai suoi desideri sessuali lo hai fatto per timore, per compiacenza o per la pressione subita?</source>
+        <target>Если вы поддались его сексуальным желаниям, вы сделали это из-за страха, самодовольства или давления?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Se il tuo compagno assume alcool o si droga, poi ha un comportamento violento con te e/o con altre persone?" xml:space="preserve">
+        <source>Se il tuo compagno assume alcool o si droga, poi ha un comportamento violento con te e/o con altre persone?</source>
+        <target>Если ваш партнер употребляет алкоголь или наркотики, имеет ли он агрессивное поведение с вами и/или другими людьми?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Sei al sicuro?" xml:space="preserve">
+        <source>Sei al sicuro?</source>
+        <target>Вы чувствуете себя в безопасности?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Senti che il tuo compagno ti controlla costantemente per amore?" xml:space="preserve">
+        <source>Senti che il tuo compagno ti controlla costantemente per amore?</source>
+        <target>Вы чувствуете, что ваш партнер постоянно наблюдает за вами из-за любви?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Si, l'ho vissuto" xml:space="preserve">
+        <source>Si, l'ho vissuto</source>
+        <target>Да, такое случалось</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="This is the NextView" xml:space="preserve">
+        <source>This is the NextView</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Ti accusa di avere altre relazioni, oppure che i tuoi amici vogliono averne con te?" xml:space="preserve">
+        <source>Ti accusa di avere altre relazioni, oppure che i tuoi amici vogliono averne con te?</source>
+        <target>Ваш партнер обвиняет постоянно подозревает что у вас есть другие отношения или что ваши друзья хотят быть с вами в отношениях?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Ti critica e si burla del tuo corpo?" xml:space="preserve">
+        <source>Ti critica e si burla del tuo corpo?</source>
+        <target>Он критикует вас и насмехается над вашим телом?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Ti dice che ha relazioni con altre donne e ti paragona alle sue ex partners?" xml:space="preserve">
+        <source>Ti dice che ha relazioni con altre donne e ti paragona alle sue ex partners?</source>
+        <target>Он говорит вам, что у него есть отношения с другими женщинами, и сравнивает вас со своими бывшими партнершами?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Ti ha mai colpito con parti del suo corpo o con qualche oggetto?" xml:space="preserve">
+        <source>Ti ha mai colpito con parti del suo corpo o con qualche oggetto?</source>
+        <target>Он когда-нибудь бил вас чем-нибудь?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Ti ha mai provocato lesioni che richiedessero l'intervento di un professionista?" xml:space="preserve">
+        <source>Ti ha mai provocato lesioni che richiedessero l'intervento di un professionista?</source>
+        <target>Он когда-нибудь причинял вам травмы, требующие профессионального вмешательства?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Ti ha obbligato a vedere materiale pornografico e/o ad avere pratiche sessuali che non ti piacevano?" xml:space="preserve">
+        <source>Ti ha obbligato a vedere materiale pornografico e/o ad avere pratiche sessuali che non ti piacevano?</source>
+        <target>Он заставлял вас смотреть порнографические содержание и/или принуждал вас к сексуальной практике , которая вам не нравилась?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Ti impedisce o ti condiziona nell'uso di metodi contraccettivi se hai relazioni sessuali con lui?" xml:space="preserve">
+        <source>Ti impedisce o ti condiziona nell'uso di metodi contraccettivi se hai relazioni sessuali con lui?</source>
+        <target>Запрещает ли он вам использование противозачаточных средств в случае сексуальных отношений с ним?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Vuole sempre sapere cosa stai facendo e/o con chi stai?" xml:space="preserve">
+        <source>Vuole sempre sapere cosa stai facendo e/o con chi stai?</source>
+        <target>Он всегда хочет знать, что вы делаете и/или с кем?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="en.lproj/ScarpetteRossastre-InfoPlist.strings" datatype="plaintext" source-language="en" target-language="ru">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.1" build-num="13A1030d"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>ScarpetteRossastre</source>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSLocationAlwaysUsageDescription" xml:space="preserve">
+        <source>Accetta</source>
+        <note>Privacy - Location Always Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSLocationWhenInUseUsageDescription" xml:space="preserve">
+        <source>Accetta</source>
+        <note>Privacy - Location When In Use Usage Description</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

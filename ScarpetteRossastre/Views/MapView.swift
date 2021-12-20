@@ -73,6 +73,8 @@ struct Home: View{
             return names.filter { $0.contains(searchText)}
         }
     }
+    
+
     var body: some View {
         NavigationView {
         GeometryReader { geometry in
@@ -99,7 +101,7 @@ struct Home: View{
                             indirizzoPin = pin.indirizzo
                             nomeAssociazionePin = pin.nomeAssociazione
                             numeroTelefonoPin = pin.numeroTelefono
-                            descrizionePin = pin.nomeAssociazione
+                            descrizionePin = pin.descrizione
                             cittàPin = pin.città
                             bottomSheetHidden = .middle
                             
@@ -130,15 +132,21 @@ struct Home: View{
                             .padding(.trailing, -30)
                     }
                 }) {
-                    VStack(spacing: 0) {
-                        Text("INDIRIZZO").foregroundColor(.gray).fontWeight(.semibold).frame(maxWidth: .infinity, alignment: .leading).padding(.leading, 15).padding(.top, 5)
+                    VStack(alignment: .leading, spacing: 0) {
+                        Group {
+                        Text("INDIRIZZO").foregroundColor(.gray).fontWeight(.semibold).padding(.leading, 15).padding(.top, 5)
                             .fixedSize(horizontal: false, vertical: true)
-                        Text(indirizzoPin).frame(maxWidth: .infinity, alignment: .leading).padding(.leading, 15).padding(.vertical, 5)
+                        Text(indirizzoPin).padding(.leading, 15).padding(.vertical, 5)
                         Divider()
-                        Text("NUMERO DI TELEFONO").foregroundColor(.gray).fontWeight(.semibold).frame(maxWidth: .infinity, alignment: .leading).padding(.leading, 15).padding(.top, 5)
-                        Text(numeroTelefonoPin).padding(.trailing, 255).frame(maxWidth: .infinity, alignment: .leading).padding(.leading, 15).padding(.vertical, 5)
+                        Text("NUMERO DI TELEFONO").foregroundColor(.gray).fontWeight(.semibold).padding(.leading, 15).padding(.top, 5)
+                        Text(numeroTelefonoPin).padding(.leading, 15).padding(.vertical, 5)
                         Divider()
-                    }
+                        Text("DESCRIZIONE").foregroundColor(.gray).fontWeight(.semibold).padding(.leading, 15).padding(.top, 5)
+                        Text(descrizionePin).padding(.leading, 15).padding(.vertical, 5)
+                        }.frame(maxWidth: .infinity, alignment: .leading)
+                        Divider()
+                        
+                    }.frame(alignment: .leading)
                 }
         }.edgesIgnoringSafeArea(.all)
         
@@ -207,11 +215,15 @@ class locationDelegate: NSObject,ObservableObject,CLLocationManagerDelegate{
         //        ]
         
         pins = []
+
+            for land in landmarks {
+                lands.append(land)
+                
+                }
         
+
         
-        for land in landmarks {
-            lands.append(land)
-        }
+            
         
         
         // From here and down is new

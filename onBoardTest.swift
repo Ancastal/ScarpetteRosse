@@ -10,8 +10,8 @@ import SwiftUI
 struct onBoardView: View {
     @State private var willMove = false
     let systemImageName: String
-    let title: String
-    let description: String
+    let title: LocalizedStringKey
+    let description: LocalizedStringKey
     @State var on: Bool
     @Binding var showOnBoarding: Bool
     var body: some View {
@@ -105,10 +105,11 @@ struct onBoardTest: View {
                                 .fontWeight(.semibold)
                                 .font(.title3)
                                 .frame(minWidth: 0, maxWidth: 300)
-                                .padding(8)
+                                .padding(15)
                                 .foregroundColor(.white)
                                 .background(orange)
                                 .cornerRadius(40)
+                                
                         }
                         
                         Spacer()

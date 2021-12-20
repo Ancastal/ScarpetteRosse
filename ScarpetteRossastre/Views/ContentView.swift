@@ -13,20 +13,19 @@ extension View {
     ///   - view: View to navigate to.
     ///   - binding: Only navigates when this condition is `true`.
     func navigate<NewView: View>(to view: NewView, when binding: Binding<Bool>) -> some View {
-        NavigationView {
             ZStack {
                 self.navigationBarTitle("")
                     .accentColor(.white)
 //                    .navigationBarHidden(false)
                 NavigationLink(destination: view
-                                .navigationBarTitle("")
-                                .navigationBarHidden(true).navigationBarBackButtonHidden(true),
+                                .navigationBarTitle("Risultati")
+                                .navigationBarHidden(false).navigationBarBackButtonHidden(false),
                                isActive: binding
                 ) {
                     EmptyView()
                 }
             }
-        }
+        
 //        .navigationViewStyle(.stack)
     }
 }
@@ -91,15 +90,15 @@ struct ContentView: View {
                         
                         Rectangle()
                             .fill(LinearGradient(gradient: Gradient(colors: [orange, red]), startPoint: .topLeading, endPoint: .bottomTrailing))
-                            .offset(y: -80)
+                            .offset(y: -30)
                             .edgesIgnoringSafeArea(.top)
                             .frame(height:
-                                    metrics.size.height * 0.20).overlay(
+                                    metrics.size.height * 0.25, alignment: .top).overlay(
                                         RoundedRectangle(cornerRadius: 20).overlay(RoundedRectangle(cornerRadius: 20).strokeBorder(.black, lineWidth: 0.5))
                                             .foregroundColor(.white)
                                             .frame(width: metrics.size.width * 0.8,
-                                                   height: metrics.size.height * 0.4)
-                                            .offset(x:0, y:-40)
+                                                   height: metrics.size.height * 0.35)
+                                            .offset(x:0, y: 30)
                                             .shadow(radius:15)
                                         
                                     )
@@ -109,8 +108,8 @@ struct ContentView: View {
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                             .foregroundColor(.black)
-                            .padding(.horizontal, 70.0)
-                            .offset(y: -40)
+                            .padding(.horizontal, 60.0)
+                            .offset(y: 40)
                         
                     }
                     Spacer()
@@ -155,7 +154,7 @@ struct ContentView: View {
                             willMoveToNextScreen = true
                         } else {
                             x += 1
-                            score += 0.5
+                            score += 0.0
                         }
                         
                     }) {
@@ -184,7 +183,7 @@ struct ContentView: View {
                             willMoveToNextScreen = true
                         } else {
                             x += 1
-                            score += 0
+                            score += 0.5
                         }
                         
                     }) {
@@ -220,7 +219,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(score: 5.0)
+        ContentView(score: 5.0).environment(\.locale, .init(identifier: "ru"))
             
     }
 }

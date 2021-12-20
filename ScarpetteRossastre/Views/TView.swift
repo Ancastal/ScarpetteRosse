@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct TView: View {
+    @State var showGreeting: Bool
     var body: some View {
         
         TabView() {
             QuizHome(score: 0.0).tabItem { Label(LocalizedStringKey("Questionario"), systemImage: "q.circle.fill") }
             MapView().tabItem { Label(LocalizedStringKey("Mappe"), systemImage: "map.fill") }
-            ShareView().tabItem { Label(LocalizedStringKey("Informazioni"), systemImage: "info.circle.fill") }
+            SettingsView(showGreeting: $showGreeting).tabItem { Label(LocalizedStringKey("Informazioni"), systemImage: "info.circle.fill") }
         }.tabViewStyle(DefaultTabViewStyle())
             .accentColor(orange)
         
@@ -22,6 +23,6 @@ struct TView: View {
 
 struct TView_Previews: PreviewProvider {
     static var previews: some View {
-        TView()
+        TView(showGreeting: true)
     }
 }

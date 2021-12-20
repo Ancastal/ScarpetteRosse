@@ -10,28 +10,42 @@ import SwiftUI
 
 
 
-struct ShareView: View {
-    
-    
+struct SettingsView: View {
+    @Binding var showGreeting: Bool
+    @AppStorage("enableLogging") var enableLogging: Bool = false
     var body: some View {
-
             GeometryReader { metrics in
                 NavigationView {
                 List{
+                    
+                    Section(header: Text("IMPOSTAZIONI").foregroundColor(.gray).fontWeight(.semibold)) {
+                        Toggle(isOn: $enableLogging, label: {
+                            Image(systemName: "key.fill")
+                            Text(" Accesso Protetto")
+                        })
+                        NavigationLink(destination: IconsSelector()) {
+                        Image("Logo").resizable().frame(width: 20, height: 20)
+                            Text("Cambia Icona")
+                        }
+                    }
                     Section(header: Text("INFORMAZIONI").foregroundColor(.gray).fontWeight(.semibold)) {
                     NavigationLink(destination: NumeriDiEmergenzaView())
                     {
+                        Image(systemName: "phone.circle.fill").foregroundColor(orange)
                         Text("Numeri di emergenza")
                     }
                     NavigationLink(destination: SostegnoView())
                     {
+                        Image(systemName: "person.crop.circle.badge.questionmark.fill").foregroundColor(orange)
                         Text("Riconoscere una violenza")
                     }
                     NavigationLink(destination: DisclaimerView())
                     {
+                        Image(systemName: "info.circle.fill").foregroundColor(orange)
                         Text("Disclaimer")
                     }
                     }
+
                 }.foregroundColor(.black)
                     
                     .navigationBarBackButtonHidden(true)
@@ -39,14 +53,16 @@ struct ShareView: View {
                 Spacer()
                         
                 }
+                
             }
             
 
     }
+        
 }
 
-struct ShareView_Previews: PreviewProvider {
+struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        ShareView()
+        SettingsView(showGreeting: .constant(true))
     }
 }

@@ -20,8 +20,7 @@ struct ResultView: View {
                 orange.ignoresSafeArea()
                 
                 VStack {
-                    
-                    Text("Risultato").font(.title)
+                
                     ZStack {
                         
                         orange.ignoresSafeArea()
@@ -29,7 +28,7 @@ struct ResultView: View {
                             ZStack {
                                 
                                 
-                                Text("RELAZIONE CON ALCUNE DIFFICOLTÀ\n\nDalle risposte che hai dato sembra che la tua sia una relazione con alcune conflittualità. Le discussioni o i problemi possono essere gestiti tra di voi. Le problematiche che presenta la tua relazione possono essere esterne alla coppia. È importante sviluppare capacità che possano aiutare a risolverli ma non sei all’interno di una relazione di violenza. Questo non significa che devi smettere di monitorare la tua relazione, parla con il tuo partner e non accettare nessun comportamento di prevaricazione, maltrattamento, svalorizzazione. Ciò non toglie che questi possono essere dei segnali di allarme di violenza.\n\nSe non ti senti sicura confrontati con coloro che hanno esperienza di violenza sulle donne scrivendo allo Sportello Antiviolenza online: sportello@reamanetwork.org , oppure chiama il 1522 – numero verde contro la violenza: ti sarà indicato il centro antiviolenza più vicino alla zona/città in cui vivi che potrà aiutarti a uscire da questa situazione.\n\nRicorda sempre che in caso di pericolo è fondamentale chiamare subito il 112. Racconta l’accaduto e chiedi aiuto!")
+                                Text("\("RELAZIONE CON ALCUNE DIFFICOLTÀ")\n\nDalle risposte che hai dato sembra che la tua sia una relazione con alcune conflittualità. Le discussioni o i problemi possono essere gestiti tra di voi. Le problematiche che presenta la tua relazione possono essere esterne alla coppia. È importante sviluppare capacità che possano aiutare a risolverli ma non sei all’interno di una relazione di violenza. Questo non significa che devi smettere di monitorare la tua relazione, parla con il tuo partner e non accettare nessun comportamento di prevaricazione, maltrattamento, svalorizzazione. Ciò non toglie che questi possono essere dei segnali di allarme di violenza.\n\nSe non ti senti sicura confrontati con coloro che hanno esperienza di violenza sulle donne scrivendo allo Sportello Antiviolenza online: sportello@reamanetwork.org , oppure chiama il 1522 – numero verde contro la violenza: ti sarà indicato il centro antiviolenza più vicino alla zona/città in cui vivi che potrà aiutarti a uscire da questa situazione.\n\nRicorda sempre che in caso di pericolo è fondamentale chiamare subito il 112. Racconta l’accaduto e chiedi aiuto!")
                                     .fontWeight(.light)
                                     .frame(minWidth: 0, maxWidth: 330, minHeight: 50)
                                     .padding(.all, 18)
@@ -133,6 +132,7 @@ struct ResultView: View {
                     ZStack {
                         orange.ignoresSafeArea()
                         ScrollView {
+                            
                             ZStack {
                                 Text("RELAZIONE ESPLICITAMENTE VIOLENTA\n\nDalle risposte che hai dato sembra che la tua sia una relazione esplicitamente violenta.\n\nLa tua vita è in pericolo, la tua salute fisica e/o mentale può essere severamente compromessa. Non lasciare passare ancora del tempo: può essere fatale! Il rischio che tu sia aggredita ancora una volta é molto elevato. Devi urgentemente prendere provvedimenti per la salvaguardia della tua incolumità e ricevere immediatamente un aiuto specialistico.\n\nChiedi aiuto, racconta tutte le violenze che hai subito, non solo quelle fisiche, anche quelle psicologiche, verbali, sessuali.\nConfrontati con coloro che hanno esperienza di violenza sulle donne scrivendo allo Sportello Antiviolenza online: sportello@reamanetwork.org , oppure chiama il 1522 – numero verde contro la violenza: ti sarà indicato il centro antiviolenza più vicino alla zona/città in cui vivi che potrà aiutarti a uscire da questa situazione.\n\nRicorda sempre che in caso di pericolo è fondamentale chiamare subito il 112. Racconta l’accaduto e chiedi aiuto!")
                                     .fontWeight(.light)

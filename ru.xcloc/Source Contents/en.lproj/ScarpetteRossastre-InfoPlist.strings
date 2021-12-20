@@ -1,0 +1,6 @@
+/* Bundle name */
+"CFBundleName" = "ScarpetteRossastre";
+/* Privacy - Location Always Usage Description */
+"NSLocationAlwaysUsageDescription" = "Accetta";
+/* Privacy - Location When In Use Usage Description */
+"NSLocationWhenInUseUsageDescription" = "Accetta";
