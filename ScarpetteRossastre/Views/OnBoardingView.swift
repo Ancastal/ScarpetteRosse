@@ -137,7 +137,6 @@ struct LoginView: View {
             
             }
             Spacer()
-            Text(String(enableLogging))
 
             
             Button("Forgot password") {
@@ -179,7 +178,7 @@ struct PasswordView: View {
     let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0, opacity: 1.0)
     @Binding var password: String
     var body: some View {
-        SecureField("Password", text: $password)
+        SecureInputView("Password", text: $password)
             .padding(10)
             .background(lightGreyColor)
             .cornerRadius(10)
@@ -214,5 +213,35 @@ struct OnBoardingView_Previews: PreviewProvider {
     static var previews: some View {
         OnBoardingContentView(showOnBoarding: .constant(true), enableLogging: .constant(true))
             .preferredColorScheme(.light)
+    }
+}
+
+struct SecureInputView: View {
+    
+    @Binding private var text: String
+    @State private var isSecured: Bool = true
+    private var title: String
+    
+    init(_ title: String, text: Binding<String>) {
+        self.title = title
+        self._text = text
+    }
+    
+
+    
+    var body: some View {
+        ZStack(alignment: .trailing) {
+            if isSecured {
+                SecureField(title, text: $text)
+            } else {
+                TextField(title, text: $text) 
+            }
+            Button(action: {
+                isSecured.toggle()
+            }) {
+                Image(systemName: self.isSecured ? "eye.slash" : "eye")
+                    .accentColor(.gray)
+            }
+        }
     }
 }
