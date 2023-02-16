@@ -6,4 +6,4 @@ Upon completion of the test, the user is presented with a result and various opt
 
 To further enhance user safety, ScarpetteRosse offers a login form with FaceID support and the ability to change the app icon to fake icons that are unrelated to the topics of the app. These features are designed to add an additional layer of privacy by making it difficult for others to identify the app on a user's device.
 
-Future developments for ScarpetteRosse include the creation of a real-time chat system with experts from the specialized agencies.
+Future developments for ScarpetteRosse include the creation of a real-time chat system with experts from specialized agencies.
